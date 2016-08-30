@@ -1,0 +1,172 @@
+/*reset.css*/
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.layout-positioner {
+    width: 1170px;
+}
+
+.clearfix {
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+
+/*Landing block*/
+
+.block--landing p.block__desc--40px {
+    color: #ffe600;
+    font-size: 40px;
+}
+
+.block--landing div.block__btn {
+    display: inline-block;
+    border: 2px solid #ffe600;
+    width: 230px;
+}
+
+.block--landing .block__btn a {
+    color: #ffffff;
+}
+
+
+ /*Navbar's block*/
+
+.navbar {
+    width: 100%;
+    border-bottom: 2px solid #ffe600;
+}
+
+.navbar__logo {
+    float: left;
+}
+
+.nav .nav__item {
+	float: right;
+    cursor: pointer;
+}
+
+.nav  .nav__item a {
+    display: block;
+    color: #8e8e8e;
+}
+
+
+/*Features*/
+.features .features__item {
+    float: left;
+    width: 265px;
+    position: relative;
+}
+
+
+.features p.features__desc {
+    color: #8e8e8e;
+    text-transform: none;
+}
+
+.features .features__header {
+    text-align: left;
+}
+
+/*Portfolio*/
+.portfolio li.portfolio__item {
+    float: left;    
+    background: #f3f3f3;
+    width: 270px;
+    height: 200px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio__title {
+    font-size: 20px;
+}
+
+.portfolio__desc {
+    color: #fff;
+}
+
+/*Client's block*/
+
+.block--clients .clients__item {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+/*Contact form*/
+.block--contact-form form  {
+    font: normal 15px 'Roboto', sans-serif;
+}
+
+.block--contact-form input{
+    width: 970px;
+    background: #ffe600;
+    border: none;
+    outline: none;
+    -moz-appearance: none;
+    color: #ffffff;
+}
+
+input[name="Name"],
+input[name="Mail"] {
+    width: 470px;
+}
+
+.block--contact-form textarea {
+    width: 970px;
+    background: #ffe600;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    -moz-appearance: none;
+    resize: none;
+}
+
+.contact-form input[type="submit"]{
+    background: #131316;
+    color: #ffe600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*Footer*/
+.footer__copyright{
+    color: #ffe600;
+    display: inline-block;
+    text-transform: none;    
+}
+
+.footer__social{
+    float: right;
+}
+
+.footer__icon {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

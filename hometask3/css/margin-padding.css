@@ -1,0 +1,140 @@
+
+/*Content positioner*/
+.layout-positioner {
+    margin: 0 auto;
+}
+
+/*Landing block*/
+
+.landing-logo {
+    margin-bottom: 50px;
+}
+
+.block--landing p.block__desc {
+    margin-bottom: 50px;    
+}
+
+.block--landing p.block__desc--40px {
+    margin-bottom: 100px;
+}
+
+.block--landing div.block__btn {
+    margin-bottom: 45px;
+    padding: 22px 0;
+}
+
+
+/*Navbar*/
+.navbar {
+    margin-bottom: 120px;
+    padding: 35px 0;
+}
+
+.navbar__logo {
+	margin-right: 420px;
+}
+
+
+.nav  .nav__item a {
+    padding: 14px 18px 15px 26px;
+}
+
+.nav  .nav__item a:hover, 
+.nav .nav__item a.active {
+    margin-left: -2px;
+}
+
+.block--navbar .block-info {
+    margin-bottom: 135px;
+}
+
+/*Features list in block--navbar*/
+.features .features__item {
+    margin-left: 155px;
+}
+
+.features .features__item:first-child {
+    margin-left: 0px;
+}
+
+.features .features__header {
+    padding-left: 72px;
+    margin-bottom: 42px;
+}
+
+/*Portfolio*/
+.portfolio li.portfolio__item {
+    margin-right: 30px; 
+    margin-bottom: 30px;
+}
+
+
+.portfolio li.portfolio__item:nth-child(4n) {
+    margin-right: 0px;
+}
+    
+.block--portfolio .block-info {
+    margin-bottom: 120px;
+}
+.portfolio__title {
+    margin-bottom: 15px;
+}
+
+.portfolio__content--hover { 
+    padding-top: 75px;
+}
+
+.block__desc--yellow{
+    margin-bottom: 30px;
+}
+
+/*Clients block*/
+.block--clients .block-info {
+    margin-bottom: 130px;    
+}
+.block--clients .clients__item {
+    margin-right: 100px;
+}
+
+.block--clients .clients__item:last-child {
+    margin-right: 0px;
+}
+
+/*Contact form*/
+.block--contact-form .block-info {
+    margin-bottom: 115px;
+}
+
+.block--contact-form input{
+    margin-bottom: 18px;
+    padding: 18px 20px;
+}
+
+input[name="Name"],
+input[name="Mail"] {
+    margin-right: 28px;
+}
+
+input[name="Mail"] {
+    margin-right: 0px;
+}
+
+.block--contact-form textarea {
+    margin-bottom: 18px;
+    padding: 18px 20px;
+}
+
+/*Footer*/
+
+.footer__icon {
+    margin-left: 35px;
+}
+
+.footer__icon:first-child {
+    margin-left: 0px;
+}
+
+
+
+
+

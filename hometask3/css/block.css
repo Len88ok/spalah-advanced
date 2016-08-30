@@ -1,0 +1,79 @@
+/*Blocks of the page*/
+/*Common styles*/
+.block{
+    width: 100%;
+    text-align: center;
+    padding: 10% 0;
+}
+
+/*Specific styles*/
+.block--landing{
+    background-color: #89898b;
+    height: 1050px; 
+    padding: 18% 0;
+}
+
+.block--navbar{
+    background-color: #ffffff;
+    height: 715px;
+    padding: 0;
+}
+
+.block--motivation{
+    background-color: #ffeb33;
+    height: 600px;
+    line-height: 40px;
+    padding: 18% 0;  
+}
+
+.block--portfolio{
+    background-color: #ffffff;
+    height: 935px;
+}
+
+
+.block--clients{
+    background-color: #424245;
+    height: 500px;
+}
+
+.block--contact-form{
+    height: 800px;
+}
+
+.block--footer{
+    background-color: #131316;
+    padding: 40px 0;
+}
+
+
+ /*Information block*/
+/*Common styles*/
+.block-info__header {
+    font-size: 25px;
+    color: #131316;
+    margin-bottom: 30px;
+}
+
+.block-info__desc{ 
+    font-size: 15px;
+    color: #ffe600;  
+}
+
+/*Specific styles*/
+.block-info__header--dark-fon {
+    color: #ffffff;  
+}
+
+.block__desc {
+    color: #fff;    
+}
+
+.block__desc--25px {
+    font-size: 25px;
+     color: #131316;
+}
+
+.block__desc--yellow{
+    color: #ffe600; 
+}

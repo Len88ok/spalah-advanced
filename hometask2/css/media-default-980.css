@@ -1,0 +1,36 @@
+@media only screen and (max-width : 980px){
+    
+    .wrapper{
+        max-width: 980px;
+        margin: 0 auto;
+    }
+    
+    .layout-positioner{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .nav-content li.nav-item{
+    margin-right: 0px;
+    }
+    
+    .shopping-cart .cart-img {
+    margin-right: 40px;
+    }
+    
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    
+    .content-wrapper>div img{
+        padding-top: 30px;
+      margin-right: 50px;
+    }
+    
+
+    .slider-content h1{
+      padding-top: 100px;
+    }
+ 
+}
