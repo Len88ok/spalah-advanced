@@ -1,0 +1,175 @@
+/*reset.css*/
+/* line 5, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase; }
+
+/* line 13, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  height: auto; }
+
+/* line 19, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.layout-positioner {
+  width: 1170px; }
+
+/* line 23, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.clearfix {
+  content: '';
+  display: inline-block;
+  clear: both; }
+
+/* line 29, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*Landing block*/
+/* line 37, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--landing div.block__btn {
+  display: inline-block;
+  border: 2px solid #ffe600;
+  width: 20%; }
+
+/* line 43, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--landing .block__btn a {
+  color: #ffffff; }
+
+/*Navbar's block*/
+/* line 50, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.navbar {
+  width: 100%;
+  border-bottom: 2px solid #ffe600; }
+
+/* line 55, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.navbar__logo {
+  float: left; }
+
+/* line 59, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.nav {
+  text-align: right; }
+
+/* line 63, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.nav .nav__item {
+  display: inline-block;
+  cursor: pointer; }
+
+/* line 68, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.nav .nav__item a {
+  display: block;
+  color: #8e8e8e; }
+
+/*Features*/
+/* line 74, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.features .features-list {
+  width: 100%; }
+
+/* line 78, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.features .features__item {
+  float: left;
+  width: 23.5%;
+  position: relative; }
+
+/* line 84, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.features p.features__desc {
+  color: #8e8e8e;
+  text-transform: none; }
+
+/* line 89, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.features .features__header {
+  text-align: left; }
+
+/*Portfolio*/
+/* line 95, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.portfolio, .portfolio-list {
+  width: 100%; }
+
+/* line 99, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.portfolio li.portfolio__item {
+  float: left;
+  background: #f3f3f3;
+  width: 23%;
+  height: 200px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+
+/* line 109, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.portfolio__title {
+  font-size: 1.3em; }
+
+/* line 113, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.portfolio__desc {
+  color: #fff; }
+
+/*Client's block*/
+/* line 118, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--clients .clients-list {
+  width: 100%; }
+
+/* line 122, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--clients .clients__item {
+  display: inline-block;
+  cursor: pointer; }
+
+/*Contact form*/
+/* line 129, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--contact-form form {
+  font: normal 1em "Roboto", sans-serif; }
+
+/* line 133, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--contact-form input {
+  width: 83%;
+  background: #ffe600;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  color: #ffffff; }
+
+/* line 143, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+input[name="Name"],
+input[name="Mail"] {
+  width: 40.17%; }
+
+/* line 147, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.block--contact-form textarea {
+  width: 83%;
+  background: #ffe600;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  resize: none; }
+
+/* line 157, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.contact-form input[type="submit"] {
+  background: #131316;
+  color: #ffe600;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+/*Footer*/
+/* line 165, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.footer {
+  width: 100%; }
+
+/* line 169, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.footer__copyright {
+  color: #ffe600;
+  display: inline-block;
+  text-transform: none; }
+
+/* line 175, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.footer__social {
+  width: 20%;
+  float: right; }
+
+/* line 180, D:/front-end/spalah-advanced/spalah-advanced/hometask3-scss/sass/scss/main.scss */
+.footer__icon {
+  cursor: pointer; }
+
+/*# sourceMappingURL=main.css.map */
