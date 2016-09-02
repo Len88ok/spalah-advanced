@@ -1,0 +1,141 @@
+/*Content positioner*/
+.wrapper {
+  margin: 0 auto;
+}
+
+.layout-positioner {
+  margin: 0 auto;
+}
+
+/*Landing block*/
+.landing-logo {
+  margin-bottom: 4%;
+}
+
+.block--landing p.block__desc {
+  margin-bottom: 4%;
+}
+
+.block--landing p.block__desc--40px {
+  margin-bottom: 8%;
+}
+
+.block--landing div.block__btn {
+  margin-bottom: 3.6%;
+  padding: 2% 0;
+}
+
+/*Navbar*/
+.navbar {
+  margin-bottom: 9%;
+  padding: 3% 0;
+}
+
+.navbar__logo {
+  margin-right: 39%;
+}
+
+.nav .nav__item {
+  margin-right: -4px;
+}
+
+.nav .nav__item a {
+  padding: 15px 20px;
+}
+
+.nav .nav__item a:hover,
+.nav .nav__item a.active {
+  margin-left: -2px;
+}
+
+.block--navbar .block-info {
+  margin-bottom: 10.5%;
+}
+
+/*Features list in block--navbar*/
+.features .features__item {
+  margin-left: 14.75%;
+}
+
+.features .features__item:first-child {
+  margin-left: 0;
+}
+
+.features .features__header {
+  padding-left: 28%;
+  margin-bottom: 23%;
+}
+
+/*Portfolio*/
+.portfolio li.portfolio__item {
+  margin-right: 2.5%;
+  margin-bottom: 2.5%;
+}
+
+.portfolio li.portfolio__item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.block--portfolio .block-info {
+  margin-bottom: 10%;
+}
+
+.portfolio__title {
+  margin-bottom: 7.5%;
+}
+
+.portfolio__content--hover {
+  padding-top: 28.5%;
+}
+
+.block__desc--yellow {
+  margin-bottom: 3%;
+}
+
+/*Clients block*/
+.block--clients .block-info {
+  margin-bottom: 12%;
+}
+
+.block--clients .clients__item {
+  margin-right: 11%;
+}
+
+.block--clients .clients__item:last-child {
+  margin-right: 0;
+}
+
+/*Contact form*/
+.block--contact-form .block-info {
+  margin-bottom: 10%;
+}
+
+.block--contact-form input {
+  margin-bottom: 1.7%;
+  padding: 1.7% 1.9%;
+}
+
+input[name="Name"],
+input[name="Mail"] {
+  margin-right: 2.3%;
+}
+
+input[name="Mail"] {
+  margin-right: 0;
+}
+
+.block--contact-form textarea {
+  margin-bottom: 1.5%;
+  padding: 1.7% 1.9%;
+}
+
+/*Footer*/
+.footer__icon {
+  margin-left: 14%;
+}
+
+.footer__icon:first-child {
+  margin-left: 0;
+}
+
+/*# sourceMappingURL=margin-padding.css.map */

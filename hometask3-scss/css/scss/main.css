@@ -1,0 +1,175 @@
+/*reset.css*/
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  height: auto;
+}
+
+.layout-positioner {
+  width: 1170px;
+}
+
+.clearfix {
+  content: '';
+  display: inline-block;
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Landing block*/
+.block--landing div.block__btn {
+  display: inline-block;
+  border: 2px solid #ffe600;
+  width: 20%;
+}
+
+.block--landing .block__btn a {
+  color: #ffffff;
+}
+
+/*Navbar's block*/
+.navbar {
+  width: 100%;
+  border-bottom: 2px solid #ffe600;
+}
+
+.navbar__logo {
+  float: left;
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav .nav__item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav .nav__item a {
+  display: block;
+  color: #8e8e8e;
+}
+
+/*Features*/
+.features .features-list {
+  width: 100%;
+}
+
+.features .features__item {
+  float: left;
+  width: 23.5%;
+  position: relative;
+}
+
+.features p.features__desc {
+  color: #8e8e8e;
+  text-transform: none;
+}
+
+.features .features__header {
+  text-align: left;
+}
+
+/*Portfolio*/
+.portfolio, .portfolio-list {
+  width: 100%;
+}
+
+.portfolio li.portfolio__item {
+  float: left;
+  background: #f3f3f3;
+  width: 23%;
+  height: 200px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio__title {
+  font-size: 1.3em;
+}
+
+.portfolio__desc {
+  color: #fff;
+}
+
+/*Client's block*/
+.block--clients .clients-list {
+  width: 100%;
+}
+
+.block--clients .clients__item {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/*Contact form*/
+.block--contact-form form {
+  font: normal 1em 'Roboto', sans-serif;
+}
+
+.block--contact-form input {
+  width: 83%;
+  background: #ffe600;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  color: #ffffff;
+}
+
+input[name="Name"],
+input[name="Mail"] {
+  width: 40.17%;
+}
+
+.block--contact-form textarea {
+  width: 83%;
+  background: #ffe600;
+  color: #ffffff;
+  border: none;
+  outline: none;
+  -moz-appearance: none;
+  resize: none;
+}
+
+.contact-form input[type="submit"] {
+  background: #131316;
+  color: #ffe600;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+  width: 100%;
+}
+
+.footer__copyright {
+  color: #ffe600;
+  display: inline-block;
+  text-transform: none;
+}
+
+.footer__social {
+  width: 20%;
+  float: right;
+}
+
+.footer__icon {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
