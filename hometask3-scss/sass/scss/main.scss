@@ -1,7 +1,5 @@
 /*reset.css*/
 
-@import "color.scss";
-
 body {
     width: 100%;
     height: 100%;
@@ -36,7 +34,7 @@ img {
 
 .block--landing div.block__btn {
     display: inline-block;
-    border: 2px solid $brand-primary;
+    border: 2px solid #ffe600;
     width: 20%;
 }
 
@@ -49,7 +47,7 @@ img {
 
 .navbar {
     width: 100%;
-    border-bottom: 2px solid $brand-primary;
+    border-bottom: 2px solid #ffe600;
 }
 
 .navbar__logo {
@@ -132,7 +130,7 @@ img {
 
 .block--contact-form input{
     width: 83%;
-    background: $brand-primary;
+    background: #ffe600;
     border: none;
     outline: none;
     -moz-appearance: none;
@@ -146,7 +144,7 @@ input[name="Mail"] {
 
 .block--contact-form textarea {
     width: 83%;
-    background: $brand-primary;
+    background: #ffe600;
     color: #ffffff;
     border: none;
     outline: none;
@@ -156,7 +154,7 @@ input[name="Mail"] {
 
 .contact-form input[type="submit"]{
     background: #131316;
-    color: $brand-primary;
+    color: #ffe600;
     text-transform: uppercase;
     cursor: pointer;
 }
@@ -167,7 +165,7 @@ input[name="Mail"] {
 }
 
 .footer__copyright{
-    color: $brand-primary;
+    color: #ffe600;
     display: inline-block;
     text-transform: none;    
 }
