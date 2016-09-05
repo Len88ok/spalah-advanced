@@ -1,0 +1,287 @@
+.navbar:after, .about:after, .expertise .features-list:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+:before,
+:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  table-layout: fixed;
+}
+
+.container {
+  width: 960px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.slider-container {
+  width: 780px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  background: url("../images/bg-header.png") no-repeat;
+}
+
+.header .bg-container {
+  width: 100%;
+  height: auto;
+  background-color: rgba(26, 15, 67, 0.85);
+}
+
+.navbar {
+  width: 100%;
+  height: auto;
+  padding: 2% 0;
+  line-height: 1em;
+}
+
+.navbar-logo {
+  float: left;
+}
+
+.navbar-nav {
+  padding: 2% 0;
+}
+
+.nav {
+  text-align: right;
+}
+
+.nav-item {
+  display: inline-block;
+  cursor: pointer;
+  padding-left: 1.5%;
+}
+
+.nav-item a {
+  display: block;
+}
+
+#owl-carousel h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3em;
+  color: #fff;
+  margin-bottom: 3%;
+}
+
+#owl-carousel .after-header {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #00e0d0;
+  margin-bottom: 2.5%;
+}
+
+#owl-carousel p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #fff;
+  line-height: 24px;
+  margin-bottom: 6%;
+}
+
+.about {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 5% 0;
+}
+
+.about-left {
+  width: 30%;
+  height: auto;
+  float: left;
+  margin-right: 10%;
+}
+
+.about-right {
+  width: 60%;
+  height: auto;
+  float: right;
+}
+
+.about-right h1, .about-right p, .about-right a {
+  margin-bottom: 30px;
+}
+
+.about-right h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6em;
+  color: #413d4b;
+}
+
+.about-right p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+  color: #413d4b;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-video.png") no-repeat;
+  background-size: cover;
+}
+
+.video .bg-container {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(26, 15, 67, 0.85);
+  text-align: center;
+}
+
+.video .bg-container .video-content {
+  width: 100%;
+  height: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.video .bg-container .video-content img {
+  margin-bottom: 3%;
+}
+
+.video .bg-container .video-content img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+      transform: scale(1.2);
+}
+
+.video .bg-container .video-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.15em;
+  color: #fff;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.page-header-head {
+  font-family: "Playfair Display", serif;
+  font-size: 1.6em;
+  color: #413d4b;
+  margin-bottom: 1.5%;
+}
+
+.page-header-desc {
+  font-family: "Playfair Display", serif;
+  font-size: 1em;
+  color: #413d4b;
+  margin-bottom: 1.5%;
+}
+
+.page-header .after-header {
+  display: inline-block;
+  width: 50px;
+  height: 2px;
+  background-color: #c6c4c9;
+  margin-bottom: 2.5%;
+}
+
+.expertise {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.expertise .features-list {
+  width: 100%;
+  height: auto;
+}
+
+.expertise .features-list .features-item {
+  float: left;
+  width: 33.3%;
+  height: auto;
+  padding: 3% 2.5%;
+  border-right: 1px solid #c6c4c9;
+  border-bottom: 1px solid #c6c4c9;
+}
+
+.expertise .features-list .features-item:nth-child(3n) {
+  border-right: none;
+}
+
+.expertise .features-list .features-item:nth-child(3) ~ li {
+  border-bottom: none;
+}
+
+.expertise .features-list .features-item img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: table-footer-group;
+  height: auto;
+  background: url("../images/bg-footer.png") no-repeat;
+}
+
+body {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.nav-item a {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.nav-item a font {
+  family: "Roboto", sans-serif;
+  weight: 900;
+  size: 0.93em;
+}
+
+.nav-item a:hover,
+.nav-item a.active {
+  color: #00e0d0;
+}
+
+.btn-primary {
+  display: inline-block;
+  width: 124px;
+  height: auto;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 1.15em;
+  color: #00e0d0;
+  border: 1px solid #00e0d0;
+  padding: 10px;
+}
+
+.btn-primary:hover {
+  border-color: #fff;
+  color: #fff;
+}
+
+/*# sourceMappingURL=all.css.map */
