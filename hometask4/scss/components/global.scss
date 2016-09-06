@@ -499,8 +499,35 @@ textarea:-moz-placeholder {
 				}					 	
 			}
 			.social-wrap{
+				display: inline-block;
 				@include size(35px, 35px);
+				border: 1px solid $font-light;
+				border-radius: 50%;
+				-webkit-border-radius: 50%;
+				-moz-border-radius: 50%;
+				text-align: center;
+				margin-left: 2%;
+				&:hover{
+					@include transform(scale(1.2));
+				}
 			}
+		}
+	}
+	.footer-content-bottom{
+		@include size (100%, auto);
+		
+		.footer-nav{
+			@extend %clearfix;
+			@include size (70%, auto);
+			float: left;
+			.footer-link{
+				@include font($font-roboto, 1.07em, $font-light);
+				margin-right: 4%;
+			}
+		}
+		.footer-copyright{
+				@include font($font-roboto, 1em, $font-light);
+				float:right;
 		}
 	}
 }
