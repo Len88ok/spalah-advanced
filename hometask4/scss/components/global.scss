@@ -15,6 +15,7 @@ html{
 body{
 	margin: 0;
 	min-width: 320px;
+	height: 100%;
 }
 
 img{
@@ -162,8 +163,9 @@ img{
 }
 
 .expertise{
-	@include size(100%, 100vh);
-	text-align: center;
+	@include size(100%);
+	text-align: center;	
+	padding: 3.5% 0 10% 0;
 	.features-list{
 		@include size(100%, auto);
 		@extend %clearfix;
@@ -183,15 +185,322 @@ img{
 				height: 50px;
 				margin-bottom: 20px;
 			}
+			h2 {
+				@include font($font-roboto, 1em, $font-dark);
+				font-weight: 900;
+				margin-bottom: 2.5%;
+			}
+			p {
+				@include font($font-roboto, 1em, $font-dark);
+			}	
 		}
 	}
 }
 
+.team-members{
+	@include size(100%,100vh);
+	@extend %clearfix;
+	background:url("../images/bg-team.png") no-repeat;
+	background-size: cover;
+	text-align: center;
+		.bg-container{
+			padding: 5% 0;
+		@include size (100%);
+		background-color: rgba(26, 15, 67, 0.85);
+		background-size: cover;
+	}
+		.page-header{
+			text-align: center;
+			&-head{
+				@include font($font-playfair, 1.6em, $font-light);
+				margin-bottom: 1.5%;
+			}
+			&-desc{
+				@include font($font-playfair, 1em, $font-light);
+				margin-bottom: 1.5%;
+			}
+			.after-header {
+				display: inline-block;
+				@include size (50px, 2px);
+				background-color: $third-color;
+				margin-bottom: 2.5%;
+			}
+		}
+		.team-list{
+			@include size(100%, auto);
+			@extend %clearfix;
+			margin-bottom: 5%;
+			.team-item{
+				float: left;
+				@include size(23.5%, auto);
+				margin-right: 2%;
+				&:nth-child(4n){
+					margin-right: 0;
+				}
+				img {
+					width: 100%;
+					background-color: $second-color;
+					min-height: 230px;
+					&:hover{
+						background-color:$font-light;
+						cursor: pointer;
+					}
+				}
+				.team-border{
+					@include size(100%);
+					border: 1px solid $third-color;
+					padding: 5% 0;
+					margin-top: -2px;
+					.team-name {
+					@include font($font-roboto, 1em, $font-light);
+					margin-bottom: 1.5%;
+					}
+					.team-position{
+						@include font($font-roboto, 0.93em, $third-color);
+						margin-bottom: 1.5%;
+					}			
+				}
+			}
+		}
+		.team-hiring{
+			margin-bottom: 5%;
+			p {
+				@include font($font-roboto, 1em, $font-light);
+				margin-bottom: 3%;
+			}			
+		}
+}
 
+.works{
+	padding: 5% 0;
+	.page-header{
+		@extend %clearfix;
+		&-left{
+			float: left;
+			@include font($font-playfair, 1.6em, $font-dark);
+			margin-bottom: 1.5%;
+		}
+		&-link{
+			float: right;
+			position: relative;
+			margin-bottom: 1.5%;
+			p {@include font($font-playfair, 1em, $font-dark);}
+			p::after{
+				content: "";
+				display: block;
+				@include size(8px, 18px);
+				background: url("../images/icons/right154.png") no-repeat;
+				position: absolute;
+				top: 20%;
+				right: -13%;
+			}
+		}
+	}
+	.work-list{
+		@include size(100%, auto);
+		@extend %clearfix;
+		margin-bottom: 5%;
+		text-align: center;
+		.work-item{
+			float: left;
+			@include size(100%/6, 200px);
+			&:nth-child(1),
+			&:nth-child(5),
+			&:nth-child(8),
+			&:nth-child(12){
+				background-color: #b6b6b6;
+			}
+			&:nth-child(2),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(11){
+				background-color: #a4a4a4;
+			}
+			&:nth-child(3),
+			&:nth-child(10){
+				background-color: #a1a1a1;
+			}
+			&:nth-child(4),
+			&:nth-child(9){
+				background-color: #8a8a8a;
+			}
+		}
+	}
+	.work-btn{
+		@include size(100%, auto);
+		text-align: center;
+	}
+}
+
+.comments{
+	@include size (100%);
+	background: url("../images/bg-test.png") no-repeat;
+	.bg-container{
+		@include size (100%, auto);
+		background-color: rgba(26, 15, 67, 0.85);
+	}
+}
+
+.contacts{
+	.contacts-header{
+			@include font($font-playfair, 1.6em, $font-dark);
+			margin-bottom: 5%;
+	}
+	@include size (100%);
+	padding: 5% 0;
+	&-form{		
+		float: left;
+		@include size (50%, auto);
+		margin-right: 10%;		
+		input[type="text"],
+		input[type="email"]{
+	    @include size (100%,auto);
+	    border: 1px solid $second-color;
+	    margin-bottom: 3.5%;
+    	padding: 2% 3%;
+		}
+		textarea{
+			@include size (100%, auto);
+    	border: 1px solid $second-color;
+    	resize: none;
+    	margin-bottom: 3.5%;
+    	padding: 2% 3%;
+		}
+		input[type="submit"]{
+			@extend .btn-primary;
+			display: inline-block;
+			@include size (25%, 40px);
+			background-color: #fff;
+			padding: 0 !important;
+			margin-bottom: 15%;
+		}
+   }
+	.clients-list{
+		.contacts-header{
+			margin-bottom: 8%;
+		}
+		float: right;
+		@include size (40%, auto);
+		.clients__item{
+			float: left;
+			@include size(100%/2, 70px);
+		}
+	}
+}
+/*Style for placeholder in the form*/
+input::-webkit-input-placeholder {
+  @include font($font-roboto, 1em, $second-color);
+}
+input:-moz-placeholder {
+	@include font($font-roboto, 1em, $second-color);
+}    
+textarea::-webkit-input-placeholder {
+	@include font($font-roboto, 1em, $second-color);    
+}
+textarea:-moz-placeholder {
+	@include font($font-roboto, 1em, $second-color);
+}    
 
 
 .footer{
 	display: table-footer-group;
 	height: auto;
 	background:url("../images/bg-footer.png") no-repeat; 
+	@include font($font-roboto, 1em, $font-light);
+	.bg-container{
+		padding: 5% 0;
+		@include size (100%, auto);
+		background-color: rgba(26, 15, 67, 0.85);
+	}
+	.footer-header{
+		@include font($font-roboto, 1.6em, $font-light);
+		margin-bottom: 8%;
+	}
+
+	.footer-logo{
+		margin-bottom: 3%;
+		margin-top: -5%;
+	}
+
+	.footer-content-top{
+		@include size (100%, auto);
+		@extend %clearfix;
+		margin-bottom: 5%;
+		line-height: 26px;
+		.column1,
+		.column2,
+		.column3{
+			float: left;
+			@include size (30%, auto);
+			}
+		.column1{
+			margin-right: 5%;
+		}
+		.column2{
+			margin-right: 4%;
+			.move-right{
+				padding-left: 10%;
+				@include size (90%, auto);
+			}
+			.footer-adress{
+				position: relative;
+				&::after{
+				content: "";
+				display: block;
+				@include size(15px, 20px);
+				background: url("../images/icons/big104.png") no-repeat;
+				position: absolute;
+				top: 1%;
+				left: -13%;
+				}
+			}
+			.footer-phone{
+				position: relative;
+				&::after{
+				content: "";
+				display: block;
+				@include size(17px, 20px);
+				background: url("../images/icons/phone351.png") no-repeat;
+				position: absolute;
+				top: 1%;
+				left: -13%;
+				}
+			}
+		}
+		.column3{
+			@include size (30%, auto);
+			margin-right: 0;
+			.input-wrap{
+				position: relative;
+				margin-bottom: 10%;
+				input{					
+					@include size (75%, auto);
+					border: 1px solid $third-color;
+					background: transparent;
+					padding: 5% 7%;
+					&::-webkit-input-placeholder {
+	  				@include font($font-roboto, 1em, $third-color);
+					}
+					&:-moz-placeholder {
+						@include font($font-roboto, 1em, $third-color);
+					} 
+				}
+				&::after{
+				content: "";
+				display: block;
+				@include size(70px, 45px);
+				background-color: $third-color;
+				background-image: url("../images/icons/paper122.png");
+				background-repeat: no-repeat;
+				background-position: 50% 50%;
+				position: absolute;
+				top: 0;
+				right: -4%;
+				}					 	
+			}
+			.social-wrap{
+				@include size(35px, 35px);
+			}
+		}
+	}
 }

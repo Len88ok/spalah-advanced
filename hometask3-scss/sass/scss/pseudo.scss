@@ -20,18 +20,14 @@
 
 /*Style for placeholder in the form*/
 input::-webkit-input-placeholder {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    @include font($fontroboto)
 }
 input:-moz-placeholder {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    
 }
 textarea::-webkit-input-placeholder {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+    
 }
 textarea:-moz-placeholder {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;
+   
 }
