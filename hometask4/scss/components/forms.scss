@@ -1,3 +1,44 @@
-.form{
+.contacts{
+	
+		&-form{		
+		float: left;
+		@include size (50%, auto);
+		margin-right: 10%;		
+			input[type="text"],
+			input[type="email"]{
+		    @include size (100%,auto);
+		    border: 1px solid $second-color;
+		    margin-bottom: 3.5%;
+	    	padding: 2% 3%;
+			}
+			textarea{
+				@include size (100%, auto);
+	    	border: 1px solid $second-color;
+	    	resize: none;
+	    	margin-bottom: 3.5%;
+	    	padding: 2% 3%;
+			}
+			input[type="submit"]{
+				@extend .btn-primary;
+				display: inline-block;
+				@include size (25%, auto);
+				background-color: #fff;
+				padding: 0;
+				margin-bottom: 15%;
+			}	
+  	}
+	}
 
+/*Style for placeholder in the form*/
+input::-webkit-input-placeholder {
+  @include font($font-roboto, 1em, $second-color);
 }
+input:-moz-placeholder {
+	@include font($font-roboto, 1em, $second-color);
+}    
+textarea::-webkit-input-placeholder {
+	@include font($font-roboto, 1em, $second-color);    
+}
+textarea:-moz-placeholder {
+	@include font($font-roboto, 1em, $second-color);
+}    

@@ -11,13 +11,4 @@
 	}
 ;}
 
-.contacts{
-	input[type="submit"]{
-		@extend .btn-primary;
-		@include size (25%, auto);
-		background-color: #fff;
-
-		}
-}
-
 

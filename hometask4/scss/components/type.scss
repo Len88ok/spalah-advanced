@@ -20,3 +20,13 @@ body{
 	}
 }
 
+
+.about{
+		h1{
+			@include font($font-playfair, 1.6em, $font-dark);
+		}
+		p{
+			@include font($font-roboto, 1em, $font-dark);
+		}
+	}
+

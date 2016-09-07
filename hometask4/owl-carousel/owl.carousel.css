@@ -13,7 +13,7 @@
 	height: 0;
 }
 /* display none until init */
-.owl-carousel{
+#owl-carousel{
 	display: none;
 	position: relative;
 	width: 100%;
@@ -22,16 +22,37 @@
 	padding: 15% 0 5% 0;
 }
 
+#owl-carousel2{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	color: #fff;
+	font-size: 16px;
+	line-height: 26px;
+}
+
+
 .owl-carousel .owl-wrapper{
 	display: none;
 	position: relative;
 	-webkit-transform: translate3d(0px, 0px, 0px);
 }
-.owl-carousel .owl-wrapper-outer{
+
+#owl-carousel .owl-wrapper-outer{
 	overflow: hidden;
 	position: relative;
 	width: 100%;
 	margin-bottom: 100px;
+}
+
+#owl-carousel2 .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding: 10% 0 0 0;
 }
 .owl-carousel .owl-wrapper-outer.autoHeight{
 	-webkit-transition: height 500ms ease-in-out;

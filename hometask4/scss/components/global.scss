@@ -72,25 +72,6 @@ img{
   &-item a{
   	display: block;
   }
-
-}
-
-#owl-carousel{
-	h1{ 
-		@include font ($font-playfair, 2.3em, $font-light);
-		margin-bottom: 3%;
-	}
-	 .after-header {
-		display: inline-block;
-		@include size (50px, 2px);
-		background-color: $primary-color;
-		margin-bottom: 2.5%;
-	}
-	p{
-		@include font ($font-roboto, 1em, $font-light);
-		line-height: 24px;
-		margin-bottom: 6%;
-	}
 }
 
 .about{
@@ -108,13 +89,7 @@ img{
 		float: right;
 		h1,p,a{
 			margin-bottom: 30px;
-		}
-		h1{
-			@include font($font-playfair, 1.6em, $font-dark);
-		}
-		p{
-			@include font($font-roboto, 1em, $font-dark);
-		}
+		}		
 	}
 }
 
@@ -198,13 +173,12 @@ img{
 }
 
 .team-members{
-	@include size(100%,100vh);
-	@extend %clearfix;
+	@include size(100%, auto);
 	background:url("../images/bg-team.png") no-repeat;
 	background-size: cover;
 	text-align: center;
 		.bg-container{
-			padding: 5% 0;
+		padding: 5% 0;
 		@include size (100%);
 		background-color: rgba(26, 15, 67, 0.85);
 		background-size: cover;
@@ -263,7 +237,7 @@ img{
 			}
 		}
 		.team-hiring{
-			margin-bottom: 5%;
+			@include size(100%, auto);
 			p {
 				@include font($font-roboto, 1em, $font-light);
 				margin-bottom: 3%;
@@ -348,59 +322,18 @@ img{
 	}
 	@include size (100%);
 	padding: 5% 0;
-	&-form{		
-		float: left;
-		@include size (50%, auto);
-		margin-right: 10%;		
-		input[type="text"],
-		input[type="email"]{
-	    @include size (100%,auto);
-	    border: 1px solid $second-color;
-	    margin-bottom: 3.5%;
-    	padding: 2% 3%;
-		}
-		textarea{
-			@include size (100%, auto);
-    	border: 1px solid $second-color;
-    	resize: none;
-    	margin-bottom: 3.5%;
-    	padding: 2% 3%;
-		}
-		input[type="submit"]{
-			@extend .btn-primary;
-			display: inline-block;
-			@include size (25%, 40px);
-			background-color: #fff;
-			padding: 0 !important;
-			margin-bottom: 15%;
-		}
-   }
 	.clients-list{
 		.contacts-header{
 			margin-bottom: 8%;
 		}
-		float: right;
-		@include size (40%, auto);
+	float: right;
+	@include size (40%, auto);
 		.clients__item{
 			float: left;
 			@include size(100%/2, 70px);
 		}
 	}
 }
-/*Style for placeholder in the form*/
-input::-webkit-input-placeholder {
-  @include font($font-roboto, 1em, $second-color);
-}
-input:-moz-placeholder {
-	@include font($font-roboto, 1em, $second-color);
-}    
-textarea::-webkit-input-placeholder {
-	@include font($font-roboto, 1em, $second-color);    
-}
-textarea:-moz-placeholder {
-	@include font($font-roboto, 1em, $second-color);
-}    
-
 
 .footer{
 	display: table-footer-group;
@@ -495,8 +428,8 @@ textarea:-moz-placeholder {
 				background-position: 50% 50%;
 				position: absolute;
 				top: 0;
-				right: -4%;
-				}					 	
+				right: -4%;					
+				}							 	
 			}
 			.social-wrap{
 				display: inline-block;
