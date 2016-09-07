@@ -605,6 +605,10 @@ img {
   margin-right: 4%;
 }
 
+.footer .footer-content-bottom .footer-nav .footer-link:hover {
+  color: #00e0d0;
+}
+
 .footer .footer-content-bottom .footer-copyright {
   font-family: "Roboto", sans-serif;
   font-size: 1em;

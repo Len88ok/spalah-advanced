@@ -456,6 +456,9 @@ img{
 			.footer-link{
 				@include font($font-roboto, 1.07em, $font-light);
 				margin-right: 4%;
+				&:hover{
+					color:$primary-color;
+				}
 			}
 		}
 		.footer-copyright{
