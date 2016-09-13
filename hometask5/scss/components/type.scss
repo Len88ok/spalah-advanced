@@ -8,6 +8,8 @@ $link-color: blue !default;
 $link-color-hover: lighten($link-color, 10%)!default;
 $link-decoration: none !default;
 $link-decoration-hover: none!default;
+$link-border-radius: 5% !default;
+$text-transform-upper: uppercase !default;
 $heading-font-family: inherit !default;
 $heading-font-weight: 700 !default;
 $heading-color: inherit !default;
@@ -39,10 +41,7 @@ p {
 a {
     color: $link-color;
     text-decoration: $link-decoration;
-    &:hover {
-        color: $link-color-hover;
-        text-decoration: $link-decoration-hover;
-    }
+    text-transform: $text-transform-upper;      
 }
 
 h1,
@@ -97,3 +96,4 @@ h6,
     font-size: $heading-font-size-6;
     margin: $heading-margin-6;
 }
+
