@@ -22,3 +22,14 @@ $line-height-base: 1.6em;
 //font styles
 $font-family-base: 'Open Sans', sans-serif;
 $heading-font-family: 'Quattrocento Sans', sans-serif;
+
+//form-styles
+$form-font-size: 14px;
+$form-font-family: $heading-font-family;
+$form-color: $link-color;
+$form-text-transform: uppercase;
+$form-border: none;
+$input-border: none;
+$input-bg-color: #eaeef1;
+$input-padding: 3%;
+$input-outline: 1px solid $primary-color;

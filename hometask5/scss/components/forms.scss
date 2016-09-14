@@ -1,3 +1,44 @@
-.form {
-	
+$form-font-size: 16px !default;
+$form-font-family: inherit !default;
+$form-color: #000 !default;
+$form-text-transform: none !default;
+$form-border: 1px solid $form-color !default;
+$input-border: 1px solid $form-color !default;
+$form-bg-color: #fff !default;
+$input-bg-color: #fff !default;
+$input-border-radius: 1% !default;
+$input-padding: 1% !default;
+$input-outline: none !default;
+
+.form-control{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	font-size: $form-font-size;
+	font-family: $form-font-family;
+	color: $form-color;
+	text-transform: $form-text-transform;
+	border: $form-border;
+	background-color: $form-bg-color;
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+	width: 100%;	
+	border: $input-border;
+	background-color: $input-bg-color;
+	border-radius: $input-border-radius;
+	padding: $input-padding;
+	&:focus{
+		outline: $input-outline;
+	}
+}
+
+textarea{
+	resize: none;
+}
+
+input[type="submit"]{
+    background: $primary-color;
 }

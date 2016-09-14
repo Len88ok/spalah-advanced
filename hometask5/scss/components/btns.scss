@@ -44,4 +44,12 @@ $btn-border-hover:$primary-color;
     a{
         color: $btn-color;
     }
+    &:hover,    
+    &.active{
+        color:$btn-color;
+        background: $primary-color;
+        border-color: $btn-border-hover;
+    }     
+    
 }
+

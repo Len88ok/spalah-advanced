@@ -136,6 +136,48 @@ h6,
   color: #fff;
 }
 
+.btn:hover, .btn.active {
+  color: #fff;
+  background: #23b7a4;
+  border-color: #23b7a4;
+}
+
+.form-control {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "Quattrocento Sans", sans-serif;
+  color: #a4aead;
+  text-transform: uppercase;
+  border: none;
+  background-color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  border: none;
+  background-color: #eaeef1;
+  border-radius: 1%;
+  padding: 3%;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: 1px solid #23b7a4;
+}
+
+textarea {
+  resize: none;
+}
+
+input[type="submit"] {
+  background: #23b7a4;
+}
+
 .block {
   padding: 20px 0;
   background-size: cover;
@@ -156,7 +198,7 @@ h6,
 
 .block-footer {
   display: table-footer-group;
-  height: 1%;
+  height: 100px;
 }
 
 .block-inner {
@@ -172,6 +214,11 @@ h6,
   height: 100vh;
 }
 
+.block-all {
+  height: 100%;
+  width: 100%;
+}
+
 .block-height-auto {
   height: auto;
 }
@@ -182,6 +229,10 @@ h6,
 
 .block-width-50 {
   width: 50%;
+}
+
+.block-width-48 {
+  width: 48%;
 }
 
 .block-width-40 {
@@ -370,6 +421,18 @@ h6,
   height: 300px;
 }
 
+.block-wrap-abs {
+  position: absolute;
+  top: 38%;
+  left: 51%;
+}
+
+.bg-carousel {
+  background-image: url("../images/owl-bg.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 .bg-dark {
   background-color: #3a454d;
   color: #fff;
@@ -478,12 +541,20 @@ h6,
   margin-right: 0;
 }
 
+.marg-r10 {
+  margin-right: 10%;
+}
+
 .marg-b10 {
   margin-bottom: 10%;
 }
 
 .marg-b5 {
   margin-bottom: 5%;
+}
+
+.marg-b2 {
+  margin-bottom: 2%;
 }
 
 .marg-b0 {
@@ -522,24 +593,6 @@ h6,
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
   background: #ffffff;
-}
-
-.btn {
-  color: #fff;
-  background: transparent;
-  border-color: 1px solid #fff;
-}
-
-.btn:hover {
-  color: #fff;
-  background: #23b7a4;
-  border-color: #23b7a4;
-}
-
-.btn.active {
-  color: #fff;
-  background: #23b7a4;
-  border-color: #23b7a4;
 }
 
 .card {
@@ -629,4 +682,8 @@ li:hover .card-2::after {
   width: 25px;
   height: 25px;
   background: url("../images/icons/glyphicons_432_plus.png") no-repeat;
+}
+
+.block-footer img:hover {
+  transform: scale(1.1);
 }

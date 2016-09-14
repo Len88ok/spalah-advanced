@@ -9,6 +9,11 @@
 
 // bgs
 .bg {
+	&-carousel{
+		background-image: url("../images/owl-bg.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+	}
 	&-dark {
 		background-color: $bg-dark;
 		color: #fff;
@@ -101,11 +106,17 @@
 	&-r0{
 		margin-right: 0;
 	}
+	&-r10{
+		margin-right: 10%;
+	}
 	&-b10{
 		margin-bottom: 10%;
 	}
 	&-b5{
 		margin-bottom: 5%;
+	}
+	&-b2{
+		margin-bottom: 2%;
 	}
 	&-b0{
 		margin-bottom: 0;
@@ -141,19 +152,6 @@
 .owl-theme .owl-dots .owl-dot:hover span {   
 	background: #ffffff; 
 }
-
-//btns hover
-.btn{
-	@include btn-variants($btn-color, $btn-bg, $btn-border,
-	$btn-color, $primary-color, $btn-border-hover);
-	&.active{
-		color:$btn-color;
-		background: $primary-color;
-		border-color: $btn-border-hover;
-;
-	}
-}
-
 
 //card caption styles
 .card{	
@@ -256,6 +254,11 @@ li{
 	}
 }
 
-
+//hover icons footer
+.block-footer{
+	img:hover{
+		transform: scale(1.1);
+	}
+}
 
 
