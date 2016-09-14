@@ -7,6 +7,10 @@
 @import "components/forms.scss";
 @import "components/block.scss";
 
+
+.clearfix{
+	@extend %clearfix;
+}
 // bgs
 .bg {
 	&-carousel{
@@ -115,8 +119,8 @@
 	&-b5{
 		margin-bottom: 5%;
 	}
-	&-b2{
-		margin-bottom: 2%;
+	&-b1{
+		margin-bottom: 1%;
 	}
 	&-b0{
 		margin-bottom: 0;
@@ -171,11 +175,6 @@
 	}
 	&-img{
 		z-index:-1;
-	}
-	&-2{
-		img{
-			width: 100%;
-		}
 	}
 }
 	
