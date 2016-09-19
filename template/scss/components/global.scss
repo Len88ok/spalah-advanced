@@ -27,6 +27,11 @@ img {
 	table-layout: fixed;
 }
 
+.container {
+	margin: auto;
+	max-width: 800px;
+	padding: 0 10px;
+}
 .footer {
 	display: table-footer-group;
 	height: 1%;

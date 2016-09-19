@@ -1,0 +1,47 @@
+$grid-columns: 12 !default; 
+$grid-gutter: 10px !default; 
+
+
+$dev: false !default;
+
+
+.row {
+    margin: 0 (-$grid-gutter);
+}
+
+[class*="col-"] {
+    padding: 0 $grid-gutter;
+    float: left;
+    @if $dev == true {
+    	padding: 10px;
+    	outline: 1px solid red;
+    	background-color: rgba(red, 0.5);
+    }  
+}
+
+
+$breakpoint: ( 
+	xs: 480px, 
+	sm: 768px, 
+	md: 980px, 
+	lg: 1200px
+);
+
+
+@each $key, $val in $breakpoint {
+    @media all and (min-width: $val) {
+        @for $i from 1 through $grid-columns {
+            .col-#{$key}-#{$i} {
+                width: 100 / $grid-columns * $i + %;
+            }
+        }
+    }
+}
+
+.container {
+    @if $dev == true {
+        outline: 1px solid blue;
+        overflow: hidden;
+        padding: 10px;
+    }  
+}

@@ -1,0 +1,42 @@
+@import "components/variables.scss";
+@import "components/mixins.scss";
+
+
+
+
+
+
+@import "components/global.scss";
+@import "components/type.scss";
+@import "components/btns.scss";
+@import "components/forms.scss";
+@import "components/block.scss";
+@import "components/grid.scss";
+
+
+// bgs
+.bg {
+	&-dark {
+		background-color: $bg-dark;
+		color: #fff;
+	}
+	&-darken {
+		background-color: $bg-darken;
+		color: #fff;
+	}
+	&-grey{
+		background-color: $bg-grey;
+		color: #000;
+	}
+	&-light-grey{
+		background-color: $bg-light-grey;
+		color: #000;
+	}
+	&-primary {
+		background-color: $bg-primary;
+	}
+}
+
+
+
+

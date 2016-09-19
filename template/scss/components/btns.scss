@@ -5,6 +5,10 @@ $btn-border: 1px solid $btn-bg !default;
 $btn-border-radius: 4px !default;
 $btn-padding: 10px 20px !default;
 
+$btn-color-hover:  #333 !default;
+$btn-bg-hover: #ddd !default;
+$btn-border-color-hover: $btn-bg !default;
+
 @mixin btn-variants( 
 	$color, 
 	$bg, 
@@ -40,4 +44,10 @@ $btn-padding: 10px 20px !default;
     border: $btn-border;
     border-radius: $btn-border-radius;
     padding: $btn-padding;
+
+    &:hover {
+        color: $btn-color-hover;
+        background: $btn-bg-hover;
+        border: $btn-border-color-hover;
+    }
 }
