@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: 'Baloo Tamma', cursive;
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+ul, ol{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.menu > li {
+	background: #34495e;
+	float: left;
+	position: relative;
+	transform: skewX(25deg);
+}
+
+.menu a {
+	display: block;
+	color: #fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: inherit;
+	font-size: 14px;
+}		
+
+.menu li:hover {
+	background: #e74c3c;
+}		
+
+.menu > li > a {
+	transform: skewX(-25deg);
+	padding: 1em 2em;
+}
