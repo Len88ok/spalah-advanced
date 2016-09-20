@@ -1,8 +1,72 @@
 body {
-  margin: 0;
-  font-family: 'Baloo Tamma', cursive;
+  font: 14px'Baloo Tamma', cursive;
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 80%;
+	margin: auto;
+}
+
+a, a:link, a:visited {
+	text-decoration: none;
+	color: #000;
+	padding: 0 20px 0 40px;
+}
+
+ul {
+	list-style-type: none;
+	display: none;
+	margin: 0 auto;
+}
+
+ul.color-menu li {
+	padding: 15px;
+	font-size: 20px;
+	-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+	text-transform: uppercase;
+	color: #fff;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	text-shadow: rgba(0,0,0,0.4) 1px 1px 2px;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	-ms-transition: all 0.2s ease;
+}
+
+ul.color-menu li:hover {
+	-webkit-transform: scale(1.2);
+	cursor: pointer;
+}
+
+ul.color-menu li:hover a{
+	color: #fff;
+	padding: 0 20px 0 40px; 
+}
+	
+.red {background-color: #FF0000;}
+.brick {background-color: #FF3300;}
+.orange {background-color: #FF8000;}
+.yellow {background-color: #FFDD00;}
+.lime {background-color: #ABFF00;}
+.green {background-color: #45FF00;}
+.bondi {background-color: #00FF79;}
+.aqua {background-color: #00FFE0;}
+.blue {background-color: #0055FF;}
+.navy {background-color: #1800FF;}
+.purple {background-color: #7800FF;}
+.violet {background-color: #C000FF;}
+.pink {background-color: #FF00E6;}
+
+/*
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -19,11 +83,6 @@ a:hover {
   outline-width: 0;
 }
 
-.container{
-	width: 80%;
-	margin: auto;
-}
-
 .clearfix:before,
 .clearfix:after {
     content: " ";
@@ -37,6 +96,8 @@ a:hover {
 .clearfix {
     *zoom: 1;
 }
+
+
 
 .menu > li {
 	background: #34495e;
@@ -63,3 +124,5 @@ a:hover {
 	transform: skewX(-25deg);
 	padding: 1em 2em;
 }
+*/
+
