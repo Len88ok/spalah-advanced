@@ -54,7 +54,8 @@ a:hover {
 	font-size: 14px;
 }		
 
-.menu li:hover {
+.menu li:hover,
+.menu li.active {
 	background: #e74c3c;
 }		
 
