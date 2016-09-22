@@ -1,5 +1,19 @@
 body {
   font: 14px'Baloo Tamma', cursive;
+  background: 
+	radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+	radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%),
+	radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+	radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%),
+	radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%),
+
+	radial-gradient(circle closest-side at 60% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+	radial-gradient(circle closest-side at 40% 43%, #b03 26%, rgba(187,0,51,0) 27%) 50px 50px,
+	radial-gradient(circle closest-side at 40% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+	radial-gradient(circle closest-side at 60% 22%, #d35 45%, rgba(221,51,85,0) 46%) 50px 50px,
+	radial-gradient(circle closest-side at 50% 35%, #d35 30%, rgba(221,51,85,0) 31%) 50px 50px;
+	background-color:#b03;
+	background-size:100px 100px;
 }
 
 * {
@@ -10,6 +24,12 @@ body {
 .container{
 	width: 80%;
 	margin: auto;
+}
+
+h1{
+	color: #fff;
+	text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+	font-size: 2.5em;
 }
 
 a, a:link, a:visited {
@@ -66,63 +86,5 @@ ul.color-menu li:hover a{
 .violet {background-color: #C000FF;}
 .pink {background-color: #FF00E6;}
 
-/*
-a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
 
-ul, ol{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-a:active,
-a:hover {
-  outline-width: 0;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-.clearfix {
-    *zoom: 1;
-}
-
-
-
-.menu > li {
-	background: #34495e;
-	float: left;
-	position: relative;
-	transform: skewX(25deg);
-}
-
-.menu a {
-	display: block;
-	color: #fff;
-	text-transform: uppercase;
-	text-decoration: none;
-	font-family: inherit;
-	font-size: 14px;
-}		
-
-.menu li:hover,
-.menu li.active {
-	background: #e74c3c;
-}		
-
-.menu > li > a {
-	transform: skewX(-25deg);
-	padding: 1em 2em;
-}
-*/
 
