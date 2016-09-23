@@ -16,18 +16,6 @@
 
 
 
-// .block {
-// 	&-header {
-// 		background-color: blue;
-// 	}
-// 	&-content {
-// 		background-color: green;
-// 	}
-// 	&-footer {
-// 		background-color: yellow;
-// 	}
-// }
-
 // bgs
 .bg {
 	&-dark {
@@ -40,6 +28,11 @@
 	}
 	&-primary {
 		background-color: tomato;
+	}
+	&-hand{
+		background-image: url("../images/phone-in-hand.png");
+		background-position: 0 40%;
+		background-repeat: no-repeat; 
 	}
 }
 

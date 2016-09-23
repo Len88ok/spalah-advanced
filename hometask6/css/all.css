@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
 }
 
 *,
@@ -25,15 +26,15 @@ img {
   table-layout: fixed;
 }
 
-.container {
-  margin: auto;
-  max-width: 800px;
-  padding: 0 10px;
-}
-
 .footer {
   display: table-footer-group;
   height: 1%;
+}
+
+.container {
+  margin: auto;
+  max-width: 1170px;
+  padding: 0 0 10px;
 }
 
 body {
@@ -96,7 +97,7 @@ h3,
 
 h4,
 .h4 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 1em;
 }
 
@@ -131,7 +132,7 @@ h6,
 .btn:hover {
   color: #333;
   background: #ddd;
-  border: #ddd;
+  border-color: #ddd;
 }
 
 .form-group {
@@ -148,7 +149,7 @@ h6,
   border-radius: 2px;
   height: 44px;
   line-height: 1.4;
-  padding: 8px 20px;
+  padding: 12.2px 20px;
 }
 
 .form-control::-webkit-input-placeholder {
@@ -234,6 +235,15 @@ h6,
   margin: 0 -10px;
 }
 
+.row:before, .row:after {
+  content: '';
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
 [class*="col-"] {
   padding: 0 10px;
   float: left;
@@ -276,6 +286,42 @@ h6,
   .col-xs-12 {
     width: 100%;
   }
+  .col-xs-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-xs-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-xs-offset-3 {
+    margin-left: 25%;
+  }
+  .col-xs-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-xs-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-xs-offset-6 {
+    margin-left: 50%;
+  }
+  .col-xs-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-xs-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-xs-offset-9 {
+    margin-left: 75%;
+  }
+  .col-xs-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-xs-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-xs-offset-12 {
+    margin-left: 100%;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -314,6 +360,42 @@ h6,
   }
   .col-sm-12 {
     width: 100%;
+  }
+  .col-sm-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-sm-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .col-sm-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-sm-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .col-sm-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-sm-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .col-sm-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-sm-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-sm-offset-12 {
+    margin-left: 100%;
   }
 }
 
@@ -354,6 +436,42 @@ h6,
   .col-md-12 {
     width: 100%;
   }
+  .col-md-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-md-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .col-md-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-md-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .col-md-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-md-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .col-md-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-md-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-md-offset-12 {
+    margin-left: 100%;
+  }
 }
 
 @media all and (min-width: 1200px) {
@@ -393,6 +511,42 @@ h6,
   .col-lg-12 {
     width: 100%;
   }
+  .col-lg-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .col-lg-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .col-lg-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .col-lg-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .col-lg-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .col-lg-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .col-lg-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .col-lg-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .col-lg-offset-12 {
+    margin-left: 100%;
+  }
 }
 
 .bg-dark {
@@ -407,4 +561,10 @@ h6,
 
 .bg-primary {
   background-color: tomato;
+}
+
+.bg-hand {
+  background-image: url("../images/phone-in-hand.png");
+  background-position: 0 40%;
+  background-repeat: no-repeat;
 }
