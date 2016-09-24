@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300|Montserrat|Roboto:300,400,500" rel="stylesheet">
   <link rel="stylesheet" href="scss/normalize.scss">
   <link rel="stylesheet" href="css/all.css">
 </head>
@@ -11,44 +12,45 @@
 <body>
   <div class="wrapper">
     <!--Header block: navbar+info-->
-    <div class="block">
-      <div class="block-header">
+    <div class="block block-overlay block-fill-height bg-primary" style="background-image: url('images/layer-14.png')">
+      <div class="block-header bg-gradient color-light">
         <div class="block-inner">
           <div class="container">
-            <div class="navbar">
-              <!--Navbar Logo-->
-              <div class="block-wrap">
-                <a href="#"><span class="navbar-logo">WAPIK</span></a>
-                <span class="phone">+62 202 555 0117</span>
-              </div>
+            <nav class="navbar">
+              <!--Navbar Logo-->              
+              <a href="#" class="navbar-logo">
+                <img src="images/icons/wapik.png" alt="logo">
+              </a>
+              <button class="navbar-toggler">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-info">+62 202 555 0117</div>              
               <!--Navigation menu-->
-              <div class="block-wrap">
-                <ul class="list">
-                  <li class="list-item active"> <a href="#">Home</a></li>
-                  <li class="list-item"> <a href="about.html">About us</a></li>
-                  <li class="list-item"> <a href="pricing.html">Pricing</a></li>
-                  <li class="list-item"> <a href="contact.html">Contact us</a></li>
-                  <li class="list-item"> <a href="#" class="btn-menu-dark-bg">Get started</a></li>
+              <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="navbar-item active"> <a class="navbar-link" href="#">Home</a></li>
+                  <li class="navbar-item"> <a class="navbar-link" href="about.html">About us</a></li>
+                  <li class="navbar-item"> <a class="navbar-link" href="pricing.html">Pricing</a></li>
+                  <li class="navbar-item"> <a class="navbar-link" href="contact.html">Contact us</a></li>
+                  <li class="navbar-item"> <a class="btn" href="#">Get started</a></li>
                 </ul>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
       </div>
-      <div class="block-content">
+      <div class="block-content color-light">
         <div class="block-inner">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <div class="block-heading">
-                  <h1>Welcome to Wapik</h1>
+                <div class="block-heading"><h1>Welcome to Wapik</h1></div>
+                <div class="block-desc">Wapik is multipurpose template, with modern and smart design. Wapik is perfect template for you!</div>
+                <div class="block-buttons"> 
+                <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
-                <div class="block-desc">
-                  <p>Wapik is multipurpose template, with modern and smart design. Wapik is perfect template for you!</p>
-                </div>
-                <button type="button" class="btn"> 
-                  Learn More
-                </button>
               </div>
             </div>
           </div>
@@ -57,88 +59,120 @@
     </div>
 
     <!--Features block-->
-    <div class="block">
+    <div class="block block-center">
       <div class="block-content">
         <div class="block-inner">
           <div class="container">
-            <div class="block-heading">
-              <h1></h1>
+            <div class="block-heading block-heading-after">
+              <h2>Best of our features</h2>
             </div>
             <div class="block-desc">
-              <p></p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
             </div>
             <div class="row">
               <div class="col-md-4">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object.png" alt="vector-smart-object1"></a>
+                <div class="feature">
+                  <div class="feature-header">
+                    <div class="feature-icon">
+                       <a href="#"><img src="images/icons/vector-smart-object.png" alt="vector-smart-object1"></a>
+                    </div>
+                    <div class="feature-heading">
+                      <h6>Ionicons</h6> 
+                    </div>
+                  </div>                
+                  <div class="feature-content">
+                    Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.
+                  </div> 
                 </div>
-                <div class="block-heading">
-                    <h4>Ionicons</h4> </div>
-                <div class="block-desc">
-                    <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem.</p>
-                </div>  
               </div>
               <div class="col-md-4">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object2.png" alt="vector-smart-object2"></a>
+                <div class="feature">
+                  <div class="feature-header">
+                    <div class="feature-icon">
+                      <a href="#"><img src="images/icons/vector-smart-object2.png" alt="vector-smart-object2"></a>
+                    </div>
+                    <div class="feature-heading">
+                      <h6>Creative Design</h6> 
+                    </div>
+                  </div>
+                  <div class="feature-content">
+                    Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                  </div>  
                 </div>
-                <div class="block-heading">
-                    <h4>Creative Design</h4> </div>
-                <div class="block-desc">
-                    <p>Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
-                </div>  
               </div>
-              <div class="col-md-4">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object3.png" alt="vector-smart-object3"></a>
+              <div class="col-md-4"> 
+                <div class="feature">
+                  <div class="feature-header">
+                    <div class="feature-icon">
+                      <a href="#"><img src="images/icons/vector-smart-object3.png" alt="vector-smart-object3"></a>
+                    </div>
+                    <div class="feature-heading">
+                      <h6>Photoshop and Sketch</h6> 
+                    </div>
+                  </div>
+                  <div class="feature-content">
+                    Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.
+                  </div>  
                 </div>
-                <div class="block-heading">
-                    <h4>Photoshop and Sketch</h4> </div>
-                <div class="block-desc">
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+              </div>
+            </div>
+            <div class="row block-align-left">
+              <div class="col-md-6">
+              <div class="feature">
+                <div class="feature-header feature-inline">
+                  <div class="feature-icon">
+                      <a href="#"><img src="images/icons/vector-smart-object4.png" alt="vector-smart-object4"></a>
+                  </div>
+                  <div class="feature-heading">
+                      <h6>Cross Browser Compatibility</h6> </div>
+                </div>
+                <div class="feature-content">
+                    Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.
                 </div>  
               </div>
             </div>
-            <div class="row">
               <div class="col-md-6">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object4.png" alt="vector-smart-object4"></a>
+                <div class="feature">
+                  <div class="feature-header feature-inline">
+                    <div class="feature-icon">
+                        <a href="#"><img src="images/icons/vector-smart-object5.png" alt="vector-smart-object5"></a>
+                    </div>
+                    <div class="feature-heading">
+                        <h6>Creative Idea</h6> </div>
+                  </div>
+                  <div class="feature-content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.</p>
+                  </div>  
                 </div>
-                <div class="block-heading">
-                    <h4>Cross Browser Compatibility</h4> </div>
-                <div class="block-desc">
-                    <p>Donec ullamcorper nulla non metus auctor fringilla. Donec id elit non mi porta gravida at eget metus.</p>
-                </div>  
               </div>
               <div class="col-md-6">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object5.png" alt="vector-smart-object5"></a>
+                <div class="feature">
+                  <div class="feature-header feature-inline">
+                    <div class="feature-icon">
+                        <a href="#"><img src="images/icons/vector-smart-object6.png" alt="vector-smart-object6"></a>
+                    </div>
+                    <div class="feature-heading">
+                        <h6>Pixel Perfect</h6> </div>
+                  </div>
+                  <div class="feature-content">
+                      <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>  
                 </div>
-                <div class="block-heading">
-                    <h4>Creative Idea</h4> </div>
-                <div class="block-desc">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper.</p>
-                </div>  
               </div>
               <div class="col-md-6">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object6.png" alt="vector-smart-object6"></a>
+                <div class="feature">
+                  <div class="feature-header feature-inline">
+                    <div class="feature-icon">
+                        <a href="#"><img src="images/icons/vector-smart-object7.png" alt="vector-smart-object7"></a>
+                    </div>
+                    <div class="feature-heading">
+                        <h6>Free Forever and Ever</h6> </div>
+                  </div>
+                  <div class="feature-content">
+                      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
+                  </div>  
                 </div>
-                <div class="block-heading">
-                    <h4>Pixel Perfect</h4> </div>
-                <div class="block-desc">
-                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>  
-              </div>
-              <div class="col-md-6">
-                <div class="block-wrap">
-                    <a href="#"><img src="images/icons/vector-smart-object7.png" alt="vector-smart-object7"></a>
-                </div>
-                <div class="block-heading">
-                    <h4>Free Forever and Ever</h4> </div>
-                <div class="block-desc">
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi porta gravida at eget metus.</p>
-                </div>  
               </div>
             </div>  
           </div>
@@ -147,33 +181,32 @@
     </div>    
 
     <!--Info block 1-->
-    <div class="block">
+    <div class="block block-center bg-grey">
       <div class="block-content">
         <div class="block-inner">
           <div class="container">
-            <div class="block-heading">
-              <h1>Looking for the perfect template to use?</h1>
-            </div>
-            <span class="block-heading-after"></span>
-            <div class="block-desc">
-              <p>Donec id elit non mi porta gravida at eget metus.</p>
+            <div class="block-heading block-heading-after">
+              <h2>Looking for the perfect template to use?</h2>
+            </div>            
+            <div class="block-desc m-b-20">
+              Donec id elit non mi porta gravida at eget metus.
             </div>
             <div class="row">
               <div class="col-md-6">
-                <div class="block-wrap"><img src="images/phone-in-hand.png" alt="phone-in-hand"></div>
+                <div class="block-image m-b-m16"><img src="images/phone-in-hand.png" alt="phone-in-hand"></div>
               </div>
-              <div class="col-md-6">
-                <div class="block-heading">
-                  <h1>Responsive Ready</h1>
+              <div class="col-md-6 block-align-left">               
+                <div class="block-heading p-t-126">
+                  <h2>Responsive Ready</h2>
                 </div>
                 <div class="block-desc">
-                  <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.</p>
+                  Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper.
                 </div>
-                <ul class="list">
-                  <li class="list-item">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
-                  <li class="list-item">Donec id elit non mi porta gravida at eget metus.</li>
-                </ul>
-              </div>              
+                <ul class="feature-list">
+                  <li class="feature-item feature-item-before p-l-37">Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</li>
+                  <li class="feature-item feature-item-before p-l-37">Donec id elit non mi porta gravida at eget metus.</li>
+                </ul>             
+              </div>
             </div>           
           </div>
         </div>
@@ -185,47 +218,51 @@
       <div class="block-content">
         <div class="block-inner">
           <div class="container">
+            <div class="testemonials">            
              <div class="row">
-              <div class="col-md-6">
-                <div class="block-desc">
-                  <p>This theme is beautiful, elegant and easy to customize. I’ve been able to build an amazing site in just a minute. Thank you very much for creating this impressive template!</p>
+              <div class="col-md-6">              
+                <div class="testemonials-text">
+                  This theme is beautiful, elegant and easy to customize. I’ve been able to build an amazing site in just a minute. Thank you very much for creating this impressive template!
                 </div>
-                <div class="card-caption">
-                  <div class="card-title">
-                    <h4>Valeria Boltneva</h4>
+                <div class="testemonials-caption">
+                  <div class="testemonials-title">
+                    <h6>Valeria Boltneva</h6>
                   </div>
-                  <div class="card-desc">
-                    <p>Director of Acme.Inc<p>
+                  <div class="testemonials-desc">
+                    Director of Acme.Inc
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="block-wrap"><img src="images/round-photo.png" alt="round-photo"></div>
-                </div>
-              </div>             
-            </div>              
+                <div class="col-md-6">
+                  <div class="testemonials-image block-center">
+                    <img src="images/round-photo.png" alt="round-photo">
+                  </div>
+                </div>             
+              </div> 
+            </div>             
           </div>
         </div>
       </div>
     </div>
 
     <!--Info block 2-->
-    <div class="block">
+    <div class="block bg-grey">
       <div class="block-content">
         <div class="block-inner">
           <div class="container">            
             <div class="row">
               <div class="col-md-6">
-                <div class="block-heading">
-                  <h1>Built with High Attention to Details</h1>
-                </div>
-                <div class="block-desc">
-                  <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus.</p>
+                <div class="block-info p-106-10">
+                  <div class="block-heading">
+                    <h2>Built with High Attention to Details</h2>
+                  </div>
+                  <div class="block-desc">
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="block-wrap"><img src="images/map-mini.png" alt="map-mini"></div>
+                <div class="block-image"><img src="images/map-mini.png" alt="map-mini"></div>
               </div>                
             </div> 
           </div>
@@ -234,14 +271,13 @@
     </div>
 
     <!--Pricing'n'plans block-->
-    <div class="block">
+    <div class="block block-center">
       <div class="block-content">
         <div class="block-inner">
           <div class="container">
-            <div class="block-heading">
-              <h1>Pricing &#38; Plan</h1>
-            </div>
-            <span class="block-heading-after"></span>
+            <div class="block-heading block-heading-after">
+              <h2>Pricing &#38; Plan</h2>
+            </div>            
             <div class="block-desc">
               <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.
               Donec id elit non mi porta gravida at eget metus.</p>
@@ -337,36 +373,35 @@
             <!--Info block 3 - inner-->
             <div class="block-heading">
               <h3>Included with all Plans</h3>
-            </div>
-            <span class="block-heading-after"></span>
+            </div>            
             <div class="row">
               <div class="col-md-4">
-                <ul class="list">
-                  <li class="list-item">Maecenas faucibus mollis interdum</li>
-                  <li class="list-item">Cras justo odio, dapibus ac facilisis</li>
-                  <li class="list-item">Fringilla Mattis</li>
+                <ul class="feature-list">
+                  <li class="feature-item feature-item-before p-l-37">Maecenas faucibus mollis interdum</li>
+                  <li class="feature-item feature-item-before p-l-37">Cras justo odio, dapibus ac facilisis</li>
+                  <li class="feature-item feature-item-before p-l-37">Fringilla Mattis</li>
                 </ul>
               </div>
-              <div class="col-md-4"><ul class="list">
-                  <li class="list-item">Vestibulum id ligula porta felis euismod</li>
-                  <li class="list-item">Duis mollis, est non commodo luctus</li>
-                  <li class="list-item">Integer posuere</li>
+              <div class="col-md-4">
+                <ul class="feature-list">
+                  <li class="feature-item feature-item-before p-l-37">Vestibulum id ligula porta felis euismod</li>
+                  <li class="feature-item feature-item-before p-l-37">Duis mollis, est non commodo luctus</li>
+                  <li class="feature-item feature-item-before p-l-37">Integer posuere</li>
                 </ul>                
               </div>
               <div class="col-md-4">
-                <ul class="list">
-                  <li class="list-item">Nulla vitae elit libero, a pharetra augue</li>
-                  <li class="list-item">Curabitur blandit tempus porttitor</li>
-                  <li class="list-item">Nullam quis risus eget urna mollis</li>
+                <ul class="feature-list">
+                  <li class="feature-item feature-item-before p-l-37">Nulla vitae elit libero, a pharetra augue</li>
+                  <li class="feature-item feature-item-before p-l-37">Curabitur blandit tempus porttitor</li>
+                  <li class="feature-item feature-item-before p-l-37">Nullam quis risus eget urna mollis</li>
                 </ul>
               </div>
             </div>
             <div class="block-wrap">
               <div class="block-wrap"><img src="images/icons/help.png" alt="help"></div>
-              <div class="block-heading block-heading-help">
+              <div class="block-heading block-heading-after block-heading-help">
                 <h1>Need Help?</h1>
-              </div>
-              <span class="block-heading-after"></span>
+              </div>              
               <div class="block-desc">
                 <p>Contact our Customer Support that is always ready to help you with any possible
                 questions, problems or information.</p>
@@ -388,10 +423,10 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="block-heading">
-                  <h1>Do You Like Wapik? Download it Now</h1>
+                  <h2>Do You Like Wapik? Download it Now</h2>
                 </div>
                 <div class="block-desc">
-                  <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
                 </div>
               </div>
               <div class="col-md-3 col-md-offset-3">

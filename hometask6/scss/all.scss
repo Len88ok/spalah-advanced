@@ -12,27 +12,52 @@
 @import "components/forms.scss";
 @import "components/block.scss";
 @import "components/grid.scss";
-
+@import "components/navbar.scss";
+@import "components/feature.scss";
+@import "components/testemonials.scss";
 
 
 
 // bgs
 .bg {
-	&-dark {
-		background-color: #3a454d;
-		color: #fff;
-	}
-	&-darken {
-		background-color: #1d2126;
-		color: #fff;
-	}
+	&-grey {
+		background-color: #eef1ec;
+	}	
 	&-primary {
-		background-color: tomato;
+		background-color: #2d6e70;
 	}
-	&-hand{
-		background-image: url("../images/phone-in-hand.png");
-		background-position: 0 40%;
-		background-repeat: no-repeat; 
+	&-gradient{
+	background-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+	}
+}
+
+//colors
+.color{
+	&-light{
+		color: $light-color;
+	}
+}
+
+//margin
+.m{
+	&-b-m16{
+		margin-bottom: -16px;
+	}
+	&-b-20{
+		margin-bottom: 20px;
+	}
+}
+
+//padding
+.p{
+	&-t-126{
+		padding-top: 126px;		
+	}
+	&-l-37{
+		padding-left: 37px;
+	}
+	&-106-10{
+		padding: 106px 10px 0 0;
 	}
 }
 

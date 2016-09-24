@@ -1,0 +1,49 @@
+.navbar{	
+	border-bottom: 1px solid #fff;
+	@include clearfix();
+
+	&-logo{
+		float: left;
+		img{
+			display: block;
+		}
+	}
+	&-nav{
+		float: right;
+		list-style: none;
+		padding-left: 0;
+		margin: 0;
+	}
+	&-toggler{
+		display: none;
+		float: right;		
+		height: 50px;
+		padding: 10px;
+		width: 50px;
+	}
+	&-info{
+
+	}
+	&-item{
+		display: inline-block;
+		vertical-align: top;
+	}
+	&-collapse{
+
+	}
+	&-link{
+		display: block;
+		color: #fff;
+		padding: 5px 10px;
+		font-weight: bold;
+	}
+}
+
+.icon-bar{
+ display: block;
+ height: 2px;
+ background-color: currentColor;
+ &+&{
+ 	margin-top: 4px;
+ }
+}
