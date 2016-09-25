@@ -1,0 +1,40 @@
+.card{	
+	@include clearfix();
+	&-item{
+		float: left;
+		padding: 29px 0 31px;
+		width: 100/3+%;
+		border: 1px solid #c1d3d2;
+		margin-right: -1px;
+		&:last-child{
+			margin-right: 0;
+		}
+	}
+	&-title{
+	color: #6fb048;
+	font-size: 15px;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 27px;
+
+	}
+	&-caption{
+
+	}
+	&-price{
+	color: #0f5f5c;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 65px;
+	font-weight: 400;
+	line-height: 0.75em;
+		&-caption{
+		margin-bottom: 25px;
+		}		
+	}
+	&-list{
+		margin-bottom: 24px;
+		&-item{
+
+		}
+	}
+}

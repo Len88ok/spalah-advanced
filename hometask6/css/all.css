@@ -37,6 +37,11 @@ img {
   padding: 0 0 10px;
 }
 
+.container-w73 {
+  width: 72.3%;
+  margin: auto;
+}
+
 body {
   color: #0f5f5c;
   background-color: #fff;
@@ -98,7 +103,7 @@ h3,
 h4,
 .h4 {
   font-size: 24px;
-  margin: 1em;
+  margin: 0;
 }
 
 h5,
@@ -250,6 +255,10 @@ h6,
   left: 47%;
 }
 
+.block-heading-green {
+  color: #6fb048;
+}
+
 .block-center {
   text-align: center;
 }
@@ -264,6 +273,11 @@ h6,
 
 .block-image img {
   width: 100%;
+}
+
+.block-email {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .row {
@@ -693,6 +707,82 @@ h6,
   color: #6fb048;
 }
 
+.card:before, .card:after {
+  content: '';
+  display: table;
+}
+
+.card:after {
+  clear: both;
+}
+
+.card-item {
+  float: left;
+  padding: 29px 0 31px;
+  width: 33.33333%;
+  border: 1px solid #c1d3d2;
+  margin-right: -1px;
+}
+
+.card-item:last-child {
+  margin-right: 0;
+}
+
+.card-title {
+  color: #6fb048;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.card-price {
+  color: #0f5f5c;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 0.75em;
+}
+
+.card-price-caption {
+  margin-bottom: 25px;
+}
+
+.card-list {
+  margin-bottom: 24px;
+}
+
+.footer-logo img {
+  display: block;
+}
+
+.footer-heading {
+  font-size: 13px;
+  font-weight: 500;
+  color: #0f5f5c;
+}
+
+.footer-item a {
+  color: inherit;
+}
+
+.footer-wrap {
+  border-bottom: 1px solid #eef1ec;
+}
+
+.footer-copyright {
+  float: left;
+}
+
+.socials-icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 35px;
+}
+
 .bg-grey {
   background-color: #eef1ec;
 }
@@ -703,6 +793,26 @@ h6,
 
 .bg-gradient {
   background-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.bg-tw {
+  background-color: #55acee;
+}
+
+.bg-fb {
+  background-color: #3b5998;
+}
+
+.bg-inst {
+  background-color: #3f729b;
+}
+
+.bg-drib {
+  background-color: #ea4c89;
+}
+
+.bg-git {
+  background-color: #333;
 }
 
 .color-light {

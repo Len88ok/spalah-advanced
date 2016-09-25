@@ -64,6 +64,9 @@
 			left: 47%;
 			}		
 		}
+		&-green{
+			color: #6fb048;
+		}
 	}
 	&-desc{
 
@@ -82,8 +85,15 @@
 			width: 100%;
 		}
 	}
+	&-email{
+		font-size: 18px;
+		font-weight: 400;
 
 
+	}
+	&-wrap{
+
+	}
 }
 
 

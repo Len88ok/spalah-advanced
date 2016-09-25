@@ -37,4 +37,8 @@ img {
 	margin: auto;
 	max-width: $container-width;
 	padding: 0 $container-gutter;
+	&-w73{
+		width: 72.3%;
+		margin: auto;
+	}
 }

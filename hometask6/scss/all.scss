@@ -15,6 +15,9 @@
 @import "components/navbar.scss";
 @import "components/feature.scss";
 @import "components/testemonials.scss";
+@import "components/card.scss";
+@import "components/footer.scss";
+@import "components/socials.scss";
 
 
 
@@ -28,6 +31,21 @@
 	}
 	&-gradient{
 	background-image: linear-gradient(to top, transparent 0%, rgba(0, 0, 0, 0.5) 100%);
+	}
+	&-tw{
+		background-color: #55acee;
+	}
+	&-fb{
+		background-color: #3b5998;
+	}
+	&-inst{
+		background-color: #3f729b;
+	}
+	&-drib{
+		background-color: #ea4c89;
+	}
+	&-git{
+		background-color: #333;
 	}
 }
 
