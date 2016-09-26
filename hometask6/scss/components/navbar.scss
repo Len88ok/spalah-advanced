@@ -1,18 +1,47 @@
-.navbar{	
-	border-bottom: 1px solid #fff;
-	@include clearfix();
+$navbar-padding: 3% 0 !default;
 
-	&-logo{
+$navbar-border-color: #fff !default;
+$navbar-border-size: 1px !default;
+
+$navbar-link-color: #fff !default;
+$navbar-link-pad: 5px 10px !default;
+$navbar-link-opacity: 0.7 !default;
+$navbar-link-font-size: 13px !default;
+$navbar-text-transform: uppercase !default;
+$navbar-link-font-weight: bold !default;
+
+$navbar-logo-padding-right: 2.5% !default;
+$navbar-logo-margin-right: 2% !default; 
+
+$navbar-info-size: 13px !default;
+$navbar-info-padding-left: 2% !default;
+$navbar-logo-margin-top: 0.5%;
+
+$navbar-btn-bg: rgba(255, 255, 255, 0.35) !default;
+$navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
+
+.navbar{	
+	border-bottom: $navbar-border-size solid $navbar-border-color;
+	@include clearfix();
+	padding: $navbar-padding;
+
+	&-logo {
 		float: left;
+		padding-right: $navbar-logo-padding-right;
+		margin-right: $navbar-logo-margin-right; 
+		margin-top: $navbar-logo-margin-top;
+		border-right: $navbar-border-size solid $navbar-border-color;
 		img{
 			display: block;
 		}
 	}
 	&-nav{
-		float: right;
+		display: inline-block;
+		text-align: right;
 		list-style: none;
 		padding-left: 0;
 		margin: 0;
+		text-transform: $navbar-text-transform;
 	}
 	&-toggler{
 		display: none;
@@ -22,28 +51,65 @@
 		width: 50px;
 	}
 	&-info{
-
+		position: relative; 
+		display: inline-block;
+		font-family: $font-family-decor;
+		font-size: $navbar-info-size;
+		padding-left: $navbar-info-padding-left;
+		margin-top: $navbar-logo-margin-top;
+		&::before{
+			position: absolute;
+			top: 10%;
+			left: 0;			
+			content: "";
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background: url('../images/icons/vector-phone.png') no-repeat 0 0;
+		}
 	}
 	&-item{
 		display: inline-block;
 		vertical-align: top;
 	}
 	&-collapse{
-
+	display: inline-block;
+	float: right;	
 	}
 	&-link{
 		display: block;
-		color: #fff;
-		padding: 5px 10px;
-		font-weight: bold;
+		color: $navbar-link-color;
+		padding: $navbar-link-pad;
+		opacity: $navbar-link-opacity;
+		font-weight: $navbar-link-font-weight;
+		font-size: $navbar-link-font-size;
+		&:hover,
+		&.active{
+		opacity: 1;
+		}
 	}
+	&-btn{
+		@include btn-size(12px,7px 12px);
+		margin-top: -2%;
+		font-weight: $navbar-link-font-weight;
+		@include btn-variants( 
+		$navbar-link-color, 
+		$navbar-btn-bg, 
+		$navbar-btn-border-bg, 
+		$color-hover: $navbar-link-color, 
+		$bg-hover: #6fb048, 
+		$border-hover: #6fb048
+		);	
+
+	}
+	
 }
 
 .icon-bar{
  display: block;
  height: 2px;
  background-color: currentColor;
- &+&{
- 	margin-top: 4px;
- }
+	 &+&{
+	 	margin-top: 4px;
+	 }
 }

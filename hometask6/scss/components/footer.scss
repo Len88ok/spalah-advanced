@@ -20,8 +20,11 @@
 	}
 	}
 	&-wrap{
-		border-bottom: 1px solid #eef1ec;
+
 	}
+	&-wrap-bordered{
+			border-bottom: 1px solid #eef1ec;
+		}	
 	&-copyright{
 		float:left;
 	}

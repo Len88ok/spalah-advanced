@@ -18,6 +18,8 @@
 @import "components/card.scss";
 @import "components/footer.scss";
 @import "components/socials.scss";
+@import "components/padding.scss";
+@import "components/margin.scss";
 
 
 
@@ -26,6 +28,15 @@
 	&-grey {
 		background-color: #eef1ec;
 	}	
+	/*&-map{
+		width: 100%;
+		height: 383px;
+		background-color: transparent;
+		background-image: url("../images/map-mini.png");
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}	*/
+
 	&-primary {
 		background-color: #2d6e70;
 	}
@@ -56,27 +67,7 @@
 	}
 }
 
-//margin
-.m{
-	&-b-m16{
-		margin-bottom: -16px;
-	}
-	&-b-20{
-		margin-bottom: 20px;
-	}
-}
 
-//padding
-.p{
-	&-t-126{
-		padding-top: 126px;		
-	}
-	&-l-37{
-		padding-left: 37px;
-	}
-	&-106-10{
-		padding: 106px 10px 0 0;
-	}
-}
+
 
 
