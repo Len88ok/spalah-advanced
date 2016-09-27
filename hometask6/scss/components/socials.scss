@@ -1,10 +1,19 @@
+$socials-width: 30px;
+$socials-height: 30px;
+$socials-border-radius: 30px;
+$socials-line-height: 35px;
+
+
 .socials{
 	&-icon{
 		display: inline-block;
-		width: 30px;
-		height: 30px;
-		border-radius: 30px;
+		width: $socials-width;
+		height: $socials-height;
+		border-radius: $socials-border-radius;
 		text-align: center;
-		line-height: 35px;
+		line-height: $socials-line-height;
+		&:hover{
+			transform: scale(1.2);
+		}
 	}
 }

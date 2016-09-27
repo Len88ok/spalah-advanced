@@ -4,6 +4,7 @@ $navbar-border-color: #fff !default;
 $navbar-border-size: 1px !default;
 
 $navbar-link-color: #fff !default;
+$navbar-link-color-grey: #83a7a5 !default;
 $navbar-link-pad: 5px 10px !default;
 $navbar-link-opacity: 0.7 !default;
 $navbar-link-font-size: 13px !default;
@@ -24,6 +25,9 @@ $navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
 	border-bottom: $navbar-border-size solid $navbar-border-color;
 	@include clearfix();
 	padding: $navbar-padding;
+	&-grey{
+		border-bottom: $navbar-border-size solid $navbar-link-color-grey;
+	}
 
 	&-logo {
 		float: left;
@@ -33,6 +37,9 @@ $navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
 		border-right: $navbar-border-size solid $navbar-border-color;
 		img{
 			display: block;
+		}
+		&-grey{
+			border-right: $navbar-border-size solid $navbar-link-color-grey;
 		}
 	}
 	&-nav{
@@ -57,7 +64,8 @@ $navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
 		font-size: $navbar-info-size;
 		padding-left: $navbar-info-padding-left;
 		margin-top: $navbar-logo-margin-top;
-		&::before{
+		&-l{
+			&::before{
 			position: absolute;
 			top: 10%;
 			left: 0;			
@@ -66,6 +74,19 @@ $navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
 			width: 14px;
 			height: 14px;
 			background: url('../images/icons/vector-phone.png') no-repeat 0 0;
+			}
+		}		
+		&-g{
+			&::before{
+			position: absolute;
+			top: 10%;
+			left: 0;			
+			content: "";
+			display: inline-block;
+			width: 14px;
+			height: 14px;
+			background: url('../images/icons/vector-phone-g.png') no-repeat 0 0;
+		}
 		}
 	}
 	&-item{
@@ -87,22 +108,21 @@ $navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
 		&.active{
 		opacity: 1;
 		}
+		&-grey{
+			color: $navbar-link-color-grey;
+		}
 	}
 	&-btn{
 		@include btn-size(12px,7px 12px);
 		margin-top: -2%;
 		font-weight: $navbar-link-font-weight;
-		@include btn-variants( 
-		$navbar-link-color, 
-		$navbar-btn-bg, 
-		$navbar-btn-border-bg, 
-		$color-hover: $navbar-link-color, 
-		$bg-hover: #6fb048, 
-		$border-hover: #6fb048
-		);	
-
-	}
-	
+		@include btn-variants( $navbar-link-color, $navbar-btn-bg, $navbar-btn-border-bg, 
+		$navbar-link-color, #6fb048, #6fb048);	
+		&-grey{			
+			@include btn-variants( $btn-color, $btn-bg, $btn-bg, 
+			$btn-color, $btn-bg-hover, $btn-bg-hover);
+		}
+	}	
 }
 
 .icon-bar{

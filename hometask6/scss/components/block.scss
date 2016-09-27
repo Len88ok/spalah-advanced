@@ -1,3 +1,7 @@
+$block-heading-color: #0f5f5c;
+$h2-font-weight: 300;
+$h1-font-weight: 400;
+
 .block {
 
 	padding: 0;
@@ -46,13 +50,33 @@
 			z-index: -1;
 			background-color: inherit;
 			opacity: 0.9;
-		}
+		}		
 	}
-	&-info{
+	&-overlay-2 {
+		position: relative;
+		z-index: 1;
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			background-color: inherit;
+			opacity: 0.7;
+		}		
+	}
 
-	}
 	&-heading{
-		color: #0f5f5c;
+		color: $block-heading-color;
+		h2{
+			font-weight: $h2-font-weight;
+		}
+		h1{
+			font-weight: $h1-font-weight;
+		}
+
 		position: relative;
 		&-after{
 			&::after{
@@ -88,20 +112,17 @@
 	&-image{
 		img{
 			width: 100%;
-		}
-		z-index: 10;
-		&-m{
-			margin-right: -20px;
-		}
+		}		
 	}
 	&-email{
 		font-size: 18px;
 		font-weight: 400;
-
-
 	}
 	&-wrap{
 
+	}
+	&-buttons{
+				
 	}
 }
 

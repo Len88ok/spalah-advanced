@@ -11,31 +11,36 @@
 
 <body>
   <div class="wrapper">
-    <!--Header block: navbar+info-->
+<!--Header block: navbar+info-->
     <div class="block">
       <div class="block-header">
         <div class="block-inner">
-          <div class="container">
-            <div class="navbar">
-              <!--Navbar Logo-->
-              <div class="block-wrap">
-                <a href="#"><img src="" alt="header-logo"></a>
-                <span class="phone">+62 202 555 0117</span>
-              </div>
+          <div class="container p-0">
+            <nav class="navbar">
+              <!--Navbar Logo-->             
+              <a href="#" class="navbar-logo navbar-logo-grey">
+                <img src="images/icons/wapik-d.png" alt="logo">
+              </a>
+              <button class="navbar-toggler">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="navbar-info navbar-info-g">+62 202 555 0117</div>            
               <!--Navigation menu-->
-              <div class="block-wrap">
-                <ul class="list">
-                  <li class="list-item active"> <a href="index.html">Home</a></li>
-                  <li class="list-item"> <a href="about.html">About us</a></li>
-                  <li class="list-item"> <a href="pricing.html">Pricing</a></li>
-                  <li class="list-item"> <a href="#">Contact us</a></li>
-                  <li class="list-item"> <a href="#" class="btn-menu-dark-bg">Get started</a></li>
+              <div class="navbar-collapse">
+                <ul class="navbar-nav">
+                  <li class="navbar-item"> <a class="navbar-link navbar-link-grey" href="index.html">Home</a></li>
+                  <li class="navbar-item"> <a class="navbar-link navbar-link-grey" href="about.html">About us</a></li>
+                  <li class="navbar-item"> <a class="navbar-link navbar-link-grey" href="pricing.html">Pricing</a></li>
+                  <li class="navbar-item"> <a class="navbar-link navbar-link-grey" href="#">Contact us</a></li>
+                  <li class="navbar-item"> <a class="btn navbar-btn navbar-btn-grey" href="#">Get started</a></li>
                 </ul>
               </div>
-            </div>
+            </nav>
           </div>
         </div>
-      </div>      
+      </div>
     </div>
 
     <!--Map-->
@@ -43,26 +48,27 @@
       <div class="block-content">
         <div class="block-inner">
           <div class="block-wrap">
-            <img src="" alt="">
+            <img src="images/big-map.png" alt="big-map">
           </div>
         </div>
       </div>
     </div>
 
     <!--Contact form-->
-    <div class="block">
+    <div class="block block-center p-75">
       <div class="block-content">
         <div class="block-inner">
           <div class="container">
-            <div class="block-heading">
-              <h1></h1>
+            <div class="block-heading block-heading-after m-b-20">
+              <h2>Get In Touch With Us</h2>
             </div>
-            <div class="block-desc">
-              <p></p>
+            <div class="block-desc p-0-24 m-b-70">
+              We are here to help. Want to learn more about our services?
+              Please get in touch, we'd love to hear from you!
             </div>
             <div class="row">
-              <div class="col-md-6">
-                <form action="" method="post">
+              <div class="col-md-6 block-align-left">
+                <form action="" method="post" class="form">
                   <div class="form-group">
                     <input type="text" id="name" placeholder="Name" class="form-control">
                   </div>
@@ -73,21 +79,23 @@
                     <input type="text" id="phone" placeholder="Phone" class="form-control">
                   </div>
                   <div class="form-group">
-                    <textarea id="Message" rows="8" placeholder="Message" class="form-control"></textarea>
+                    <textarea id="Message" rows="4" placeholder="Message" class="form-control"></textarea>
                   </div>
                   <div class="form-group">
-                    <input type="submit" value="" class="btn">
+                    <input type="submit" value="send message" class="btn">
                   </div>
                 </form>
               </div>
               <div class="col-md-6">
-                <div class="block-wrap">
-                  <div class="block-heading">
-                    <h1></h1>
+                <div class="headquarter">
+                  <div class="headquarter-heading">
+                    Headquarter
                   </div>
-                  <span class="adress"></span>
-                  <span class="phone"></span>
-                  <span class="email"></span>
+                  <ul class="headquarter-list">
+                    <li class="headquarter-item headquarter-item-adress">hi@wapik.com</li>
+                    <li class="headquarter-item headquarter-item-phone">+62 202 555 0117</li>
+                    <li class="headquarter-item headquarter-item-email">610 Overlook Circle Suite 323 Kalamazoo, MI 49009</li>
+                  </ul>  
                 </div>
               </div>
             </div>
@@ -97,23 +105,23 @@
     </div>
 
     <!--Download block-->
-    <div class="block">
+    <div class="block p-75" style="background-image: url('images/bg-down.png')">
       <div class="block-content">
         <div class="block-inner">
           <div class="container">
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-8">
                 <div class="block-heading">
-                  <h1></h1>
+                  <h2>Do You Like Wapik? Download it Now</h2>
                 </div>
                 <div class="block-desc">
-                  <p></p>
+                  Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
                 </div>
               </div>
-              <div class="col-md-3 col-md-offset-3">
-                <button type="button" class="btn"> 
-                  <a href="#"></a> 
-                </button>
+              <div class="col-md-4 block-align-right p-2">
+                <a href="#" class="btn"> 
+                  download now! - FREE forever
+                </a>
               </div>
             </div>              
           </div>
@@ -126,34 +134,71 @@
       <div class="block-footer">
         <div class="block-inner">
           <div class="container">
-            <div class="row">
-              <div class="col-md-3">
-                
-              </div>
-              <div class="col-md-3">
-                
-              </div>
-              <div class="col-md-3">
-                
-              </div>
-              <div class="col-md-3">
-                
+            <div class="footer-wrap-bordered p-10-6">
+              <div class="row">
+                <div class="col-md-3">   
+                  <div class="footer-heading">             
+                    <a href="#" class="footer-logo">
+                      <img src="images/icons/wapik-dark.png" alt="logo">
+                    </a>
+                  </div>
+                  <ul class="footer-list">
+                    <li class="footer-item footer-item-dark">@: hi@wapik.com</li>
+                    <li class="footer-item">p: +62 202 555 0117</li>
+                    <li class="footer-item">a: 610 Overlook Circle Suite 323
+                      Kalamazoo, MI 49009</li>
+                  </ul>  
+                </div>
+                <div class="col-md-3">
+                  <div class="footer-heading">
+                    Company
+                  </div>
+                  <ul class="footer-list">
+                    <li class="footer-item"> <a href="#">Home</a></li>
+                    <li class="footer-item"> <a href="about.html">About us</a></li>
+                    <li class="footer-item"> <a href="pricing.html">Pricing</a></li>
+                    <li class="footer-item"> <a href="contact.html">Contact us</a></li>
+                  </ul> 
+                </div>              
+                <div class="col-md-3">
+                  <div class="footer-heading">
+                    Others
+                  </div>
+                  <ul class="footer-list">
+                    <li class="footer-item"> <a href="#">Help &#38; Support</a></li>
+                    <li class="footer-item"> <a href="about.html">Privacy Policy</a></li>
+                    <li class="footer-item"> <a href="pricing.html">Terms</a></li>
+                    <li class="footer-item"> <a href="contact.html">Sitemap</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <div class="footer-heading">
+                    Newsletter
+                  </div>
+                  <div class="footer-desc">
+                    <p>Subscribe to our newsletter and get all
+                    the cool news</p>
+                  </div>
+                  <div class="form-group">
+                      <input type="email" id="subspribe-field" placeholder="Enter Email" class="form-control">
+                      <span class="form-icon"><a href="#"><img src="images/icons/vector-arrow.png"></a></span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <span></span><!--for hr in footer-->
-        <div class="block-inner">
-          <div class="container">
-            <div class="footer-copyright"></div>
-            <div class="socials">
-              <div class="block-wrap"><a href="#"><img src="" alt=""></a></div>
-              <div class="block-wrap"><a href="#"><img src="" alt=""></a></div>
-              <div class="block-wrap"><a href="#"><img src="" alt=""></a></div>
-              <div class="block-wrap"><a href="#"><img src="" alt=""></a></div>
-              <div class="block-wrap"><a href="#"><img src="" alt=""></a></div>
-            </div>
-          </div>
+            <div class="footer-wrap p-10">
+              <div class="footer-copyright p-5">
+                <p>All rights reserved 2015.</p>
+              </div>
+              <div class="socials bg-dark block-align-right">
+                <div class="socials-icon bg-tw"><a href="#"><img src="images/icons/tw.png" alt="twitter"></a></div>
+                <div class="socials-icon bg-fb"><a href="#"><img src="images/icons/fb.png" alt="facebook"></a></div>
+                <div class="socials-icon bg-inst"><a href="#"><img src="images/icons/inst.png" alt="instagram"></a></div>
+                <div class="socials-icon bg-drib"><a href="#"><img src="images/icons/dr.png" alt="dribble"></a></div>
+                <div class="socials-icon bg-git"><a href="#"><img src="images/icons/cat.png" alt="github"></a></div>
+              </div>
+            </div> 
+          </div>          
         </div>
       </div>
     </div>

@@ -1,4 +1,5 @@
-$container-width: 1170px !default;
+$wrapper-width: 1500px !default;
+$container-width: 1058px !default;
 $container-gutter: 0 10px !default;
 
 html {
@@ -14,6 +15,8 @@ html {
 
 body {
     margin: 0;
+
+
 }
 
 img {
@@ -24,7 +27,7 @@ img {
 .wrapper {
 	overflow: hidden;
 	display: table;
-	width: 100%;
+	max-width: $wrapper-width;
 	height: 100vh;
 	table-layout: fixed;
 }
@@ -35,7 +38,7 @@ img {
 
 .container {
 	margin: auto;
-	max-width: $container-width;
+	max-width: $container-width/$wrapper-width*100%;
 	padding: 0 $container-gutter;
 	&-w73{
 		width: 72.3%;

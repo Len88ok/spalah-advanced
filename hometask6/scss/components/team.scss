@@ -1,0 +1,17 @@
+$team-heading-color: #0f5f5c !default;
+$team-heading-font-size: 15px !default;
+$team-heading-font-weight: 500 !default;
+
+.team{
+	&-icon{
+
+	}
+	&-heading{
+		color: $team-heading-color;
+		font-size: $team-heading-font-size;
+		font-weight: $team-heading-font-weight;
+	}
+	&-content{
+
+	}
+}

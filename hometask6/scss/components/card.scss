@@ -1,40 +1,78 @@
+
+$card-border-color: #c1d3d2 !default;
+$card-item-bg: #fff;
+
+$card-item-padding: 2.5% 0 3.5% !default;
+$card-item-width: 100/3+% !default;
+
+$card-title-color: $btn-bg !default;
+$card-title-font-size: 15px !default;
+$card-title-font-weight: 500 !default;
+$card-title-text-transform: uppercase !default;
+$card-title-margin-bottom: 7% !default;
+
+$card-price-color: #0f5f5c !default;
+$card-price-font-family: 'Montserrat', sans-serif !default;
+$card-price-font-size: 65px !default;
+$card-price-font-weight: 400 !default;
+$card-price-line-height: 0.75em !default;
+$card-price-margin-bottom: $card-title-margin-bottom !default;
+
+$card-list-padding-bottom: 7% !default;
+$card-list-line-height: 1.75em !default;
+
+
+
+
 .card{	
 	@include clearfix();
 	&-item{
 		float: left;
-		padding: 29px 0 31px;
-		width: 100/3+%;
-		border: 1px solid #c1d3d2;
+		background: $card-item-bg;
+		padding: $card-item-padding;
+		width: $card-item-width;
+		border: 1px solid $card-border-color;
 		margin-right: -1px;
 		&:last-child{
 			margin-right: 0;
 		}
 	}
 	&-title{
-	color: #6fb048;
-	font-size: 15px;
-	font-weight: 500;
-	text-transform: uppercase;
-	margin-bottom: 27px;
+	color: $card-title-color;
+	font-size: $card-title-font-size;
+	font-weight: $card-title-font-weight;
+	text-transform: $card-title-text-transform;
+	margin-bottom: $card-title-margin-bottom;
 
 	}
 	&-caption{
 
 	}
 	&-price{
-	color: #0f5f5c;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 65px;
-	font-weight: 400;
-	line-height: 0.75em;
+	color: $card-price-color;
+	font-family: $card-price-font-family;
+	font-size: $card-price-font-size;
+	font-weight: $card-price-font-weight;
+	line-height: $card-price-line-height;
 		&-caption{
-		margin-bottom: 25px;
+		margin-bottom: $card-price-margin-bottom;
 		}		
 	}
 	&-list{
-		margin-bottom: 24px;
-		&-item{
-
+		line-height: $card-list-line-height;
+		padding-bottom: $card-list-padding-bottom;
+		&-item{		
 		}
 	}
+	&-btn{
+		@include btn-size(13px,13px 23px);
+		@include btn-variants($btn-color, $btn-bg-hover, $btn-bg-hover, 
+		$btn-color, $btn-bg, $btn-bg);
+	}
+	.best{
+			@include btn-variants( 
+			$btn-color, $btn-bg, $btn-bg, 
+			$btn-color, $btn-bg-hover, $btn-bg-hover);
+	}
+		
 }

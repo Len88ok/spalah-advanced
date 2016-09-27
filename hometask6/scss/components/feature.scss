@@ -1,46 +1,37 @@
-.feature{
-	margin-bottom: 40px;
-	&-header{
+$feature-margin-bottom: 4%;
 
+.feature{
+	margin-bottom: $feature-margin-bottom;
+	&-header{
+	margin-bottom: $feature-margin-bottom/2;
 	}
 	&-icon{
 		display: inline-block;
+		margin-bottom: $feature-margin-bottom;
 	}
 	&-heading{
-
+	
 	}
 	&-content{
 
 	}
 	&-inline{
+		margin-bottom: $feature-margin-bottom;
 		>*{
 			display: inline-block;
 			vertical-align: middle;
+
 		}
 		.feature{
 			&-icon{
 				margin-right: 10px;
-			}
+				margin-bottom: 0;
+				height: 38px; 
+			}				
 		}
-	}
-	&-list{
-
 	}	
-	&-item{
-		position: relative;
-		line-height: 38px;
-		&-before{
-			&::before{
-			position: absolute;
-			top: 5px;
-			left: 0;			
-			content: "";
-			display: inline-block;
-			width: 26px;
-			height: 26px;
-			background: transparent url(../images/icons/check.png) no-repeat 0 0;
-
-			}		
-		}
+	&-separate{
+		margin-bottom: $feature-margin-bottom;
 	}
+
 }

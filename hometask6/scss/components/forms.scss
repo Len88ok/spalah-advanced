@@ -1,5 +1,6 @@
-$form-color: red !default;
-$form-bg: #eaeef1 !default;
+$form-color: #000 !default;
+//$form-bg: #eaeef1 !default;
+$form-bg: #fff !default;
 $form-border: 1px solid #eaeef1 !default;
 $form-border-radius: 2px !default;
 $form-height: 44px !default;
@@ -11,6 +12,9 @@ $form-margin-bottom: 15px !default;
 $form-label-color: #eaeef1 !default;
 $form-label-font-size: 14px !default;
 $form-label-margin-bottom: 4px !default;
+
+$placeholder-color: #83a7a5 !default;
+
 
 
 @mixin placeholder($color, $opacity: 1) {
@@ -47,7 +51,8 @@ $form-label-margin-bottom: 4px !default;
 }
 
 .form {
-	&-group {
+	&-group {  
+        position: relative;      
 		margin-bottom: $form-margin-bottom;
 	}
     &-control {
@@ -62,12 +67,29 @@ $form-label-margin-bottom: 4px !default;
         line-height: $form-line-height;
         $padding-y: ($form-height - ($form-font-size * $form-line-height)) / 2;
         padding: $padding-y $form-padding-x;
-        @include placeholder(#fff);
+        @include placeholder($placeholder-color);       
     }
     &-label {
     	display: block;
     	color: $form-label-color;
     	font-size: $form-label-font-size;
     	margin-bottom: $form-label-margin-bottom;
+    }
+    &-icon{
+        position: absolute;
+        top: 27%;
+        right: 7%;
+        &:hover{
+             transform: scale(1.2);
+        }
+    }
+    
+}
+
+textarea{
+    resize: none;
+    overflow: auto;
+    &.form-control{
+        height: auto;
     }
 }

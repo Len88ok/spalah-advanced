@@ -1,0 +1,57 @@
+.headquarter{
+	text-align: left;
+	border: 2px dashed #c1d3d2;
+	line-height: 1.375em;
+	padding: 38px 130px 56px 41px; 
+	&-heading{
+	font-size: 22px;
+	font-weight: 300;
+	text-transform: uppercase;
+	margin-bottom: 26px;
+	}
+	&-list{
+
+	}
+	&-item{
+		position: relative;
+		padding-left: 67px;
+		margin-bottom: 16px;
+		&-adress{
+			&::before{		
+				position: absolute;
+				top: 5px;
+				left: 0;			
+				content: "";
+				display: inline-block;
+				width: 14px;
+				height: 20px;
+				background: url(../images/icons/vector-adress.png) no-repeat 0 0;
+			}
+		}
+		&-phone{
+			&::before{
+				position: absolute;
+				top: 0;
+				left: 0;			
+				content: "";
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background: url(../images/icons/vector-phone-green.png) no-repeat 0 0;
+			}
+		}
+		&-email{
+			&::before{
+				position: absolute;
+				top: 0;
+				left: 0;			
+				content: "";
+				display: inline-block;
+				width: 18px;
+				height: 12px;
+				background: url(../images/icons/vector-mail.png) no-repeat 0 0;
+			}
+		}
+
+	}
+}

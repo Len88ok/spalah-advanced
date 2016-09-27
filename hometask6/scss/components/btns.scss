@@ -46,6 +46,13 @@ $btn-border-color-hover: $btn-bg-hover !default;
     border-radius: $btn-border-radius;
     padding: $btn-padding;
     text-transform: $btn-text-transform;
+    &-primary{
+        @include btn-size(14px,17px 42px);
+    }
+    &-same-bg{
+        @include btn-variants($btn-color, #49732f, #49732f, 
+        $btn-color, $btn-bg-hover, $btn-bg-hover);
+    }
 
     &:hover {
         color: $btn-color-hover;

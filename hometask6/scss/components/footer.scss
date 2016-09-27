@@ -1,31 +1,48 @@
+$footer-line-height: 1.75em !default;
+
+$footer-heading-font-size: 13px;
+$footer-heading-font-weight: 500;
+$footer-heading-color: #0f5f5c;
+
+$footer-wrap-border-color: #eef1ec;
+
+
+
+
 .footer{
+	
 	&-logo{
 		img{
 			display: block;
 		}
 	}
 	&-heading{
-		font-size: 13px;
-		font-weight: 500;
-		color: #0f5f5c;
+		font-size: $footer-heading-font-size;
+		font-weight: $footer-heading-font-weight;
+		color: $footer-heading-color;
+		margin-bottom: 3%;
 
 
 	}
 	&-list{
-
+	line-height: $footer-line-height;
 	}
 	&-item{
-	a{
-		color: inherit;
-	}
+		a{
+			color: inherit;
+		}
+		&-dark{
+			color: $footer-heading-color;
+			font-weight: $footer-heading-font-weight;
+		} 
 	}
 	&-wrap{
 
 	}
 	&-wrap-bordered{
-			border-bottom: 1px solid #eef1ec;
+			border-bottom: 1px solid $footer-wrap-border-color;
 		}	
 	&-copyright{
 		float:left;
-	}
+	}	
 }

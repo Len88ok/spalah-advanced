@@ -1,0 +1,21 @@
+.info-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.info-item {
+  position: relative;
+  line-height: 38px;
+}
+
+.info-item::before {
+  position: absolute;
+  top: 5px;
+  left: 0;
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: transparent url(../images/icons/check.png) no-repeat 0 0;
+}
