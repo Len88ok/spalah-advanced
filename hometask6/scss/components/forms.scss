@@ -70,6 +70,7 @@ $placeholder-color: #83a7a5 !default;
         @include placeholder($placeholder-color); 
         &-secondary{
            background-color: $form-bg-secondary;
+           padding-right: 20%;
         }      
     }
     &-label {
