@@ -110,6 +110,9 @@ $navbar-btn-border-bg: rgba(255, 255, 255, 0) !default;
 		}
 		&-grey{
 			color: $navbar-link-color-grey;
+			&:hover{
+				color:$btn-bg; 
+			}
 		}
 	}
 	&-btn{

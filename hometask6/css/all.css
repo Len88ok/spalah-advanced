@@ -153,6 +153,12 @@ h6,
   border-color: #83a7a5;
 }
 
+.btn-form {
+  font-size: 13px;
+  padding: 10px 45px;
+  border-radius: 2px;
+}
+
 .btn:hover {
   color: lighten #fff, 10%;
   background: #83a7a5;
@@ -190,6 +196,10 @@ h6,
 .form-control:-ms-input-placeholder {
   color: #83a7a5;
   opacity: 1;
+}
+
+.form-control-secondary {
+  background-color: #eef1ec;
 }
 
 .form-label {
@@ -347,6 +357,7 @@ textarea.form-control {
 }
 
 .block-email {
+  color: #0f5f5c;
   font-size: 18px;
   font-weight: 400;
 }
@@ -778,6 +789,10 @@ textarea.form-control {
   color: #83a7a5;
 }
 
+.navbar-link-grey:hover {
+  color: #6fb048;
+}
+
 .navbar-btn {
   font-size: 12px;
   padding: 7px 12px;
@@ -855,8 +870,8 @@ textarea.form-control {
 
 .testemonials-text {
   font-size: 22px;
-  padding: 96px 26px 0 0;
-  margin-bottom: 27px;
+  padding: 20% 3% 0 0;
+  margin-bottom: 4%;
 }
 
 .testemonials-caption {
@@ -980,6 +995,11 @@ textarea.form-control {
   border-radius: 30px;
   text-align: center;
   line-height: 35px;
+  margin-right: 5px;
+}
+
+.socials-icon:last-child {
+  margin-right: 0px;
 }
 
 .socials-icon:hover {
@@ -1026,6 +1046,10 @@ textarea.form-control {
 
 .p-75 {
   padding: 6% 0;
+}
+
+.p-4 {
+  padding: 4% 0;
 }
 
 .p-60 {
@@ -1120,22 +1144,27 @@ textarea.form-control {
 
 .headquarter {
   text-align: left;
-  border: 2px dashed #c1d3d2;
   line-height: 1.375em;
-  padding: 38px 130px 56px 41px;
+}
+
+.headquarter-bordered {
+  border: 2px dashed #c1d3d2;
+  width: 80%;
+  margin: 0 auto;
+  padding: 7% 0 7% 7%;
 }
 
 .headquarter-heading {
   font-size: 22px;
   font-weight: 300;
   text-transform: uppercase;
-  margin-bottom: 26px;
+  margin-bottom: 3%;
 }
 
 .headquarter-item {
   position: relative;
-  padding-left: 67px;
-  margin-bottom: 16px;
+  padding-left: 10%;
+  margin-bottom: 4%;
 }
 
 .headquarter-item-adress::before {
@@ -1158,6 +1187,10 @@ textarea.form-control {
   width: 16px;
   height: 16px;
   background: url(../images/icons/vector-phone-green.png) no-repeat 0 0;
+}
+
+.headquarter-item-email {
+  color: #0f5f5c;
 }
 
 .headquarter-item-email::before {

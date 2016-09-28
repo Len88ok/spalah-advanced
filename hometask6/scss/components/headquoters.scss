@@ -1,21 +1,40 @@
+$headquarter-border-size: 2px !default;
+$headquarter-border-color: #c1d3d2 !default;
+$headquarter-line-height: 1.375em !default;
+$headquarter-padding: 7% 0 7% 7% !default;
+
+$headquarter-heading-font-size: 22px!default;
+$headquarter-heading-font-weight: 300!default;
+$headquarter-heading-text-transform: uppercase !default;
+$headquarter-heading--margin-bottom: 3% !default; 
+
+$headquarter-item-padding-left: 10% !default;
+$headquarter-item-margin-bottom: 4% !default;
+
+$headquarter-bordered-width: 80% !default;
+
 .headquarter{
-	text-align: left;
-	border: 2px dashed #c1d3d2;
-	line-height: 1.375em;
-	padding: 38px 130px 56px 41px; 
-	&-heading{
-	font-size: 22px;
-	font-weight: 300;
-	text-transform: uppercase;
-	margin-bottom: 26px;
+	text-align: left;	
+	line-height: $headquarter-line-height;
+	&-bordered{
+		border: $headquarter-border-size dashed $headquarter-border-color;
+		width: $headquarter-bordered-width;
+		margin: 0 auto;
+		padding: $headquarter-padding; 
 	}
-	&-list{
+	&-heading{
+		font-size: $headquarter-heading-font-size;
+		font-weight: $headquarter-heading-font-weight;
+		text-transform: $headquarter-heading-text-transform;
+		margin-bottom: 3%;
+	}
+	&-list{		
 
 	}
 	&-item{
 		position: relative;
-		padding-left: 67px;
-		margin-bottom: 16px;
+		padding-left: $headquarter-item-padding-left;
+		margin-bottom: $headquarter-item-margin-bottom;
 		&-adress{
 			&::before{		
 				position: absolute;
@@ -41,6 +60,7 @@
 			}
 		}
 		&-email{
+			color: $block-heading-color;
 			&::before{
 				position: absolute;
 				top: 0;

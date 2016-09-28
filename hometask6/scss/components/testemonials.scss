@@ -1,15 +1,22 @@
+$testemonials-padding: 10% 0 !default;
+$testemonials-font-size: 22px !default;
+$testemonials-margin-bottom: 4% !default;
+$testemonials-text-padding: 20% 3% 0 0 !default;
+$testemonials-caption-line-height: 22px !default;
+$testemonials-title-color: #6fb048 !default;
+
 .testemonials{
-	padding: 10% 0;
+	padding: $testemonials-padding;
 	&-text{
-	font-size: 22px;
-	padding: 96px 26px 0 0;
-	margin-bottom: 27px;
+	font-size: $testemonials-font-size;
+	padding: $testemonials-text-padding;
+	margin-bottom: $testemonials-margin-bottom;
 	}
 	&-caption{
-	line-height: 22px;
+	line-height: $testemonials-caption-line-height;
 	}
 	&-title{
-	color: #6fb048;
+	color: $testemonials-title-color;
 	}
 	&-desc{
 	

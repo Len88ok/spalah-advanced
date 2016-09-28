@@ -2,6 +2,7 @@ $socials-width: 30px;
 $socials-height: 30px;
 $socials-border-radius: 30px;
 $socials-line-height: 35px;
+$socials-margin-right: 5px;
 
 
 .socials{
@@ -12,6 +13,10 @@ $socials-line-height: 35px;
 		border-radius: $socials-border-radius;
 		text-align: center;
 		line-height: $socials-line-height;
+		margin-right: $socials-margin-right; 
+		&:last-child{
+			margin-right: ($socials-margin-right)-($socials-margin-right); 
+		}
 		&:hover{
 			transform: scale(1.2);
 		}

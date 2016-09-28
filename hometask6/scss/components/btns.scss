@@ -53,6 +53,9 @@ $btn-border-color-hover: $btn-bg-hover !default;
         @include btn-variants($btn-color, #49732f, #49732f, 
         $btn-color, $btn-bg-hover, $btn-bg-hover);
     }
+    &-form{
+        @include btn-size(13px,10px 45px);
+    }
 
     &:hover {
         color: $btn-color-hover;
