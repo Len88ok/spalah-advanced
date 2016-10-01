@@ -1,0 +1,12 @@
+.wrapper {
+  overflow: hidden;
+  display: table;
+  max-width: 1500px;
+  height: 100vh;
+  table-layout: fixed;
+}
+
+.footer {
+  display: table-footer-group;
+  height: 1%;
+}
