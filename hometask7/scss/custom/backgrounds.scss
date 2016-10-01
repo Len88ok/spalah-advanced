@@ -1,0 +1,17 @@
+$bg-fb: #3b5998 !default;
+$bg-drib:#e33262 !default;
+$bg-pint:#c2161c !default;
+$bg-link:#3399cc !default;
+$bg-sky:#00aff0 !default;
+$bg-share:#21a71b !default;
+
+
+
+.bg{
+	&-fb{ background: $bg-fb;}
+	&-drib{background: $bg-drib;}
+	&-pint{ background: $bg-pint;}
+	&-link{ background: $bg-link;}
+	&-sky{ background: $bg-sky;}
+	&-share{ background: $bg-share;}
+}

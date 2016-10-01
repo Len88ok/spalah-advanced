@@ -1,0 +1,29 @@
+.carousel {    
+    margin-bottom: 60px;
+}
+
+.carousel-inner {
+  &-1{
+    height: 440px;
+  > .item {
+    > img,
+    > a > img{
+         width: 100%;
+         height: auto;
+      }    
+  }
+  }
+  
+}
+
+.carousel-caption {
+  &-1{
+    top: 25%;
+    margin: auto;
+    padding: 0;
+    margin: 0;
+  }  
+  
+}
+
+
