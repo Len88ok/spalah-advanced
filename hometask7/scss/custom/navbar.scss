@@ -1,11 +1,6 @@
-/*.navbar-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;
-  }*/
+$navbar-nav-font-size: 13px !default;
 
+//customized styles for navbar
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
@@ -13,29 +8,36 @@
 
 
 .navbar-brand {
-  height: 80px;
-  padding: 5px;
-
-}
-.navbar-inverse {
-  .navbar-nav {
-    > li > a { 
-      color: white;
-      &:hover,
-      &:focus {  
-        color: white;  
-      }
-    }
-    > .active > a {
-      &,
-      &:hover,
-      &:focus {
-        
-      }
-    } 
+ margin-top: -4%;
+ @media (min-width: $grid-float-breakpoint) {
+     margin-top: -8%;
   }
 }
 
+
+@media (min-width:$grid-float-breakpoint) {
+  .navbar-right {
+    float: none !important; 
+    >li>a{
+    	padding-left: 0;
+    }   
+  }
+}
+@media (min-width: $screen-md-min) {
+  .navbar-right {
+    float: right !important;
+    >li>a{
+    	padding-left: 20px;
+    }
+  }
+}
+
+
+.navbar-nav {
+  > li > a {    
+    font-size: $navbar-nav-font-size;
+  }
+}
 
 
 

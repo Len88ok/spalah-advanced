@@ -1,0 +1,22 @@
+
+
+.feature{
+	&-icon{
+		display: inline-block;
+		width: 40px;
+		height: 40px;
+		background: $primary-color;
+		border-radius: 50%;
+		text-align: center;
+		line-height: 2.2em;
+		color: #fff;
+		font-size: 20px;
+	}
+	&-inline{
+		>*{
+			display: inline-block;
+			vertical-align: middle;
+
+		}		
+	}	
+}

@@ -1,4 +1,4 @@
-$body-color: #000 !default;
+$body-color: $font-color !default;
 $body-bg: #fff !default;
 $font-size-base: 16px !default;
 $line-height-base: 1.4 !default;
@@ -27,13 +27,13 @@ $heading-margin-6: 1em !default;
 
 body {
     color: $body-color;
-    background-color: $body-bg;
-    font-size: $font-size-base;
-    line-height: $line-height-base;
-    font-family: $font-family-base;
+   // background-color: $body-bg;
+   // font-size: $font-size-base;
+   // line-height: $line-height-base;
+   // font-family: $font-family-base;
 }
 
-p {
+/*p {
     margin-top: 0;
     margin-bottom: $margin-bottom-p;
 }
@@ -99,3 +99,4 @@ h6,
     font-size: $heading-font-size-6;
     margin: $heading-margin-6;
 }
+*/

@@ -1,5 +1,6 @@
 .carousel {    
-    margin-bottom: 60px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
 }
 
 .carousel-inner {
@@ -11,19 +12,35 @@
          width: 100%;
          height: auto;
       }    
-  }
-  }
-  
+    }
+  }  
 }
 
 .carousel-caption {
   &-1{
-    top: 25%;
-    margin: auto;
+    font-size: 50px;
+    line-height: 1.2em;
+    top: 20%;
+    left: 5%;
+    right: 66%;
     padding: 0;
-    margin: 0;
-  }  
-  
+    text-align: left;
+  }    
+}
+
+.carousel-indicators {
+ bottom: -30px;
+ li{
+    background-color: #626262;
+    border-color: #626262;
+    width:  12px;
+    height: 12px;
+    margin: 5px;
+  }
+  .active {
+    border-color: #fff;
+    margin: 5px;
+  }
 }
 
 

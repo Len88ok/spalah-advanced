@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bislite</title>
     <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="icomoon/style.css">
 </head>
 
 <body>
 <div class="wrapper">
 	
 	<!--Navbar header-->
-	<div class="block">
+	<div class="block block-collapse">
   	<div class="block-header">
-  		<div class="block-inner">
-  			<div class="container">
-  				<nav class="navbar navbar-default" role="navigation">		
+  		<div class="block-inner">  			
+  				<nav class="navbar navbar-default" role="navigation">
+  				<div class="container">		
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -32,10 +32,10 @@
 						<!-- Collect the nav links, forms, and other content for toggling -->
 						<div class="collapse navbar-collapse navbar-ex1-collapse">				
 							<ul class="nav navbar-nav navbar-right">
-								<li class="active"><a href="#">Home</a></li>
-								<li><a href="#">About Us</a></li>
+								<li><a class="text-uppercase" href="#">Home</a></li>
+								<li><a class="text-uppercase" href="#">About Us</a></li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services<b class="caret"></b></a>
+									<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">Services<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li><a href="#">Web Design</a></li>
 										<li><a href="#">Wordpress Design</a></li>
@@ -45,7 +45,7 @@
 									</ul>
 								</li>
 								<li class="dropdown">
-									<a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
+									<a href="#" class="dropdown-toggle text-uppercase" data-toggle="dropdown">Portfolio<b class="caret"></b></a>
 									<ul class="dropdown-menu">
 										<li><a href="portfolio.html">Web Design</a></li>
 										<li><a href="portfolio.html">Wordpress Design</a></li>
@@ -54,22 +54,22 @@
 										<li><a href="portfolio.html">Social Media Management</a></li>
 									</ul>
 								</li>
-								<li><a href="#">Blog</a></li>
-								<li><a href="contact.html">Contact Us</a></li>
+								<li><a class="text-uppercase" href="#">Blog</a></li>
+								<li><a class="text-uppercase" href="contact.html">Contact Us</a></li>
 							</ul>
 						</div><!-- /.navbar-collapse -->
-					</nav>
-  			</div>
+					</div>
+				</nav>  			
   		</div>
   	</div>
   </div>
 
 	<!--Carousel bootstrap-->
-  <div class="block">
+  <div class="block bg-light">
   	<div class="block-content">
   		<div class="block-inner">
   			<div class="container">
-  				<div id="carousel-id" class="carousel slide" data-ride="carousel">
+  				<div id="carousel-id" class="carousel slide bg-light" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carousel-id" data-slide-to="0" class=""></li>
 							<li data-target="#carousel-id" data-slide-to="1" class=""></li>
@@ -90,7 +90,7 @@
 								<img alt="Second slide" src="images/slider-img.png">
 								<div class="container">
 									<div class="carousel-caption carousel-caption-1">
-										<h1>We design clean, crisp &#38; memorable icons</h1>						
+										We design clean, crisp &#38; memorable icons					
 									</div>
 								</div>
 							</div>
@@ -98,7 +98,7 @@
 								<img alt="Third slide" src="images/slider-img.png">
 								<div class="container">
 									<div class="carousel-caption carousel-caption-1">
-										<h1>We design clean, crisp &#38; memorable icons</h1>						
+										We design clean, crisp &#38; memorable icons				
 									</div>
 								</div>
 							</div>
@@ -106,7 +106,7 @@
 								<img alt="Fourth slide" src="images/slider-img.png">
 								<div class="container">
 									<div class="carousel-caption carousel-caption-1">
-										<h1>We design clean, crisp &#38; memorable icons</h1>						
+										We design clean, crisp &#38; memorable icons				
 									</div>
 								</div>
 							</div>
@@ -114,7 +114,7 @@
 								<img alt="Fifth slide" src="images/slider-img.png">
 								<div class="container">
 									<div class="carousel-caption carousel-caption-1">
-										<h1>We design clean, crisp &#38; memorable icons</h1>						
+										We design clean, crisp &#38; memorable icons					
 									</div>
 								</div>
 							</div>
@@ -131,26 +131,34 @@
   		<div class="block-inner">
   			<div class="container">
   				<div class="row">
-				    <div class="col-md-3">
-				    <img class="img-circle" src="" width="40" height="40">
+				    <div class="col-md-3">				    
+				    	<div  class="feature-icon">
+				    		<span class="icon-feature1"></span>
+				    	</div>
 				      <h2>Clean Theme</h2>
 				      <p>Ut nec lorem id orci convallis porta. Donec pharetra neque eu velit dictum molestie. Duis porta gravida augue sed viverra. Quisque at nulla leo, non aliquet mi.</p>
 				      <p><a class="" href="#">> Read More</a></p>
 				    </div>
 				    <div class="col-md-3">
-				    	<img class="img-circle" src="" width="40" height="40">
+				    	<div  class="feature-icon">
+				    		<span class="icon-feature2"></span>
+				    	</div>
 				      <h2>Responsive Design</h2>
 				      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi euismod placerat dui et tincidunt. Sed sollicitudin posuere auctor. Phasellus at ultricies nisl. Integer at leo eros. </p>
 				      <p><a class="" href="#">> Read More</a></p>
 				   </div>
 				    <div class="col-md-3">
-				    	<img class="img-circle" src="" width="40" height="40">
+				    	<div  class="feature-icon">
+				    		<span class="icon-feature3"></span>
+				    	</div>
 				      <h2>Fully layerd PSD </h2>
 				      <p>Phasellus lobortis metus non augue sodales volutpat. Vestibulum sit amet nibh eros, hendrerit venenatis est. In vitae nulla nec purus cursus pretium sed id magna. </p>
 				      <p><a class="" href="#">> Read More</a></p>
 				    </div>
 				    <div class="col-md-3">
-				    	<img class="img-circle" src="" width="40" height="40">
+				    	<div  class="feature-icon">
+				    		<span class="icon-feature4"></span>
+				    	</div>
 				      <h2>Ready for coding</h2>
 				      <p>Vivamus convallis feugiat mauris sed posuere. Nam rutrum, quam quis euismod commodo, elit est porta quam, non placerat eros neque porta ante. Fusce quis odio urna.</p>
 				      <p><a class="" href="#">> Read More</a></p>
