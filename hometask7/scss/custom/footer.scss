@@ -1,16 +1,24 @@
+$footer-margin-bottom: 40px !default;
+
+$footer-heading-font-size: 15px !default;
+$footer-heading-font-weight: 700 !default;
+$footer-heading-line-height: 1.25em !default;
+$footer-heading-text-transform: uppercase !default;
+$footer-heading-margin-bottom: 20px !default; 
+
 .footer{
 	&-top{
-		margin-bottom: 40px;
+		margin-bottom: $footer-margin-bottom;
 		&-padding{
 			padding-left: 40px;
 		}
 	}	
 	&-heading{
-	font-size: 15px;
-	font-weight: 700;
-	line-height: 1.25em;
-	text-transform: uppercase;
-	margin-bottom: 20px;
+	font-size: $footer-heading-font-size;
+	font-weight: $footer-heading-font-weight;
+	line-height: $footer-heading-line-height;
+	text-transform: $footer-heading-text-transform;
+	margin-bottom: $footer-heading-margin-bottom;
 	}
 	&-text{
 	padding: 10px 10px 0 0; 

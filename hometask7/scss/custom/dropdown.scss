@@ -1,6 +1,6 @@
-$dropdown-border-height: 5px;
-$dropdown-border-color: $primary-color;
-$dropdown-list-border-color: #e7e7e7;
+$dropdown-border-height: 5px !default;
+$dropdown-border-color: $primary-color !default;
+$dropdown-list-border-color: #e7e7e7 !default;
 $dropdown-link-color: #000;
 $dropdown-link-hover-color: $primary-color;
 

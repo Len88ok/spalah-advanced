@@ -1,12 +1,12 @@
-$map-padding: 10px;
+$map-padding: 10px !default;
 
-$map-thumbnail-background: $primary-color-lighter;
-$map-thumbnail-border-color: #81e4ed;
-$map-thumbnail-padding: 20px;
+$map-thumbnail-background: $primary-color-lighter !default;
+$map-thumbnail-border-color: #81e4ed !default;
+$map-thumbnail-padding: 20px !default;
 
-$map-caption-padding: 9px;
-$map-caption-color: #000;
-$map-caption-font-weight: 700;
+$map-caption-padding: 9px !default;
+$map-caption-color: #000 !default;
+$map-caption-font-weight: 700 !default;
 
 
 .map{
