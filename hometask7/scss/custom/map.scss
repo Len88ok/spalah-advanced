@@ -1,0 +1,19 @@
+
+.map{
+	padding: 10px;
+	.thumbnail{
+	background: $primary-color-lighter;
+	border-color: #81e4ed;
+	padding: 20px;
+	}
+	&-caption {
+    padding: 9px;
+    color: #000;
+	}
+	&-image{
+		img{
+			width: 100%;
+		}
+
+	}
+}

@@ -49,8 +49,23 @@
 	}	
 
 	&-heading{
+		font-size: $portfolio-heading-font-size;
+		font-weight: $portfolio-font-weight;
+		text-transform: $portfolio-text-transform;	
+		margin-bottom: $portfolio-margin-bottom;	
+		padding-bottom: ($portfolio-margin-bottom)-3;
+		border-bottom: 1px solid $portfolio-border-color;
+		&-unbordered{
+			border-bottom: none; 
+			padding-bottom: 0;
 
 		}
+		span{
+			color: $portfolio-icon-color;
+			font-size: $portfolio-icon-font-size;			
+			padding-right: $portfolio-icon-padding-right;
+		}
+	}
 
 
 	&-desc{
