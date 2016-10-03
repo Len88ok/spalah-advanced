@@ -1,11 +1,33 @@
+$carousel-padding-bottom: 10px !default;
+$carousel-inner-height: 440px !default;
+
+$carousel-caption-font-size: 50px !default;
+$carousel-caption-line-height: 1.2 !default;
+$carousel-caption-padding: 0 !default;
+
+$carousel-indicators-bg-color: #626262 !default;
+$carousel-indicators-active-color: #fff !default;
+$carousel-indicators-width: 12px !default;
+$carousel-indicators-height: $carousel-indicators-width !default;
+$carousel-indicators-margin: 5px !default;
+
+$carousel-control-width: 20px;
+$carousel-control-height: $carousel-control-width;
+$carousel-control-background: #81e4ed !default;
+$carousel-control-border-radius: 50% !default;
+$carousel-control-opacity: 1;
+$carousel-control-line-height: 16px !default;    
+$carousel-control-color: #000 !default;
+
+
 .carousel {    
     margin-bottom: 0;
-    padding-bottom: 10px;
+    padding-bottom: $carousel-padding-bottom;
 }
 
 .carousel-inner {
   &-1{
-    height: 440px;
+    height: $carousel-inner-height;
   > .item {
     > img,
     > a > img{
@@ -18,12 +40,12 @@
 
 .carousel-caption {
   &-1{
-    font-size: 50px;
-    line-height: 1.2em;
+    font-size: $carousel-caption-font-size;
+    line-height: $carousel-caption-line-height;
     top: 20%;
     left: 5%;
     right: 66%;
-    padding: 0;
+    padding: $carousel-caption-padding;
     text-align: left;
   }    
 }
@@ -31,16 +53,45 @@
 .carousel-indicators {
  bottom: -30px;
  li{
-    background-color: #626262;
-    border-color: #626262;
-    width:  12px;
-    height: 12px;
-    margin: 5px;
+    background-color: $carousel-indicators-bg-color;
+    border-color: $carousel-indicators-bg-color;
+    width:  $carousel-indicators-width;
+    height: $carousel-indicators-height;
+    margin: $carousel-indicators-margin;
   }
   .active {
-    border-color: #fff;
-    margin: 5px;
+    border-color: $carousel-indicators-active-color;
+    margin: $carousel-indicators-margin;
   }
 }
 
+
+#myCarousel.carousel {    
+  background: $body-bg;
+}
+
+#myCarousel{
+  .carousel-control{
+    top: -28%;
+    background: $carousel-control-background;
+    width: $carousel-control-width;
+    height: $carousel-control-height;
+    border-radius: $carousel-control-border-radius;
+    opacity: $carousel-control-opacity;    
+    line-height: $carousel-control-line-height;    
+    color: $carousel-control-color;
+  }
+  .carousel-control.left{
+    left: 95%;
+  }
+
+  .thumbnail{
+    border: none;
+    padding: 0;
+    >img{
+      width: 100%;
+    } 
+  }  
+
+}
 

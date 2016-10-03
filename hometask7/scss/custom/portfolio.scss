@@ -1,0 +1,31 @@
+$portfolio-padding: 2% 0 0;
+
+$portfolio-heading-font-size: 15px !default;
+$portfolio-font-weight: 700 !default;
+$portfolio-text-transform: uppercase !default;	
+$portfolio-margin-bottom: 20px !default;	
+$portfolio-border-color: #dfe1e5 !default;
+
+$portfolio-icon-color: $primary-color !default;
+$portfolio-icon-font-size: 20px !default;
+$portfolio-icon-padding-right: 20px !default;
+
+
+.portfolio{
+	border-bottom: 1px solid $portfolio-border-color;
+	padding: $portfolio-padding;
+	&-heading{
+		font-size: $portfolio-heading-font-size;
+		font-weight: $portfolio-font-weight;
+		text-transform: $portfolio-text-transform;	
+		margin-bottom: $portfolio-margin-bottom;	
+		padding-bottom: ($portfolio-margin-bottom)-3;
+		border-bottom: 1px solid $portfolio-border-color;
+		span.icon-head1{
+			color: $portfolio-icon-color;
+			font-size: $portfolio-icon-font-size;			
+			padding-right: $portfolio-icon-padding-right;
+		}
+	}
+}
+

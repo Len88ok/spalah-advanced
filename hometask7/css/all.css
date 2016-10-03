@@ -6500,7 +6500,6 @@ h6,
 .wrapper {
   overflow: hidden;
   display: table;
-  max-width: 1500px;
   height: 100vh;
   table-layout: fixed;
 }
@@ -6581,13 +6580,7 @@ h6,
 }
 
 .navbar-brand {
-  margin-top: -4%;
-}
-
-@media (min-width: 768px) {
-  .navbar-brand {
-    margin-top: -8%;
-  }
+  padding: 30% 0;
 }
 
 @media (min-width: 768px) {
@@ -6629,7 +6622,7 @@ h6,
 
 .carousel-caption-1 {
   font-size: 50px;
-  line-height: 1.2em;
+  line-height: 1.2;
   top: 20%;
   left: 5%;
   right: 66%;
@@ -6654,6 +6647,38 @@ h6,
   margin: 5px;
 }
 
+#myCarousel.carousel {
+  background: #fff;
+}
+
+#myCarousel .carousel-control {
+  top: -28%;
+  background: #81e4ed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 1;
+  line-height: 16px;
+  color: #fff;
+}
+
+#myCarousel .carousel-control.left {
+  left: 95%;
+}
+
+#myCarousel .thumbnail {
+  border: none;
+  padding: 0;
+}
+
+#myCarousel .thumbnail > img {
+  width: 100%;
+}
+
+.feature {
+  padding: 4% 0;
+}
+
 .feature-icon {
   display: inline-block;
   width: 40px;
@@ -6666,9 +6691,100 @@ h6,
   font-size: 20px;
 }
 
+.feature-heading {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding-left: 20px;
+}
+
+.feature-content {
+  font-size: 13px;
+}
+
+.feature-text {
+  margin-bottom: 6%;
+}
+
+.feature-inline {
+  margin-bottom: 6%;
+}
+
 .feature-inline > * {
   display: inline-block;
   vertical-align: middle;
+}
+
+.feature-link span {
+  color: #000;
+}
+
+.portfolio {
+  border-bottom: 1px solid #dfe1e5;
+  padding: 2% 0 0;
+}
+
+.portfolio-heading {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #dfe1e5;
+}
+
+.portfolio-heading span.icon-head1 {
+  color: #2aacc8;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.testimonials-heading {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.testimonials-heading span.icon-head2,
+.testimonials-heading span.icon-head3 {
+  color: #2aacc8;
+  font-size: 20px;
+  padding-right: 20px;
+}
+
+.testimonials-text {
+  line-height: 1.5em;
+}
+
+.testimonials-text p {
+  margin-bottom: 40px;
+}
+
+.testimonials-left {
+  margin-right: 30px;
+}
+
+.testimonials-right {
+  margin-left: 30px;
+}
+
+.testimonials-right .thumbnail {
+  position: relative;
+  height: 101px;
+  margin: 0;
+  border: 0.063em solid #e8ebf1;
+  box-shadow: inset 0 0 1.563em #e8ebf1;
+  border-radius: 0;
+}
+
+.testimonials-right .thumbnail > img {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .socials-icon {

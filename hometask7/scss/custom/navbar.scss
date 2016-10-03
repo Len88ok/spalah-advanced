@@ -1,4 +1,6 @@
 $navbar-nav-font-size: 13px !default;
+$navbar-brand-padding: 30% 0;
+
 
 //customized styles for navbar
 .navbar {
@@ -8,10 +10,7 @@ $navbar-nav-font-size: 13px !default;
 
 
 .navbar-brand {
- margin-top: -4%;
- @media (min-width: $grid-float-breakpoint) {
-     margin-top: -8%;
-  }
+  padding: $navbar-brand-padding;
 }
 
 
