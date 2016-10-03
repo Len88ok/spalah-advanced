@@ -155,7 +155,7 @@ $btn-default-border:             #ccc !default;
 
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
-$btn-primary-border:             darken($btn-primary-bg, 5%) !default;
+$btn-primary-border:             $btn-primary-bg !default;
 
 $btn-success-color:              #fff !default;
 $btn-success-bg:                 $brand-success !default;
@@ -177,8 +177,8 @@ $btn-link-disabled-color:        $gray-light !default;
 
 // Allows for customizing button radius independently from global border radius
 $btn-border-radius-base:         $border-radius-base !default;
-$btn-border-radius-large:        $border-radius-large !default;
-$btn-border-radius-small:        $border-radius-small !default;
+$btn-border-radius-large:        $border-radius-base*2 !default;
+$btn-border-radius-small:        $border-radius-base/2 !default;
 
 
 //== Forms
@@ -427,7 +427,7 @@ $navbar-inverse-toggle-border-color:        #333 !default;
 $nav-link-padding:                          10px 15px !default;
 $nav-link-hover-bg:                         $gray-lighter !default;
 
-$nav-disabled-link-color:                   $gray-light !default;
+$nav-disabled-link-color:                   #000 !default;
 $nav-disabled-link-hover-color:             $gray-light !default;
 
 //== Tabs
@@ -444,8 +444,8 @@ $nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 //== Pills
 $nav-pills-border-radius:                   $border-radius-base !default;
-$nav-pills-active-link-hover-bg:            $component-active-bg !default;
-$nav-pills-active-link-hover-color:         $component-active-color !default;
+$nav-pills-active-link-hover-bg:            #81e4ed !default;
+$nav-pills-active-link-hover-color:         #000 !default;
 
 
 //== Pagination
@@ -460,9 +460,9 @@ $pagination-hover-color:               $link-hover-color !default;
 $pagination-hover-bg:                  $gray-lighter !default;
 $pagination-hover-border:              #ddd !default;
 
-$pagination-active-color:              #fff !default;
-$pagination-active-bg:                 $brand-primary !default;
-$pagination-active-border:             $brand-primary !default;
+$pagination-active-color:              #000 !default;
+$pagination-active-bg:                 #81e4ed !default;
+$pagination-active-border:             #81e4ed !default;
 
 $pagination-disabled-color:            $gray-light !default;
 $pagination-disabled-bg:               #fff !default;

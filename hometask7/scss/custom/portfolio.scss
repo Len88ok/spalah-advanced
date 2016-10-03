@@ -21,11 +21,45 @@ $portfolio-icon-padding-right: 20px !default;
 		margin-bottom: $portfolio-margin-bottom;	
 		padding-bottom: ($portfolio-margin-bottom)-3;
 		border-bottom: 1px solid $portfolio-border-color;
-		span.icon-head1{
+		span{
 			color: $portfolio-icon-color;
 			font-size: $portfolio-icon-font-size;			
 			padding-right: $portfolio-icon-padding-right;
 		}
 	}
+	.thumbnail{
+    border: none;
+    padding: 0;
+    >img{
+      width: 100%;
+    } 
+  }
+  &-menu{
+  	padding-bottom: $portfolio-margin-bottom;
+  	margin-bottom: $portfolio-margin-bottom;
+  	border-bottom: 1px solid $portfolio-border-color;
+  	li> a{
+  		color: #000;	
+  		&:hover{
+  		background-color: $nav-pills-active-link-hover-bg;
+  		}
+  	}
+	}
+	&-pagination{
+		text-align: center;
+		li> a{
+  		color: #000; 
+  		border: none; 		
+  	&:hover{
+  		background-color: $pagination-active-bg;
+  		}
+  	}
+  	a.page-toggle{  		
+  		background-color: $secondary-color;
+  		margin-right: 20px;  		
+  	}
+  }
+ 
+
 }
 

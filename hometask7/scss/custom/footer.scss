@@ -1,0 +1,36 @@
+.footer{
+	&-top{
+		margin-bottom: 40px;
+		&-padding{
+			padding-left: 40px;
+		}
+	}	
+	&-heading{
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.25em;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	}
+	&-text{
+	padding: 10px 10px 0 0; 
+	}
+	&-list{
+
+	}
+	&-item{
+		a{
+			color: inherit;
+		}
+	}
+	
+	&-bottom{
+
+	}
+	&-copyright{
+		padding-right: 30%;
+	}	
+	&-logo{
+
+	}
+}

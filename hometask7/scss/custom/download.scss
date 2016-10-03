@@ -1,0 +1,16 @@
+$download-border-color: #81e4ed;
+$download-padding: 35px;
+$download-text-padding: 0 100px 0 20px;
+$download-text-line-height: 1.625em;
+
+
+
+
+.download{
+	border: 1px solid $download-border-color;
+	padding: $download-padding;
+	&-text{
+		padding: $download-text-padding;
+		line-height: $download-text-line-height;
+	}
+}
