@@ -36,6 +36,14 @@ $navbar-brand-padding: 30% 0;
   > li > a {    
     font-size: $navbar-nav-font-size;
   }
+  .dropdown.open{
+    border-top: 5px solid $primary-color;
+    a,
+    a:hover,
+    a:focus{
+      background-color: #fff;
+    }
+  }
 }
 
 

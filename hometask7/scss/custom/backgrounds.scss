@@ -1,12 +1,4 @@
 
-//Socials bgs
-$bg-fb: $color-fb !default;
-$bg-drib: $color-drib !default;
-$bg-pint: $color-pint !default;
-$bg-link: $color-link !default;
-$bg-sky: $color-sky !default;
-$bg-share: $color-share !default;
-
 //Blocks bgs
 $bg-primary: $primary-color;
 $bg-primary-light: $primary-color-light !default;
@@ -15,13 +7,6 @@ $bg-secondary: $secondary-color !default;
 
 
 .bg{
-	//socials bgs
-	&-fb{ background: $bg-fb;}
-	&-drib{background: $bg-drib;}
-	&-pint{ background: $bg-pint;}
-	&-link{ background: $bg-link;}
-	&-sky{ background: $bg-sky;}
-	&-share{ background: $bg-share;}
 	//blocks bgs
 	&-primary{background: $bg-primary;}
 	&-light{background: $bg-primary-light;}

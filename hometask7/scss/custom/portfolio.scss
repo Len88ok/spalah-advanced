@@ -10,6 +10,12 @@ $portfolio-icon-color: $primary-color !default;
 $portfolio-icon-font-size: 20px !default;
 $portfolio-icon-padding-right: 20px !default;
 
+$portfolio-caption-color: #fff;
+$portfolio-caption-font-size: 24px; 
+$portfolio-caption-padding: 10px;
+$portfolio-caption-line-height: 3.3em;
+
+
 
 .portfolio{
 	border-bottom: 1px solid $portfolio-border-color;
@@ -27,12 +33,36 @@ $portfolio-icon-padding-right: 20px !default;
 			padding-right: $portfolio-icon-padding-right;
 		}
 	}
+  &-image{
+    position: relative;
+    &:hover{
+      .portfolio-caption{
+        bottom: 0;
+      }     
+    }
+  }
+  &-caption{
+      position: absolute;
+      height: 81px;
+      bottom: -100%;
+      left: 0;
+      width: 100%;
+      background: $primary-color;          
+      text-align: center;
+      span{
+        color: $portfolio-caption-color;
+        font-size: $portfolio-caption-font-size;
+        padding: $portfolio-caption-padding;
+        line-height: $portfolio-caption-line-height;
+      }
+  
+  }
 	.thumbnail{
     border: none;
     padding: 0;
     >img{
-      width: 100%;
-    } 
+      width: 100%;      
+    }       
   }
   &-menu{
   	padding-bottom: $portfolio-margin-bottom;

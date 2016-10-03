@@ -1,0 +1,27 @@
+$dropdown-border-height: 5px;
+$dropdown-border-color: $primary-color;
+$dropdown-list-border-color: #e7e7e7;
+$dropdown-link-color: #000;
+$dropdown-link-hover-color: $primary-color;
+
+
+
+
+.dropdown{
+	&-menu{
+		border: none;
+		border-bottom: $dropdown-border-height solid $dropdown-border-color;
+		>li{
+			border-bottom: 1px solid $dropdown-list-border-color;
+			&:last-child{
+				border-bottom: none;
+			}
+		}
+		>li>a{
+			color: $dropdown-link-color;
+			&:hover{
+				color: $dropdown-link-hover-color;
+			}
+		}		
+	}
+}
