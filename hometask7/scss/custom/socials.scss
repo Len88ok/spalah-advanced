@@ -1,5 +1,8 @@
 
 .socials{	
+	[class*="col-"]{
+		margin-bottom: 5px;
+	  } 
 	&-icon{
 		display: inline-block;	
 		margin: 0 10px 5px 0;	

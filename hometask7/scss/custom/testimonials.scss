@@ -27,30 +27,44 @@ $testimonials-icon-padding-right: 20px !default;
 			margin-bottom: 40px;
 		}
 	}
-	&-left{
-	margin-right: 30px;
+	@media screen and (min-width: $screen-xxs-min){  
+		&-left{
+			margin-right: 0;
+		}	
+	}
+	@media screen and (min-width: $screen-md-min){  
+		&-left{
+			margin-right: 30px;
+		}
 	}
 	&-right{
 	margin-left: 30px;
-	.thumbnail{
-		position: relative;
-		height: 101px;
-		margin: 0;
-		border: 0.063em solid #e8ebf1;
-		box-shadow: inset 0 0 1.563em #e8ebf1;
-		border-radius: 0;
-		
-		
-		>img{
-			position: absolute;
-	    margin: auto;
-	    left: 0;
-	    top: 0;
-	    bottom: 0;
-	    right: 0;
+		.thumbnail{
+			position: relative;
+			height: 101px;
+			margin: 0;
+			border: 0.063em solid #e8ebf1;
+			box-shadow: inset 0 0 1.563em #e8ebf1;
+			border-radius: 0;				
+			>img{
+				position: absolute;
+		    margin: auto;
+		    left: 0;
+		    top: 0;
+		    bottom: 0;
+		    right: 0;
+			}
 		}
 	}
-
+	@media screen and (min-width: $screen-xxs-min){  
+		&-right{
+			margin-left: 0;
+		}	
+	}
+	@media screen and (min-width: $screen-md-min){  
+		&-right{
+			margin-left: 30px;
+		}
 	}
 
 

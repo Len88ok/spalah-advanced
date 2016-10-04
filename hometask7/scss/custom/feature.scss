@@ -10,7 +10,7 @@ $feature-icon-font-size: 20px !default;
 $feature-heading-font-size: 15px !default;		
 $feature-heading-text-transform: uppercase !default;
 $feature-heading-font-weight: 700 !default;
-$feature-heading-padding-left: 20px !default;
+$feature-heading-padding-left: 15px !default;
 
 $feature-content-font-size: 13px !default;
 
@@ -37,6 +37,29 @@ $feature-link-color: #000 !default;
 	font-weight: $feature-heading-font-weight;
 	padding-left: $feature-heading-padding-left;
 	}
+  @media screen and (min-width: $screen-md-min){
+  	.feature{  
+			&-icon, 
+			&-inline {
+				display: block;
+			}
+		}		
+		&-heading{
+		padding: 0;
+		}
+	}
+	@media screen and (min-width: $screen-lg-min){
+  	.feature{  
+			&-icon, 
+			&-inline {
+				display: inline-block;
+			}
+		}		
+		&-heading{
+		padding-left: $feature-heading-padding-left;
+		}
+	}
+
 	&-content{
 	font-size: $feature-content-font-size;
 	}
@@ -57,4 +80,5 @@ $feature-link-color: #000 !default;
 		}
 	}
 }
+
 

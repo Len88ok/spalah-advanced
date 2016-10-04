@@ -6,13 +6,29 @@ $footer-heading-line-height: 1.25em !default;
 $footer-heading-text-transform: uppercase !default;
 $footer-heading-margin-bottom: 20px !default; 
 
-.footer{
+
+
+
+.footer{	
 	&-top{
+		[class*="col-"]{
 		margin-bottom: $footer-margin-bottom;
-		&-padding{
-			padding-left: 40px;
-		}
-	}	
+	  } 
+	}		
+	@media screen and (min-width: $screen-md-min){
+		&-top{
+			&-padding{
+				padding-left: 8px;
+			}
+		}	
+	}
+	@media screen and (min-width: $screen-lg-min){
+		&-top{
+			&-padding{
+				padding-left: 25px;
+			}
+		}	
+	}
 	&-heading{
 	font-size: $footer-heading-font-size;
 	font-weight: $footer-heading-font-weight;

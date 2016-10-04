@@ -1,38 +1,22 @@
 $navbar-nav-font-size: 13px !default;
-$navbar-brand-padding: 30% 0 !default;
+$navbar-padding: 2em 0 !default;
 
 
 //customized styles for navbar
 .navbar {
   margin-bottom: 0;
   border-radius: 0;
+  text-align: justify;
+  padding: $navbar-padding;
 }
 
-
-.navbar-brand {
-  padding: $navbar-brand-padding;
+.navbar-brand {  
+  vertical-align: middle;
+  width: 50%;
 }
-
-
-@media (min-width:$grid-float-breakpoint) {
-  .navbar-right {
-    float: none !important; 
-    >li>a{
-    	padding-left: 0;
-    }   
-  }
-}
-@media (min-width: $screen-md-min) {
-  .navbar-right {
-    float: right !important;
-    >li>a{
-    	padding-left: 20px;
-    }
-  }
-}
-
 
 .navbar-nav {
+    vertical-align: middle;
   > li > a {    
     font-size: $navbar-nav-font-size;
   }

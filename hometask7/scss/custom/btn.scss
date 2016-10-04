@@ -17,3 +17,38 @@ $btn-icon-color: #fff !default;
 	}
 }
 
+@media screen and (min-width: $screen-xxs-min){
+	.download{	
+		.btn{
+	@include button-size(10px, 10px, 12px, 1em, 4px);	
+		}
+	}
+}
+@media screen and (min-width: $screen-xs-min){
+	.download{	
+		.btn{
+	@include button-size(10px, 10px, 15px, 1em, 4px);
+		}
+	}
+}
+@media screen and (min-width: $screen-sm-min){
+	.download{	
+		.btn{
+	@include button-size(10px, 10px, 15px, 1.2em, 6px);	
+		}
+	}
+}
+@media screen and (min-width: $screen-md-min){
+	.download{	
+		.btn{
+	@include button-size(10px, 9px, 15px, 1.2em, 8px);	
+		}
+	}
+}
+@media screen and (min-width: $screen-lg-min){
+	.download{	
+		.btn{
+	@include button-size(15px, 15px, 18px, 1.25em, 8px);	
+		}
+	}
+}

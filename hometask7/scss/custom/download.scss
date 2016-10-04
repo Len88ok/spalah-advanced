@@ -10,7 +10,21 @@ $download-text-line-height: 1.625em !default;
 	border: 1px solid $download-border-color;
 	padding: $download-padding;
 	&-text{
-		padding: $download-text-padding;
 		line-height: $download-text-line-height;
+	}
+}
+
+@media screen and (min-width: $screen-xxs-min){
+	.download{	
+		&-text{
+    padding: 5px;
+		}
+	}
+}
+@media screen and (min-width: $screen-lg-min){
+	.download{	
+		&-text{
+    padding: $download-text-padding;
+		}
 	}
 }

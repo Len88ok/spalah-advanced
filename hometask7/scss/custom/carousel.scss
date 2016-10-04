@@ -1,9 +1,9 @@
 $carousel-padding-bottom: 10px !default;
 $carousel-inner-height: 440px !default;
 
-$carousel-caption-font-size: 50px !default;
+$carousel-caption-font-size: 3.4em !default;
 $carousel-caption-line-height: 1.2 !default;
-$carousel-caption-padding: 0 !default;
+$carousel-caption-padding: 2em 8em 2em 0 !default;
 
 $carousel-indicators-bg-color: #626262 !default;
 $carousel-indicators-active-color: #fff !default;
@@ -27,7 +27,6 @@ $carousel-control-color: #000 !default;
 
 .carousel-inner {
   &-1{
-    height: $carousel-inner-height;
   > .item {
     > img,
     > a > img{
@@ -40,15 +39,45 @@ $carousel-control-color: #000 !default;
 
 .carousel-caption {
   &-1{
-    font-size: $carousel-caption-font-size;
     line-height: $carousel-caption-line-height;
-    top: 20%;
-    left: 5%;
-    right: 66%;
-    padding: $carousel-caption-padding;
+
     text-align: left;
+
   }    
 }
+@media screen and (min-width: $screen-xxs-min){
+   .carousel-caption {
+    font-size: $carousel-caption-font-size/3;
+    left: 5%;
+    top: 0;
+    bottom: 0;
+    padding: 0 6em 2em 0;
+  }
+}
+@media screen and (min-width: $screen-xs-min){
+   .carousel-caption {
+    font-size: $carousel-caption-font-size/2.2;
+    padding: 1em 7em 2em 0;
+  }
+}
+@media screen and (min-width: $screen-sm-min){   
+   .carousel-caption {
+    font-size: $carousel-caption-font-size/1.4;        
+  }
+}
+@media screen and (min-width: $screen-md-min){
+   .carousel-caption {
+    font-size: $carousel-caption-font-size/1.1;
+  }
+}
+@media screen and (min-width: $screen-lg-min){   
+  .carousel-caption {
+    padding: $carousel-caption-padding;
+    font-size: $carousel-caption-font-size;
+  }
+}
+
+    
 
 .carousel-indicators {
  bottom: -30px;
@@ -72,7 +101,6 @@ $carousel-control-color: #000 !default;
 
 #myCarousel{
   .carousel-control{
-    top: -28%;
     background: $carousel-control-background;
     width: $carousel-control-width;
     height: $carousel-control-height;
@@ -81,9 +109,7 @@ $carousel-control-color: #000 !default;
     line-height: $carousel-control-line-height;    
     color: $carousel-control-color;
   }
-  .carousel-control.left{
-    left: 95%;
-  }
+  
 
   .thumbnail{
     border: none;
@@ -91,6 +117,46 @@ $carousel-control-color: #000 !default;
     >img{
       width: 100%;
     } 
+  }
+  @media screen and (min-width: $screen-xxs-min){  
+    .carousel-control{
+      top: -23%;
+    }
+    .carousel-control.left{
+      left: 80%;
+    } 
+  }
+  @media screen and (min-width: $screen-xs-min){  
+    .carousel-control{
+      top: -16%;
+    }
+    .carousel-control.left{
+      left: 85%;
+    } 
+  }  
+ @media screen and (min-width: $screen-sm-min){  
+    .carousel-control{
+      top: -10%;
+    }
+    .carousel-control.left{
+      left: 90%;
+    } 
+  }  
+   @media screen and (min-width: $screen-md-min){  
+    .carousel-control{
+      top: -30%;
+    }
+    .carousel-control.left{
+      left: 93%;
+    } 
+  }  
+  @media screen and (min-width: $screen-lg-min){  
+    .carousel-control{
+      top: -28%;
+    }
+    .carousel-control.left{
+      left: 95%;
+    }
   }  
 
 }

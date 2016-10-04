@@ -296,7 +296,8 @@ $zindex-modal:             1050 !default;
 //== Media queries breakpoints
 //
 //## Define the breakpoints at which your layout will change, adapting to different screen sizes.
-
+$screen-xxs:                  320px !default;
+$screen-xxs-min:              $screen-xxs !default;
 // Extra small screen / phone
 //** Deprecated `$screen-xs` as of v3.0.1
 $screen-xs:                  480px !default;
@@ -372,7 +373,7 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    126px !default;
+$navbar-height:                    auto !default;
 $navbar-margin-bottom:             $line-height-computed !default;
 $navbar-border-radius:             none !default;
 $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
