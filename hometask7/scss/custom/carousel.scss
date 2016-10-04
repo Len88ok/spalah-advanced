@@ -17,7 +17,7 @@ $carousel-control-background: #81e4ed !default;
 $carousel-control-border-radius: 50% !default;
 $carousel-control-opacity: 1;
 $carousel-control-line-height: 16px !default;    
-$carousel-control-color: #000 !default;
+$carousel-control-color: #000;
 
 
 .carousel {    
@@ -40,7 +40,6 @@ $carousel-control-color: #000 !default;
 .carousel-caption {
   &-1{
     line-height: $carousel-caption-line-height;
-
     text-align: left;
 
   }    
