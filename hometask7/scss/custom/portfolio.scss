@@ -125,10 +125,37 @@ $portfolio-caption-line-height: 3.3em;
   	}
   	a.page-toggle{  		
   		background-color: $secondary-color;
-  		margin-right: 20px;  		
+  		margin-right: 20px;
+      &-last{
+        margin-right: 0;
+      }
   	}
   }
- 
+  @media screen and (min-width: $screen-xxs-min){
+    &-pagination{
+      li> a,
+      li> span{
+        padding: 3px 6px;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-xs-min){
+    &-pagination{
+      li> a,
+      li> span{
+        padding: 4px 8px;
+      }
+    }
+  }
+  @media screen and (min-width: $screen-sm-min){
+    &-pagination{
+      li> a,
+      li> span{
+        padding: 6px 12px;
+      }
+    }
+  }
 
 }
+
 

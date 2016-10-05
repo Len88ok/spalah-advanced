@@ -6265,6 +6265,31 @@ h6,
   margin-right: 20px;
 }
 
+.portfolio-pagination a.page-toggle-last {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 320px) {
+  .portfolio-pagination li > a,
+  .portfolio-pagination li > span {
+    padding: 3px 6px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .portfolio-pagination li > a,
+  .portfolio-pagination li > span {
+    padding: 4px 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-pagination li > a,
+  .portfolio-pagination li > span {
+    padding: 6px 12px;
+  }
+}
+
 .block {
   padding: 20px 0;
   background-size: cover;
@@ -6367,7 +6392,7 @@ h6,
 }
 
 @media screen and (min-width: 320px) {
-  .download .btn {
+  .btn {
     padding: 10px 10px;
     font-size: 12px;
     line-height: 1em;
@@ -6376,7 +6401,7 @@ h6,
 }
 
 @media screen and (min-width: 480px) {
-  .download .btn {
+  .btn {
     padding: 10px 10px;
     font-size: 15px;
     line-height: 1em;
@@ -6385,7 +6410,7 @@ h6,
 }
 
 @media screen and (min-width: 768px) {
-  .download .btn {
+  .btn {
     padding: 10px 10px;
     font-size: 15px;
     line-height: 1.2em;
@@ -6394,7 +6419,7 @@ h6,
 }
 
 @media screen and (min-width: 992px) {
-  .download .btn {
+  .btn {
     padding: 10px 9px;
     font-size: 15px;
     line-height: 1.2em;
@@ -6403,7 +6428,7 @@ h6,
 }
 
 @media screen and (min-width: 1200px) {
-  .download .btn {
+  .btn {
     padding: 15px 15px;
     font-size: 18px;
     line-height: 1.25em;
@@ -6822,6 +6847,10 @@ textarea.form-control {
 
 .map-image img {
   width: 100%;
+}
+
+.map-address {
+  padding-left: 20px;
 }
 
 .footer-top [class*="col-"] {
