@@ -6452,6 +6452,10 @@ h6,
   vertical-align: middle;
 }
 
+.navbar-nav > li {
+  border-top: 5px solid transparent;
+}
+
 .navbar-nav > li > a {
   font-size: 13px;
 }

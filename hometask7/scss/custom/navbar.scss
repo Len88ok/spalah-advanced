@@ -17,8 +17,12 @@ $navbar-padding: 2em 0 !default;
 
 .navbar-nav {
     vertical-align: middle;
+    >li {
+      border-top: 5px solid transparent;
+    }
   > li > a {    
     font-size: $navbar-nav-font-size;
+
   }
   .dropdown.open{
     border-top: 5px solid $primary-color;
