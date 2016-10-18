@@ -1,0 +1,16 @@
+$navbar-default-bg:                      #37bc9b;
+$navbar-default-link-active-bg:        	 #48cfad;
+
+.navbar-default {
+  background-color: $navbar-default-bg;
+	.navbar-nav {
+	 	> .active > a,
+	 	> .open > a {
+	    &,
+	    &:hover,
+	    &:focus {
+	      background-color: $navbar-default-link-active-bg;
+	  	}
+		}
+	}
+}

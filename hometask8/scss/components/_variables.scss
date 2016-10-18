@@ -6,6 +6,7 @@
 $gray-dark:             #434a54;
 $gray:                  #aab2bd;
 $gray-light:            #656d78;
+$gray-lighter:          #e6e9ed;
 
 $brand-primary:         #3bafda;
 $brand-success:         #8cc152;
@@ -15,6 +16,8 @@ $brand-danger:          #da4453;
 
 
 //== Scaffolding
+//** Background color for `<body>`.
+$body-bg:               #f1f2f6;
 
 //** Global textual link color.
 $link-color:            #fff;
@@ -123,11 +126,8 @@ $popover-font-color:                     #fff;
 $popover-title-font-color:               $gray;
 
 //Stepper
-$stepper-primary:                     #3bafda;
-$stepper-primary-hover:               lighten($stepper-primary, 10%);
-$stepper-arrow-width:                 20px;
+$stepper-primary:                        #3bafda;
+$stepper-primary-hover:                  lighten($stepper-primary, 10%);
+$stepper-arrow-width:                    20px;
 
 
-//Navbar
-// Basics of a navbar
-$navbar-default-bg:                $brand-info;

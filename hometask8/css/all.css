@@ -1380,7 +1380,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #333333;
-  background-color: #fff;
+  background-color: #f1f2f6;
 }
 
 input,
@@ -2735,7 +2735,7 @@ th {
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #f1f2f6;
 }
 
 .table-condensed > thead > tr > th,
@@ -5031,7 +5031,7 @@ tbody.collapse.in {
 }
 
 .navbar-default {
-  background-color: #48CFAD;
+  background-color: #f8f8f8;
   border-color: #e7e7e7;
 }
 
@@ -7725,46 +7725,46 @@ button.close {
   border-color: #e3e6ea;
 }
 
-.labels-badges .label,
-.labels-badges .badge {
+.label,
+.badge {
   border: 1px solid #aab2bd;
   background-color: #aab2bd;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.labels-badges .label-default,
-.labels-badges .badge-default {
+.label-default,
+.badge-default {
   background-color: #fff;
   color: #000;
 }
 
-.labels-badges .label-primary,
-.labels-badges .badge-primary {
+.label-primary,
+.badge-primary {
   border-color: #3bafda;
   background-color: #3bafda;
 }
 
-.labels-badges .label-success,
-.labels-badges .badge-success {
+.label-success,
+.badge-success {
   border-color: #8cc152;
   background-color: #8cc152;
 }
 
-.labels-badges .label-danger,
-.labels-badges .badge-danger {
+.label-danger,
+.badge-danger {
   border-color: #da4453;
   background-color: #da4453;
 }
 
-.labels-badges .label-warning,
-.labels-badges .badge-warning {
+.label-warning,
+.badge-warning {
   border-color: #f6bb42;
   background-color: #f6bb42;
 }
 
-.labels-badges .label-info,
-.labels-badges .badge-info {
+.label-info,
+.badge-info {
   border-color: #48CFAD;
   background-color: #48CFAD;
 }
@@ -8111,4 +8111,156 @@ button.close {
 .tabs-right .nav-tabs {
   float: right;
   margin-left: 19px;
+}
+
+.navbar-default {
+  background-color: #37bc9b;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  background-color: #48cfad;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #3bafda;
+}
+
+.nav-pills > li > a {
+  color: #3bafda;
+}
+
+.nav-pills > li > a:hover {
+  color: #434a54;
+  background-color: #aab2bd;
+}
+
+.nav-pills > .active > a > .badge {
+  color: #3bafda;
+}
+
+.nav-pills .open > a,
+.nav-pills .open > a:focus,
+.nav-pills .open > a:hover {
+  color: #434a54;
+  background-color: #aab2bd;
+}
+
+.breadcrumb {
+  color: #434a54;
+  background-color: #e6e9ed;
+}
+
+.breadcrumb > .active {
+  color: #434a54;
+}
+
+.breadcrumb a {
+  color: #3bafda;
+}
+
+.breadcrumb-arrow {
+  padding: 0;
+  list-style: none;
+  background-color: #e6e9ed;
+  height: 36px;
+  line-height: 36px;
+}
+
+.breadcrumb-arrow li,
+.breadcrumb-arrow li a,
+.breadcrumb-arrow li span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.breadcrumb-arrow li:not(:first-child) {
+  margin-left: -5px;
+}
+
+.breadcrumb-arrow li + li:before {
+  padding: 0;
+  content: "";
+}
+
+.breadcrumb-arrow li span {
+  padding: 0 10px;
+}
+
+.breadcrumb-arrow li a,
+.breadcrumb-arrow li:not(:first-child) span {
+  padding: 0 10px 0 25px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.breadcrumb-arrow li:first-child a {
+  padding: 0 10px;
+}
+
+.breadcrumb-arrow li a {
+  position: relative;
+  border: 1px solid #3bafda;
+  color: #fff;
+  background-color: #3bafda;
+  text-decoration: none;
+}
+
+.breadcrumb-arrow li:first-child a {
+  padding-left: 10px;
+}
+
+.breadcrumb-arrow li a:before,
+.breadcrumb-arrow li a:after {
+  position: absolute;
+  top: -1px;
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+}
+
+.breadcrumb-arrow li a:before {
+  right: -10px;
+  border-left-width: 11px;
+  border-left-style: solid;
+  border-left-color: #3bafda;
+  z-index: 3;
+}
+
+.breadcrumb-arrow li a:after {
+  right: -11px;
+  border-left: 11px solid #2494be;
+  z-index: 2;
+}
+
+.breadcrumb-arrow li a:hover,
+.breadcrumb-arrow li a:focus {
+  background-color: #66c1e2;
+  border: 1px solid #66c1e2;
+}
+
+.breadcrumb-arrow li a:hover:before,
+.breadcrumb-arrow li a:focus:before {
+  border-left-color: #66c1e2;
+}
+
+.breadcrumb-arrow li a:active {
+  background-color: #2494be;
+  border: 1px solid #2494be;
+}
+
+.breadcrumb-arrow li a:active:before,
+.breadcrumb-arrow li a:active:after {
+  border-left-color: #2494be;
+}
+
+.breadcrumb-arrow li span {
+  color: #434a54;
 }
