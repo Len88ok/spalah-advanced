@@ -1,0 +1,40 @@
+.alert {
+  &-dismissable .close {
+      color: #000;
+  }
+
+  @at-root &-info {
+      background-color: #7cd1ef;
+  }
+  @at-root &-warning {
+      background-color: #ffdd87;
+  }
+  @at-root &-danger {
+      background-color: #f2838f;
+  }
+  @at-root &-success {
+      background-color: #b9df90;
+  }
+
+  @at-root & &-link {
+    cursor: pointer;
+    text-decoration: underline;
+    opacity: .65; 
+    &:hover,
+    &:focus {
+      opacity: .45;            
+    }
+  }
+
+  @at-root & .btn-link,
+  & .btn-link:hover,
+  & .btn-link:focus {
+    color: #000;
+    opacity: .65;
+  }
+  @at-root & .btn-link:focus,
+  & .btn-link:hover {
+    text-decoration: none;
+    opacity: .40;        
+  }
+}

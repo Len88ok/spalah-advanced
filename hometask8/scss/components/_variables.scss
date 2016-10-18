@@ -9,7 +9,7 @@ $gray-light:            #656d78;
 
 $brand-primary:         #3bafda;
 $brand-success:         #8cc152;
-$brand-info:            #37bc9b;
+$brand-info:            #48CFAD;
 $brand-warning:         #f6bb42;
 $brand-danger:          #da4453;
 
@@ -126,3 +126,8 @@ $popover-title-font-color:               $gray;
 $stepper-primary:                     #3bafda;
 $stepper-primary-hover:               lighten($stepper-primary, 10%);
 $stepper-arrow-width:                 20px;
+
+
+//Navbar
+// Basics of a navbar
+$navbar-default-bg:                $brand-info;
