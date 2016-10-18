@@ -1,0 +1,39 @@
+.labels-badges{
+	.label,
+  .badge {
+  	border: 1px solid $label-normal-bg;
+    background-color: $label-normal-bg;
+    font-weight: $label-font-weight;
+    text-transform: uppercase;
+  }
+  .label-default,
+  .badge-default {
+    background-color: $label-default-bg;
+    color: $label-default-font-color;
+  }
+  .label-primary,
+  .badge-primary {
+    border-color: $label-primary-bg;
+    background-color: $label-primary-bg;
+  }
+  .label-success,
+  .badge-success {
+    border-color: $label-success-bg;
+    background-color: $label-success-bg;
+  }
+  .label-danger,
+  .badge-danger {
+    border-color: $label-danger-bg;
+    background-color: $label-danger-bg;
+  }
+  .label-warning,
+  .badge-warning {
+    border-color: $label-warning-bg;
+    background-color: $label-warning-bg;
+  }
+  .label-info,
+  .badge-info {
+    border-color: $label-info-bg;
+    background-color: $label-info-bg;
+  }
+}

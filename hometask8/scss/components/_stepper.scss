@@ -1,0 +1,57 @@
+.stepper {
+	& .stepper-input {
+		overflow: hidden;
+		-moz-appearance: textfield;
+
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+	}
+
+	& .stepper-arrow {
+		background-color: $stepper-primary;
+		cursor: pointer;
+		display: block;
+		height: 50%;
+		position: absolute;
+		right: 15px;
+		text-indent: -99999px;
+		width: $stepper-arrow-width;
+
+		&:hover,
+		&:active {
+			background-color: $stepper-primary-hover;
+		}
+	}
+	& .up {
+		border: 1px solid  darken($stepper-primary, 7%);
+		top: 0;
+	}
+	& .down {
+		bottom: 0;
+	}
+	& .up::before,
+	& .down::before {
+		content: "";
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-left: 4px solid transparent;
+		border-right: 4px solid transparent;
+	}
+	& .up::before {
+		top: 5px;
+		left: 5px;
+		border-bottom: 4px solid #fff;
+	}
+	& .down:before {
+		bottom: 5px;
+		left: 6px;
+		border-top: 4px solid #fff;
+	}
+	&.disabled .stepper-arrow {
+		background-color: $stepper-primary;
+	}
+ }

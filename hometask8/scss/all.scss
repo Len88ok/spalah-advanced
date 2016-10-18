@@ -1,11 +1,14 @@
-@import "components/fonts.scss";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap.scss";
 
-@import "components/mixins.scss";
-
-
+@import "components/fonts.scss";
 @import "components/global.scss";
 @import "components/block.scss";
 
+
+@import "components/buttons.scss";
+@import "components/labels-badges.scss";
+@import "components/dropdown.scss";
+@import "components/popover.scss";
+@import "components/stepper.scss";
 
 

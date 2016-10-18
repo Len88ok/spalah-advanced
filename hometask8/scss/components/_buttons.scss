@@ -1,0 +1,14 @@
+.buttons{
+	.btn{
+		color: #fff;
+		text-transform: uppercase;
+	}
+
+	.btn-default{
+		color: #000;
+	}
+}
+
+.btn-normal{
+	 @include button-variant($btn-normal-color, $btn-normal-bg, $btn-normal-border);
+	}		
