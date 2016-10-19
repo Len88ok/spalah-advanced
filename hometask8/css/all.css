@@ -8264,3 +8264,444 @@ button.close {
 .breadcrumb-arrow li span {
   color: #434a54;
 }
+
+.timeline dl {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 20px 0;
+}
+
+.timeline dl:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  content: '';
+  background-color: #e6e9ed;
+  z-index: 100;
+}
+
+.timeline dl dt {
+  position: relative;
+  top: 30px;
+  padding: 3px 5px;
+  margin: 0 auto 30px;
+  text-align: center;
+  background-color: #434a54;
+  font-weight: normal;
+  color: #fff;
+  width: 120px;
+  z-index: 200;
+}
+
+.timeline dl dd {
+  position: relative;
+  z-index: 200;
+}
+
+.timeline dl dd .circ {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -11px;
+  width: 22px;
+  height: 22px;
+  background-color: #3bafda;
+  z-index: 200;
+}
+
+.timeline dl dd .time {
+  position: absolute;
+  top: 31px;
+  left: 50%;
+  padding: 10px 20px;
+  width: 100px;
+  display: inline-block;
+  color: #3bafda;
+}
+
+.timeline dl dd .events {
+  position: relative;
+  margin-top: 31px;
+  padding: 10px 10px 0;
+  background-color: #fff;
+  width: 47%;
+}
+
+.timeline dl dd .events:before {
+  position: absolute;
+  top: 12px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 6px;
+  border-style: solid;
+}
+
+.timeline dl dd .events .events-object {
+  margin-right: 10px;
+}
+
+.timeline dl dd .events .events-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.timeline dl dd .events .events-body .events-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+
+.timeline dl dd.pos-right .time {
+  margin-left: -100px;
+  text-align: right;
+}
+
+.timeline dl dd.pos-right .events {
+  float: right;
+}
+
+.timeline dl dd.pos-right .events:before {
+  left: -12px;
+}
+
+.timeline dl dd.pos-left .time {
+  margin-left: 0;
+  text-align: left;
+}
+
+.timeline dl dd.pos-left .events {
+  float: left;
+}
+
+.timeline dl dd.pos-left .events:before {
+  right: -12px;
+  border-color: transparent transparent transparent #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .timeline dl:before {
+    left: 60px;
+  }
+  .timeline dl dt {
+    margin: 0 0 30px;
+  }
+  .timeline dl dd .circ {
+    left: 60px;
+  }
+  .timeline dl dd .time {
+    left: 0;
+  }
+  .timeline dl dd.pos-left .time {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .timeline dl dd.pos-left .events {
+    float: right;
+    width: 84%;
+  }
+  .timeline dl dd.pos-left .events:before {
+    left: -12px;
+    border-color: transparent #fff transparent transparent;
+  }
+  .timeline dl dd.pos-right .time {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .timeline dl dd.pos-right .events {
+    float: right;
+    width: 84%;
+  }
+}
+
+.pricing ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pricing .unit {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  min-width: 250px;
+}
+
+.pricing .unit.active {
+  top: 5px;
+  margin-left: -36px;
+  margin-right: -36px;
+  z-index: 1;
+}
+
+.pricing .unit.active .price-title h3 {
+  font-size: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .pricing .unit {
+    display: block;
+    margin-bottom: 20px;
+  }
+  .pricing .unit.active {
+    top: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pricing .unit.active .price-title h3 {
+    font-size: 30px;
+  }
+}
+
+.pricing .price-title {
+  padding: 20px 20px 10px;
+  color: #FFF;
+}
+
+.pricing .price-title h3,
+.pricing .price-title h3 > p {
+  margin: 0;
+}
+
+.pricing .price-body {
+  padding: 20px 20px 10px;
+}
+
+.pricing .price-body ul {
+  padding-top: 10px;
+}
+
+.pricing .price-body li {
+  margin-bottom: 10px;
+}
+
+.pricing .price-body h4 {
+  margin: 0;
+}
+
+.pricing .price-foot {
+  padding: 20px;
+  background-color: #e6e9ed;
+}
+
+.pricing .price-primary .price-title {
+  background-color: #3bafda;
+}
+
+.pricing .price-primary .price-body {
+  background-color: #bce4f2;
+}
+
+.pricing .price-primary .price-body ul {
+  border-top: 1px solid #91d2ea;
+}
+
+.pricing .price-success .price-title {
+  background-color: #8cc152;
+}
+
+.pricing .price-success .price-body {
+  background-color: #d7e9c3;
+}
+
+.pricing .price-success .price-body ul {
+  border-top: 1px solid #bedc9d;
+}
+
+.pricing .price-warning .price-title {
+  background-color: #f6bb42;
+}
+
+.pricing .price-warning .price-body {
+  background-color: #fdf0d4;
+}
+
+.pricing .price-warning .price-body ul {
+  border-top: 1px solid #fbdea3;
+}
+
+.calendar {
+  padding: 20px;
+  color: #fff;
+  background-color: #e7848e;
+}
+
+.calendar .unit {
+  float: left;
+  width: 14.28%;
+  text-align: center;
+}
+
+.calendar .years .prev {
+  text-align: left;
+}
+
+.calendar .years .next {
+  text-align: right;
+}
+
+.calendar .years .prev em,
+.calendar .years .next em {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #fff;
+  width: 34px;
+  height: 34px;
+  cursor: pointer;
+}
+
+.calendar .years .prev em:before,
+.calendar .years .next em:before {
+  position: absolute;
+  display: block;
+  content: "";
+  margin-top: 6px;
+  border-style: solid;
+  border-width: 7px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+}
+
+.calendar .years .prev em:before {
+  top: 3px;
+  left: 4px;
+  border-color: transparent #fff transparent transparent;
+}
+
+.calendar .years .next em:before {
+  top: 3px;
+  left: 13px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.calendar .years .prev em:hover,
+.calendar .years .next em:hover,
+.calendar .years .prev em:active,
+.calendar .years .next em:active {
+  border-color: #da4453;
+}
+
+.calendar .years .prev em:hover:before,
+.calendar .years .prev em:active:before {
+  border-color: transparent #da4453 transparent transparent;
+}
+
+.calendar .years .next em:hover:before,
+.calendar .years .next em:active:before {
+  border-color: transparent transparent transparent #da4453;
+}
+
+.calendar .years .monyear {
+  float: left;
+  width: 71.42%;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+}
+
+.calendar .days {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #e26f7a;
+}
+
+.calendar .days .unit {
+  margin-bottom: 3px;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+}
+
+.calendar .days .unit b {
+  font-weight: normal;
+  width: 34px;
+  height: 34px;
+}
+
+.calendar .days .unit:hover b,
+.calendar .days .unit:active b,
+.calendar .days .unit.active b {
+  display: inline-block;
+  background-color: #fff;
+  color: #da4453;
+  cursor: pointer;
+}
+
+.calendar .days .unit.older b {
+  color: #da4453;
+  background-color: transparent;
+  cursor: default;
+  width: auto;
+  height: auto;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #434a54;
+}
+
+.footer-logo, .footer-nav {
+  float: left;
+  padding: 0 20px;
+  width: 20%;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+  .footer-logo, .footer-nav {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+.footer-logo {
+  margin-top: -5px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.footer-logo img {
+  margin-right: 10px;
+}
+
+.footer-logo a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.footer-logo a:hover,
+.footer-logo a:active {
+  text-decoration: none;
+}
+
+.footer-nav .nav-title {
+  margin-bottom: 15px;
+  color: #e6e9ed;
+}
+
+.footer-nav .nav-item {
+  line-height: 28px;
+}
+
+.footer-nav .nav-item > a {
+  color: #aab2bd;
+}
+
+.footer-nav .nav-item > a:hover,
+.footer-nav .nav-item > a:active {
+  color: #656d78;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  color: #aab2bd;
+}
