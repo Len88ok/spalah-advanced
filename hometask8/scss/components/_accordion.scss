@@ -1,0 +1,15 @@
+$accordion-border-color:                       $gray;
+$accordion-panel-background-color:             #fff;
+
+
+.panel-group {
+  & .panel {
+    background-color: transparent;
+  }
+}
+.panel-group-lists {
+  & .panel {
+    border-bottom: 1px solid $accordion-border-color;
+    background-color: $accordion-panel-background-color;
+  }
+}

@@ -1,0 +1,16 @@
+$next-font-color:                        #fff;
+$next-font-color-disabled:               #e9e9ed;
+
+.pager {
+  & .disabled > a,
+  & .disabled > a:hover,
+  & .disabled > a:focus,
+  & .disabled > span {
+    color: $next-font-color-disabled;
+    background-color: $next-font-color;
+    border-color: $next-font-color-disabled;
+ }
+}
+
+
+

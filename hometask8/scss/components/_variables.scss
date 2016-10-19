@@ -131,3 +131,19 @@ $stepper-primary-hover:                  lighten($stepper-primary, 10%);
 $stepper-arrow-width:                    20px;
 
 
+//Pagination
+$pagination-color:                     $gray-dark;
+$pagination-active-bg:                 $brand-success;
+$pagination-active-border:             $brand-success;
+
+//Pager
+$pager-bg:                             $pagination-active-bg;
+$pager-border:                         $pagination-active-border;
+
+//Lists
+$list-group-active-bg:                 $brand-primary;
+$list-group-active-border:             $list-group-active-bg;
+
+//Jumbotron
+$jumbotron-font-size:                  $font-size-base;
+$jumbotron-heading-font-size:          ceil(($font-size-base * 1.7)); //24px

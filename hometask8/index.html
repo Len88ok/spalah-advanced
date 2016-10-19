@@ -1222,25 +1222,25 @@
       <div class="block-inner">
         <div class="container">        
           <div class="row">
+          <div class="col-md-6">
+          <div class="block-heading"><h5>Paginations</h5></div>
+            <ul class="pagination">
+              <li class="active"><a href="#">PREV</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li class="disabled"><a href="#">5</a></li>
+              <li class="active"><a href="#">NEXT</a></li>
+            </ul>
+          </div>
             <div class="col-md-6">
             <div class="block-heading"><h5>Pagers</h5></div> 
               <ul class="pager">
                 <li class="previous"><a href="#">Previous</a></li>
                 <li class="next disabled"><a href="#">Next</a></li>
               </ul>
-            </div>  
-            <div class="col-md-6">
-            <div class="block-heading"><h5>Paginations</h5></div>
-              <ul class="pagination">
-                <li class="active"><a href="#">PREV</a></li>
-                <li><a href="#">1</a></li>
-                <li class="active"><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li class="disabled"><a href="#">5</a></li>
-                <li class="active"><a href="#">NEXT</a></li>
-              </ul>
-            </div>
+            </div>              
           </div>
         </div>
       </div>
@@ -1371,17 +1371,6 @@
               </div>
               <div class="col-md-6">
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-primary">facilisis in</a>
-                  <a href="#" class="list-group-item list-group-item-success">Dapibus ac facilisis in</a>
-                  <a href="#" class="list-group-item list-group-item-info">Cras sit amet nibh libero</a>
-                  <a href="#" class="list-group-item list-group-item-warning">Porta ac consectetur ac</a>
-                  <a href="#" class="list-group-item list-group-item-danger">Vestibulum at eros</a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="list-group">
                   <a href="#" class="list-group-item active">Cras justo odio</a>
                   <a href="#" class="list-group-item">Dapibus ac facilisis in</a>
                   <a href="#" class="list-group-item">Morbi leo risus</a>
@@ -1390,6 +1379,8 @@
                   <a href="#" class="list-group-item"><span class="badge badge-primary">38</span>Morbi leo risus</a>
                 </div>
               </div>
+            </div>
+            <div class="row">              
               <div class="col-md-6">
                 <div class="list-group">
                   <a href="#" class="list-group-item active">
@@ -1424,9 +1415,9 @@
                 <div class="jumbotron-photo"><img src="images/jumb1.png" /></div>
                 <div class="jumbotron-contents">
                   <h1>Implementing the HTML and CSS into your user interface project</h1>
-                  <h2>HTML Structure</h2>
+                  <h2 class="h1">HTML Structure</h2>
                   <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                  <h2>CSS Structure</h2>
+                  <h2 class="h1">CSS Structure</h2>
                   <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 </div>
               </div>
@@ -1453,9 +1444,9 @@
                 </div>
                 <div class="jumbotron-contents">
                   <h1>Implementing the HTML and CSS into your user interface project</h1>
-                  <h2>HTML Structure</h2>
+                  <h2 class="h1">HTML Structure</h2>
                   <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                  <h2>CSS Structure</h2>
+                  <h2 class="h1">CSS Structure</h2>
                   <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
                 </div>
               </div>
@@ -1466,45 +1457,39 @@
     </div>
   </div>  
 
-  <!-- Thumbnails-->
+  <!-- Thumbnails and Modals-->
   <div class="block">
     <div class="block-content">
       <div class="block-inner">
-        <div class="container">
-          <div class="block-heading"><h5>Thumbnails</h5></div>
+        <div class="container">          
           <div class="row">
-            <div class="col-sm-6">
-              <div class="thumbnail">
-                <img class="img-rounded" src="images/progress1.png" >
-                <div class="caption text-center">
-                  <h3>Thumbnail label</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
-                  <p><a href="#" class="btn btn-warning" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+            <div class="col-md-6">
+              <!-- Thumbnails-->
+              <div class="row"> 
+                <div class="block-heading"><h5>Thumbnails</h5></div>
+                <div class="col-sm-6">
+                  <div class="thumbnail">
+                    <img class="img-rounded" src="images/progress1.png" >
+                    <div class="caption text-center">
+                      <h5>Thumbnail label</h5>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
+                      <p><a href="#" class="btn btn-warning" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
                 </div>
+                <div class="col-sm-6">
+                  <div class="thumbnail">
+                    <img class="img-rounded" src="images/progress2.png">
+                    <div class="caption text-center">
+                      <h5>Thumbnail label</h5>
+                      <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
+                      <p><a href="#" class="btn btn-warning" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                    </div>
+                  </div>
+                </div> 
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="thumbnail">
-                <img class="img-rounded" src="images/progress2.png">
-                <div class="caption text-center">
-                  <h3>Thumbnail label</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
-                  <p><a href="#" class="btn btn-warning" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                </div>
-              </div>
-            </div>            
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>  
-
-  <!-- Modals and Wells-->
-  <div class="block">
-    <div class="block-content">
-      <div class="block-inner">
-        <div class="container">      
-          <div class="row example-modal">
+            </div> <!--end Thumbnails-->
+            <!--Modals-->
             <div class="col-md-6">
               <div class="block-heading"><h5>Modals</h5></div>
               <div class="modal">
@@ -1540,7 +1525,20 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div>  <!-- end Modals-->         
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  <!-- end Thumbnails and Modals-->
+
+  <!-- Wells-->
+  <div class="block">
+    <div class="block-content">
+      <div class="block-inner">
+        <div class="container">      
+          <div class="row example-modal">
+            
             <div class="col-md-6">
               <div class="block-heading"><h5>Wells</h5></div>
               <div class="well">Look, I'm in a well!</div>
@@ -1662,14 +1660,14 @@
     </div>
   </div>
   
+  <!-- Media Lists-->
   <div class="block">
     <div class="block-content">
       <div class="block-inner">
-        <div class="container">
-          <!-- Media Lists-->
-            <div class="row">
-              <div class="col-md-12">
-                <div class="block-heading"><h5>Media list</h5></div>
+        <div class="container">          
+          <div class="row">
+            <div class="col-md-12">
+              <div class="block-heading"><h5>Media list</h5></div>
                 <ul class="media-list">
                   <li class="media">
                     <a class="pull-left" href="#"><img class="media-object img-rounded" src="images/panel1.png"></a>
@@ -1720,7 +1718,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> <!--end Media Lists-->
 
   <!--Footer-->
   <div class="block">
@@ -1770,7 +1768,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> <!-- end Footer-->
 
   <!--Typography-->
   <div class="block">
