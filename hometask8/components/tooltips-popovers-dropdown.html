@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Bootflat</title>
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="../css/all.css">
+</head>
+<body>
+	<!--Tooltip, Popover, Dropdown-->
+	<div class="block">
+	  <div class="block-content">
+	    <div class="block-inner">
+	      <div class="container">          
+	        <div class="row">
+	          <!-- Popovers-->          
+	          <div class="col-md-8">
+	            <div class="block-heading"><h5>Popovers</h5></div>
+	            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="left" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">
+	              Popover on left
+	            </button>
+	            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="top" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">
+	              Popover on top
+	            </button>
+	            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">
+	              Popover on bottom
+	            </button>
+	            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="right" data-content="Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.">
+	              Popover on right
+	            </button>                           
+	          </div>  <!--end Popovers-->
+	          <!-- Dropdowns-->  
+	          <div class="col-md-4">
+	            <div class="block-heading"><h5>Dropdowns</h5></div>
+	            <div class="dropdown">
+	              <button class="btn btn-normal" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                Dropdown trigger
+	                <span class="caret"></span>
+	              </button>   
+	              <ul class="dropdown-menu" aria-labelledby="dLabel" role="menu">
+	                <li class="dropdown-header">Setting</li>
+	                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+	                <li role="presentation" class="disabled"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+	                <li class="dropdown-submenu">
+	                    <a href="#">Something else here</a>
+	                    <ul class="dropdown-menu">
+	                        <li><a href="#">Action1</a></li>
+	                        <li><a href="#">Action2</a></li>
+	                        <li><a href="#">Another action</a></li>
+	                        <li><a href="#">Something else here</a></li>
+	                        <li class="divider"></li>
+	                        <li><a href="#">Separated link</a></li>
+	                    </ul>
+	                </li>
+	                <li role="presentation" class="divider"></li>
+	                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+	              </ul>
+	            </div>              
+	          </div>
+	        </div>   <!--end Dropdowns-->                
+	        <div class="row">
+	          <div class="col-md-8">              
+	            <!-- Tooltips-->
+	            <div class="block-heading"><h5>Tooltips</h5></div>
+	            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+	            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+	            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+	            <button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+	          </div>
+	        </div>  <!--end Tooltips-->            
+	      </div>
+	    </div>
+	  </div>
+	</div> 
+	<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+	<script src="../js/main.js"></script>
+</body>
+</html>
