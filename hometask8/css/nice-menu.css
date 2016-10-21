@@ -1,7 +1,7 @@
 ul.nice-menu {
   list-style: none;
   margin-top: 30px;
-  width: 50%;
+  width: 40%;
 }
 
 @-moz-keyframes expand {  
@@ -201,7 +201,7 @@ ul.nice-menu.bounce li {
 }
 
 ul.nice-menu li:hover {
-  width: 200px;
+  width: 100%;
   padding-left: 20px;
   -moz-animation-name: expand;
   -moz-animation-duration: 0.5s;
