@@ -1,11 +1,7 @@
 .buttons{
 	.btn{
-		color: #fff;
 		text-transform: uppercase;
-	}
-
-	.btn-default{
-		color: #000;
+		@include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
 	}
 }
 

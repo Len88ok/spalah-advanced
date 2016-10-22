@@ -56,6 +56,8 @@ $btn-normal-color:               #fff;
 $btn-normal-bg:                  $gray;
 $btn-normal-border:              darken($btn-normal-bg, 5%);
 
+$btn-default-color:              #000;
+
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             darken($btn-primary-bg, 5%);
 
@@ -71,6 +73,7 @@ $btn-warning-border:             darken($btn-warning-bg, 5%);
 $btn-danger-bg:                  $brand-danger;
 $btn-danger-border:              darken($btn-danger-bg, 5%);
 
+$padding-base-vertical:          8px;
 
 //== Labels
 $label-normal-bg:             $gray;
@@ -147,3 +150,6 @@ $list-group-active-border:             $list-group-active-bg;
 //Jumbotron
 $jumbotron-font-size:                  $font-size-base;
 $jumbotron-heading-font-size:          ceil(($font-size-base * 1.7)); //24px
+
+//Forms
+$input-height-base:                    37px;                   

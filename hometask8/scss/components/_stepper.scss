@@ -1,4 +1,7 @@
 .stepper {
+ label{
+ 	color: transparent;
+ }
 	& .stepper-input {
 		overflow: hidden;
 		-moz-appearance: textfield;
@@ -14,7 +17,7 @@
 		background-color: $stepper-primary;
 		cursor: pointer;
 		display: block;
-		height: 50%;
+		height: 31%;
 		position: absolute;
 		right: 15px;
 		text-indent: -99999px;
@@ -27,7 +30,7 @@
 	}
 	& .up {
 		border: 1px solid  darken($stepper-primary, 7%);
-		top: 0;
+		top: 24px;
 	}
 	& .down {
 		bottom: 0;
