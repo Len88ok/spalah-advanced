@@ -2996,28 +2996,28 @@ fieldset[disabled] a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4; }
+  background-color: #00bc9c;
+  border-color: #00a387; }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #286090;
-    border-color: #122b40; }
+    background-color: #008972;
+    border-color: #00231d; }
   .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #008972;
+    border-color: #006554; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74; }
+    background-color: #008972;
+    border-color: #006554; }
     .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus,
     .open > .btn-primary.dropdown-toggle:hover,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle.focus {
       color: #fff;
-      background-color: #204d74;
-      border-color: #122b40; }
+      background-color: #006554;
+      border-color: #00231d; }
   .btn-primary:active, .btn-primary.active,
   .open > .btn-primary.dropdown-toggle {
     background-image: none; }
@@ -3025,10 +3025,10 @@ fieldset[disabled] a.btn {
   fieldset[disabled] .btn-primary:hover,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary.focus {
-    background-color: #337ab7;
-    border-color: #2e6da4; }
+    background-color: #00bc9c;
+    border-color: #00a387; }
   .btn-primary .badge {
-    color: #337ab7;
+    color: #00bc9c;
     background-color: #fff; }
 
 .btn-success {
@@ -3407,12 +3407,16 @@ tbody.collapse.in {
   white-space: normal; }
 
 .dropdown-menu {
+  padding: 15%;
   left: auto;
   right: -300%;
   top: 200%;
   width: 1170px;
   background-color: #f5f7fa;
   box-sizing: border-box; }
+
+.dropdown-list-type {
+  list-style-type: circle; }
 
 .dropdown-image {
   position: relative; }

@@ -1,8 +1,7 @@
-
+$dropdown-menu-btn-color: $brand-primary;
 
 
 .dropdown {
-
   &-header{
 
     p{
@@ -10,13 +9,17 @@
     }
   }
   &-menu {  
+  padding: 15%;
   left: auto;
   right: -300%;
   top: 200%;
   width: $container-lg;
   background-color: $gray-lighter;
   box-sizing: border-box;
-  }   
+  } 
+  &-list-type{
+    list-style-type: circle; 
+  }
   &-image{
     position: relative;    
     img{

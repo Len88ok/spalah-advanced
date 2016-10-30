@@ -37,7 +37,10 @@ $navbar-height:                    auto;
 $navbar-padding-horizontal:        0;
 $navbar-padding-vertical:          2em;
 
-
+//Buttons
+$btn-primary-color:              #fff;
+$btn-primary-bg:                 $brand-primary;
+$btn-primary-border:             darken($btn-primary-bg, 5%);
 
 
 
