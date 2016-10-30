@@ -1,0 +1,24 @@
+$socials-width: 30px !default;
+$socials-height: 40px !default;
+$socials-line-height: $socials-height !default;
+
+
+.social{ 
+	&-icon{
+		display: inline-block;
+		font-size: 0;
+		width: $socials-width;
+		height: $socials-height;
+		text-align: center;
+		line-height: $socials-line-height;
+		margin-right: -4px;
+		&:last-child{
+			margin-right: 0;
+		}		
+	}
+	li:hover{
+		img{
+			transform: scale(1.3);
+		}
+	}
+}

@@ -1,0 +1,24 @@
+// bgs
+.bg {
+	&-primary{
+		background-color: $brand-primary;
+	}
+	&-fb{
+		background-color: #4668b3;
+	}
+	&-tw{
+		background-color: #2fbbed;
+	}
+	&-pint{
+		background-color: #d94348;
+	}
+	&-goo{
+		background-color: #de5745;
+	}
+	&-beh{
+		background-color: #3079ff;
+	}
+	&-drib{
+		background-color: #eb6397;
+	}
+}

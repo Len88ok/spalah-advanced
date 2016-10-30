@@ -1,0 +1,51 @@
+$panel-border-radius-1:       none !default;
+$panel-font-family:           $font-family-sans-serif-second !default;
+$panel-email-color:           $brand-primary !default;
+$panel-bg-color:              $gray-lighter !default;
+
+
+
+.panel{
+	font-size: 12px;
+	font-family: $panel-font-family;
+	font-weight: 400;
+	border-radius: $panel-border-radius-1;	
+	background-color: $panel-bg-color;
+	margin-bottom: 0;
+	&-body{
+		padding: 0;	}
+	&-email{
+		position: relative;		
+		margin-right: 30px;
+		height: 40px;
+		line-height: 3em;
+		color: $panel-email-color;
+		padding-left: 20px;
+		&::before{
+			position: absolute;
+			top: 4px;
+			left: 0;			
+			content: "";
+			display: inline-block;
+			width: 11px;
+			height: 9px;
+			background: url('../../src/images/icons/envelop.svg') no-repeat 0 0;
+		}
+	}
+	&-phone{
+		position: relative;	
+		height: 40px;	
+		line-height: 3em;
+		padding-left: 15px;
+		&::before{
+			position: absolute;
+			top: 2px;
+			left: 0;			
+			content: "";
+			display: inline-block;
+			width: 7px;
+			height: 13px;
+			background: url('../../src/images/icons/mobile.svg') no-repeat 0 0;
+		}
+	}	
+}

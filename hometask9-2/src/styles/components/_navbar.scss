@@ -1,0 +1,46 @@
+$navbar-nav-font-size: 15px !default;
+$navbar-background-color-1: #fff !default;
+
+
+//customized styles for navbar
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  text-align: justify;
+  background-color: $navbar-background-color-1;
+  border-color: transparent;
+  &-brand {  
+  padding: 1em 0;
+  vertical-align: middle;
+  }
+  &-nav {
+  vertical-align: middle;
+  padding: 2em 0;
+  > li > a {    
+    font-size: $navbar-nav-font-size;
+    padding: 0 10px;
+    }
+  .dropdown.open{
+    a,
+    a:hover,
+    a:focus{
+      background-color: #fff;
+      }
+    }
+  }
+  &-search{
+    position: relative;
+    padding: 2em 0;
+  }
+  &-nav{
+    margin: 0 15% 0 10%;
+  }
+}
+
+
+
+
+
+
+
+  

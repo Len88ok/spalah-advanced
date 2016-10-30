@@ -1,1 +1,43 @@
 // Variables go here
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #2f4052;
+$gray-darker:            #283645;
+$gray-dark:              #506a85;
+$gray:                   #5e6c7a;
+$gray-light:             #8b9cac;
+$gray-lighter:           #f5f7fa; 
+
+$brand-primary:          #00bc9c;
+
+//== Scaffolding
+
+//** Global text color on `<body>`.
+$text-color:            $gray-light;
+
+//** Global textual link color.
+$link-color:            $brand-primary;
+
+//** Link hover decoration.
+$link-hover-decoration:          none;
+
+
+//== Typography
+$font-family-sans-serif:  'Lato', Arial, sans-serif;
+$font-family-sans-serif-second: 'Source Sans Pro', Arial, sans-serif;
+$font-family-base:        $font-family-sans-serif;
+
+
+// Basics of a navbar
+$navbar-height:                    auto;
+
+$navbar-padding-horizontal:        0;
+$navbar-padding-vertical:          2em;
+
+
+
+
+

@@ -1,0 +1,55 @@
+
+
+
+.dropdown {
+
+  &-header{
+
+    p{
+      white-space: normal;
+    }
+  }
+  &-menu {  
+  left: auto;
+  right: -300%;
+  top: 200%;
+  width: $container-lg;
+  background-color: $gray-lighter;
+  box-sizing: border-box;
+  }   
+  &-image{
+    position: relative;    
+    img{
+      width: 100%;
+    }
+    &-hover{
+    display: none; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $brand-primary;
+    opacity: 0.9;
+    &::after{
+      position: absolute;
+      top: 45%;
+      left: 47%;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background:url('../../src/images/icons/icon-plus.png') no-repeat; 
+      }
+    } 
+    &:hover{
+      .dropdown-image-hover{
+        display: block;
+      }      
+    }    
+  }
+}
+
+
+
+ 
+
