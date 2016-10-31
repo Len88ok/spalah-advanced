@@ -1,0 +1,29 @@
+$btn-box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.15) !default;
+$btn-text-transform: uppercase !default;
+
+.btn{
+	box-shadow: $btn-box-shadow;
+	text-transform: $btn-text-transform;
+}
+
+
+@media screen and (min-width: $screen-xs-min){
+		.btn{
+	@include button-size(10px, 10px, 15px, 1em, 2px);
+		}
+}
+@media screen and (min-width: $screen-sm-min){
+		.btn{
+	@include button-size(10px, 10px, 15px, 1.2em, 2px);	
+		}
+}
+@media screen and (min-width: $screen-md-min){
+		.btn{
+	@include button-size(10px, 9px, 15px, 1.2em, 2px);	
+		}
+}
+@media screen and (min-width: $screen-lg-min){
+		.btn{
+	@include button-size(15px, 30px, 18px, 1.25em, 2px);	
+		}
+}

@@ -3,6 +3,11 @@
 		padding: 0 0.5em;
 		border: none;
 		background-color: #586674;
+		&-btn{
+			.btn{
+				@include button-size(8px, 10px, 15px, 1em, 2px);
+			}
+		}
 		.form-control{
 			height: 40px;
 			border: none;	
@@ -14,6 +19,6 @@
 		}
 		input:-moz-placeholder {
 			color: white;
-		} 
+		}		
 	}
 }

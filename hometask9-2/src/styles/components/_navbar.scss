@@ -10,39 +10,69 @@ $navbar-background-color-1: #fff !default;
   background-color: $navbar-background-color-1;
   border-color: transparent;
   &-brand {  
-  padding: 1em 0;
+  padding: 1.9em 0 1.5em;
   vertical-align: middle;
-  }
+  }  
   &-nav {
   vertical-align: middle;
-  padding: 2em 0;
-  margin: 0 15% 0 10%;
-  > li > a {    
+  padding: 1.5em 0;
+  > li > a { 
     font-size: $navbar-nav-font-size;
-    padding: 0 10px;
+    padding: 1.5em 1em;
+    color: $headings-color;
+    &:hover{
+      color: $brand-primary;
     }
+  }  
   .dropdown.open{
     a,
     a:hover,
     a:focus{
-      background-color: #fff;
+      background-color: $gray-lighter;
+      border: 1px solid $dropdown-border;
+      border-bottom: none;
+      z-index: 1100;
+      color: $brand-primary;
       }
     }
   }
   &-search{
     position: relative;
-    padding: 2em 0;
+    padding: 3em 0;
   }
 } 
+
+
+.navbar-default{
+ .navbar-nav {
+    > li > a {
+      color: $headings-color;
+      font-size: 15px;
+  
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $brand-primary;
+      }
+    }
+  }
+}
 
 #navbar-main {
   /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
   &.affix {
     padding: 0 8em;
-    z-index: 1;
+    z-index: 100;
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
   }
 }
 

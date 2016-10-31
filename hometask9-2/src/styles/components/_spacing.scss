@@ -1,5 +1,12 @@
 //margin
-.m{}
+.m{
+	&-b-1{
+		margin-bottom: 1em;
+	}
+	&-b-2{
+		margin-bottom: 2em;
+	}
+}
 
 
 //padding
@@ -13,6 +20,9 @@
 	}
 	&-a-5{
 		padding: 5em 0;
+	}
+	&-a{
+		padding: 2em;
 	}
 }
 
