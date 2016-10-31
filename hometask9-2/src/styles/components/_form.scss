@@ -1,0 +1,19 @@
+.input{
+	&-group{
+		padding: 0 0.5em;
+		border: none;
+		background-color: #586674;
+		.form-control{
+			height: 40px;
+			border: none;	
+			background-color: #586674;
+		}
+				/*Style for placeholder in the form*/
+		input::-webkit-input-placeholder {
+		  color: white;
+		}
+		input:-moz-placeholder {
+			color: white;
+		} 
+	}
+}

@@ -3,6 +3,13 @@
 	&-primary{
 		background-color: $brand-primary;
 	}
+	&-darker{
+		background-color: $gray-darker;
+	}
+	&-dark{
+		background-color: $gray-base;
+	}
+
 	&-fb{
 		background-color: #4668b3;
 	}

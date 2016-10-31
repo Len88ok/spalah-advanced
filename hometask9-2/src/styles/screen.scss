@@ -46,6 +46,7 @@
 @import 'components/dropdown';
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "components/form";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navs";
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
 @import 'components/navbar';
@@ -76,6 +77,8 @@
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
 @import 'base/block';
+@import "components/footer";
+
 
 ul{
 	margin: 0;

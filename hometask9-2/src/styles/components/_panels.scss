@@ -23,12 +23,12 @@ $panel-bg-color:              $gray-lighter !default;
 		padding-left: 20px;
 		&::before{
 			position: absolute;
-			top: 4px;
+			top: 0.2em;
 			left: 0;			
 			content: "";
 			display: inline-block;
-			width: 11px;
-			height: 9px;
+			width: 25px;
+			height: 25px;
 			background: url('../../src/images/icons/envelop.svg') no-repeat 0 0;
 		}
 	}
@@ -36,16 +36,16 @@ $panel-bg-color:              $gray-lighter !default;
 		position: relative;	
 		height: 40px;	
 		line-height: 3em;
-		padding-left: 15px;
+		padding-left: 20px;
 		&::before{
 			position: absolute;
-			top: 2px;
+			top: -0.2em;
 			left: 0;			
 			content: "";
 			display: inline-block;
-			width: 7px;
-			height: 13px;
-			background: url('../../src/images/icons/mobile.svg') no-repeat 0 0;
+			width: 25px;
+			height: 25px;
+			background: url('../../src/images/icons/mobile-m.svg') no-repeat 0 0;
 		}
 	}	
 }
