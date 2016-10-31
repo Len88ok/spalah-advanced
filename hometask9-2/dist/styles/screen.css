@@ -1267,6 +1267,9 @@ hr {
 .bg-dark {
   background-color: #2f4052; }
 
+.bg-lighter {
+  background-color: #f5f7fa; }
+
 .bg-fb {
   background-color: #4668b3; }
 
@@ -1287,10 +1290,10 @@ hr {
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: inherit;
-  font-weight: 500;
+  font-family: "Lato", Arial, sans-serif;
+  font-weight: 700;
   line-height: 1.1;
-  color: inherit; }
+  color: #506a85; }
   h1 small,
   h1 .small, h2 small,
   h2 .small, h3 small,
@@ -4274,6 +4277,15 @@ tbody.collapse.in {
     position: relative;
     padding: 2em 0; }
 
+#navbar-main {
+  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */ }
+  #navbar-main.affix {
+    padding: 0 8em;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0; }
+
 .thumbnail {
   display: block;
   padding: 4px;
@@ -5079,6 +5091,125 @@ a.thumbnail.active {
       opacity: 0.9; }
   .block-inline {
     display: inline-block; }
+  .block-heading {
+    margin-bottom: 2em; }
+  .block-desc {
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    margin-bottom: 2em; }
+
+.feature {
+  margin-bottom: 2em; }
+  .feature-header {
+    margin-bottom: 1em; }
+  .feature-icon {
+    display: inline-block;
+    margin-bottom: 2em; }
+  .feature-content {
+    margin-left: 6em; }
+
+.portfolio-image {
+  position: relative; }
+  .portfolio-image img {
+    width: 100%; }
+  .portfolio-image-hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00bc9c;
+    opacity: 0.9; }
+    .portfolio-image-hover::after {
+      position: absolute;
+      top: 45%;
+      left: 47%;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background: url("../../src/images/icons/icon-plus.png") no-repeat; }
+  .portfolio-image-hover1 {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00bc9c;
+    opacity: 0.9;
+    padding: 4em 0; }
+    .portfolio-image-hover1 > h5,
+    .portfolio-image-hover1 > p {
+      color: #fff; }
+  .portfolio-image:hover .portfolio-image-hover,
+  .portfolio-image:hover .portfolio-image-hover1 {
+    display: block; }
+
+.portfolio .thumbnail {
+  padding: 0; }
+
+.portfolio .caption > h5:hover {
+  color: #00bc9c; }
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  border: 1px solid #506a85;
+  background-color: #506a85; }
+
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  border: 1px solid #00bc9c;
+  background-color: #00bc9c; }
+
+#carousel-id .carousel-indicators {
+  background-color: #FFF;
+  bottom: -2em;
+  padding: 0.5em 0;
+  width: 10%;
+  left: 75%; }
+
+#carousel-id .carousel-caption {
+  bottom: 0;
+  top: 15vw; }
+  #carousel-id .carousel-caption > h1 {
+    color: #fff;
+    font-size: 5vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 0.2em; }
+  #carousel-id .carousel-caption > p {
+    opacity: 0.7;
+    margin-bottom: 3em; }
+
+#myCarousel .carousel-indicators {
+  bottom: -4.8em; }
+
+#myCarousel .carousel-control {
+  width: 30px;
+  height: 30px;
+  font-size: 3rem;
+  line-height: 0.9em;
+  background-color: #506a85;
+  color: #00bc9c;
+  top: auto;
+  bottom: -2em; }
+  #myCarousel .carousel-control.left {
+    left: 44%; }
+  #myCarousel .carousel-control.right {
+    right: 44%; }
+
+.p-a-1 {
+  padding: 1em 0; }
+
+.p-a-2 {
+  padding: 2em 0; }
+
+.p-a-5 {
+  padding: 5em 0; }
 
 .footer-menu {
   padding: 2em 0; }

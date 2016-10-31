@@ -1,0 +1,54 @@
+.portfolio{
+	&-image{
+		position: relative;    
+    img{
+      width: 100%;
+    }
+    &-hover{
+    display: none; 
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $brand-primary;
+    opacity: 0.9;
+    &::after{
+      position: absolute;
+      top: 45%;
+      left: 47%;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background:url('../../src/images/icons/icon-plus.png') no-repeat; 
+      }
+    }
+    &-hover1{
+	    display: none; 
+	    position: absolute; 
+	    top: 0;
+	    left: 0;
+	    width: 100%;
+	    height: 100%;
+	    background-color: $brand-primary;
+	    opacity: 0.9;
+	    padding: 4em 0;
+	    > h5,
+	    > p {
+			color: #fff;
+	    }   
+    }
+    &:hover{
+      .portfolio-image-hover,
+      .portfolio-image-hover1{
+        display: block;
+      }         
+    }     
+	}
+	.thumbnail{
+		padding: 0;
+	}
+	.caption > h5:hover{
+      	color: $brand-primary;
+      }   
+}

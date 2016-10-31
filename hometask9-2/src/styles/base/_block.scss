@@ -52,6 +52,14 @@
 	&-inline{
 		display: inline-block;
 	}
+	&-heading{
+		margin-bottom: 2em;
+	}
+	&-desc{
+		font-family: $font-family-sans-serif-second;
+		margin-bottom: 2em;
+	}
 }
+
 
 

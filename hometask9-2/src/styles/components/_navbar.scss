@@ -34,3 +34,15 @@ $navbar-background-color-1: #fff !default;
     padding: 2em 0;
   }
 } 
+
+#navbar-main {
+  /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+  &.affix {
+    padding: 0 8em;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+

@@ -1,0 +1,15 @@
+$feature-margin-bottom: 2em;
+
+.feature{
+	margin-bottom: $feature-margin-bottom;
+	&-header{
+	margin-bottom: $feature-margin-bottom/2;
+	}
+	&-icon{
+		display: inline-block;
+		margin-bottom: $feature-margin-bottom;
+	}
+	&-content{
+		margin-left: 6em;
+	}
+}

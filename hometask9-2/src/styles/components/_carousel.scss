@@ -1,0 +1,68 @@
+.carousel{
+  &-indicators {  	
+
+	  li {
+	    width:  15px;
+	    height: 15px;
+	    margin: 1px;
+	    border: 1px solid $gray-dark;
+	    background-color: $gray-dark; 
+	  	}
+		.active {
+	  width:  15px;
+	  height: 15px;
+	  margin: 1px;
+	  border: 1px solid $brand-primary;
+	  background-color: $brand-primary;
+		}	
+	}
+}
+
+
+#carousel-id .carousel{
+	&-indicators {
+		background-color: #FFF;
+	  bottom: -2em;
+	  padding: 0.5em 0;
+	  width: 10%;
+	  left: 75%;
+	}
+	&-caption{
+		bottom: 0;
+		top: 15vw;
+		> h1{
+			color: #fff;
+			font-size: 5vw;
+			font-weight: 900;
+			text-transform: uppercase;
+			margin-bottom: 0.2em;
+		}
+		> p{
+			opacity: 0.7;
+			margin-bottom: 3em;
+		}
+	}
+}
+  
+
+#myCarousel .carousel{
+  &-indicators {
+	  bottom: -4.8em;
+	}
+	&-control{
+		width: 30px;
+		height: 30px;
+		font-size: 3rem;
+		line-height: 0.9em;		
+		background-color: $gray-dark;  
+		color: $brand-primary;
+		top: auto;
+		bottom: -2em;
+		&.left{
+			left: 44%;
+		}
+		&.right{
+			right: 44%;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+//margin
+.m{}
+
+
+//padding
+.p{
+	//padding all sides
+	&-a-1{
+		padding: 1em 0;
+	}
+	&-a-2{
+		padding: 2em 0;
+	}
+	&-a-5{
+		padding: 5em 0;
+	}
+}
+
