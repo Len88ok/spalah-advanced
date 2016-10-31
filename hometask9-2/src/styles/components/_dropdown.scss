@@ -17,9 +17,6 @@ $dropdown-menu-btn-color: $brand-primary;
   }
   &-menu {  
   left: auto;
-  right: -220%;
-  top: 98%;
-  width: $container-lg;
   background-color: $gray-lighter;
   box-sizing: border-box;
   } 
@@ -78,6 +75,27 @@ $dropdown-menu-btn-color: $brand-primary;
     }    
   }
 }
+
+@media screen and (min-width: $screen-md-min){
+  .dropdown {
+    &-menu {  
+    right: -190%;
+    top: 97%;
+    width: $container-md;
+    } 
+  }
+}
+
+@media screen and (min-width: $screen-lg-min){
+    .dropdown {
+    &-menu {  
+    right: -323%;
+    top: 98%;
+    width: $container-lg;
+    } 
+  }
+}
+
 
 
 

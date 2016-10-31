@@ -3458,9 +3458,6 @@ tbody.collapse.in {
 
 .dropdown-menu {
   left: auto;
-  right: -220%;
-  top: 98%;
-  width: 1170px;
   background-color: #f5f7fa;
   box-sizing: border-box; }
 
@@ -3509,6 +3506,18 @@ tbody.collapse.in {
   .dropdown-image:hover .dropdown-image-hover1,
   .dropdown-image:hover .dropdown-image-hover {
     display: block; }
+
+@media screen and (min-width: 992px) {
+  .dropdown-menu {
+    right: -190%;
+    top: 97%;
+    width: 970px; } }
+
+@media screen and (min-width: 1200px) {
+  .dropdown-menu {
+    right: -323%;
+    top: 98%;
+    width: 1170px; } }
 
 .btn-group,
 .btn-group-vertical {
@@ -4332,7 +4341,8 @@ tbody.collapse.in {
     .navbar-nav > li > a {
       font-size: 15px;
       padding: 1.5em 1em;
-      color: #506a85; }
+      color: #506a85;
+      font-weight: 900; }
       .navbar-nav > li > a:hover {
         color: #00bc9c; }
     .navbar-nav .dropdown.open a,
@@ -4359,12 +4369,52 @@ tbody.collapse.in {
 #navbar-main {
   /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */ }
   #navbar-main.affix {
-    padding: 0 8em;
     z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+
+@media screen and (min-width: 480px) {
+  .navbar-search {
+    display: none; }
+  .navbar-toggle {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em; }
+  .navbar-nav > li > a {
+    padding: 0; }
+  .navbar li.dropdown {
+    display: none; }
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */ }
+    #navbar-main.affix {
+      padding: 0 1em; } }
+
+@media screen and (min-width: 768px) {
+  .navbar-search {
+    display: block; }
+  .navbar-nav > li > a {
+    padding: 1em 0.5em; }
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */ }
+    #navbar-main.affix {
+      padding: 0 2.5em; } }
+
+@media screen and (min-width: 992px) {
+  .navbar-nav {
+    padding: 2em 0; }
+  .navbar li.dropdown {
+    display: block; }
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */ }
+    #navbar-main.affix {
+      padding: 0 4em; } }
+
+@media screen and (min-width: 992px) {
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */ }
+    #navbar-main.affix {
+      padding: 0 13em; } }
 
 .thumbnail {
   display: block;

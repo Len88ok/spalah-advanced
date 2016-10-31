@@ -20,6 +20,7 @@ $navbar-background-color-1: #fff !default;
     font-size: $navbar-nav-font-size;
     padding: 1.5em 1em;
     color: $headings-color;
+    font-weight: 900;
     &:hover{
       color: $brand-primary;
     }
@@ -67,12 +68,79 @@ $navbar-background-color-1: #fff !default;
 #navbar-main {
   /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
   &.affix {
-    padding: 0 8em;
     z-index: 100;
     top: 0;
     left: 0;
     right: 0;
     box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  }
+}
+
+@media screen and (min-width: $screen-xs-min){
+  .navbar{
+    &-search{
+      display: none;
+    }
+    &-toggle{
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;    
+    }
+    &-nav {
+      > li > a { 
+        padding: 0;
+      }
+    }
+    li.dropdown{
+      display: none;
+    }
+  }
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+    &.affix {
+      padding: 0 1em;
+    }
+  } 
+}
+@media screen and (min-width: $screen-sm-min){
+.navbar{
+    &-search{
+      display: block;
+    }
+    &-nav {
+      > li > a { 
+        padding: 1em 0.5em;;
+      }
+    }    
+  }
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+    &.affix {
+      padding: 0 2.5em;
+    }
+  }  
+}
+@media screen and (min-width: $screen-md-min){
+.navbar{
+    &-nav {
+      padding: 2em 0;     
+    }
+    li.dropdown{
+    display: block;
+    } 
+  }
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+    &.affix {
+      padding: 0 4em;
+    }
+  }
+}
+@media screen and (min-width: $screen-md-min){
+  #navbar-main {
+    /* Added `.affix` class css when the element is >= 170px (Look: line 8 html) */
+    &.affix {
+      padding: 0 13em;
+    }
   }
 }
 
