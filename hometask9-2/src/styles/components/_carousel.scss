@@ -53,13 +53,7 @@
 		background-color: $gray-dark;  
 		color: $brand-primary;
 		top: auto;
-		bottom: -2em;
-		&.left{
-			left: 44%;
-		}
-		&.right{
-			right: 44%;
-		}
+		bottom: -2em;		
 	}
 }
 
@@ -75,12 +69,32 @@
 		top: 1vw;
 		}
 	}
+	#myCarousel .carousel{
+		&-control{
+			&.left{
+				left: 37%;
+			}
+			&.right{
+				right: 37%;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: $screen-sm-min){
   #carousel-id .carousel{
 		&-caption{
 		top: 5vw;
+		}
+	}
+	#myCarousel .carousel{
+		&-control{
+			&.left{
+				left: 39%;
+			}
+			&.right{
+				right: 39%;
+			}
 		}
 	}
 }
@@ -93,6 +107,16 @@
 		}
 		&-caption{
 		top: 10vw;
+		}
+	}
+	#myCarousel .carousel{
+		&-control{
+			&.left{
+				left: 42%;
+			}
+			&.right{
+				right: 42%;
+			}
 		}
 	}
 }
@@ -108,4 +132,14 @@
 			top: 15vw;
 		}
 	}
+	#myCarousel .carousel{
+		&-control{
+			&.left{
+			left: 44%;
+			}
+			&.right{
+				right: 44%;
+			}
+		}
+	}	
 }

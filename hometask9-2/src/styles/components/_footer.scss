@@ -37,7 +37,6 @@ $footer-nav-hover-color: $brand-primary !default;
 		&::after{
       position: absolute;
       top: 0.5em;
-      left: 40%;
       content: "";
       width: 10px;
       height: 8px;
@@ -61,8 +60,6 @@ $footer-nav-hover-color: $brand-primary !default;
     opacity: 0.9;
     &::after{
       position: absolute;
-      top: 42%;
-      left: 42%;
       content: "";
       width: 25px;
       height: 25px;
@@ -124,9 +121,12 @@ $footer-nav-hover-color: $brand-primary !default;
 
 
 	&-nav{
-	 .navbar-nav {
+	 .navbar-nav {    
 	 	padding: 1em 0;
   	margin: 0;
+    >li>a{
+      white-space: pre;
+    }
   	>li>a:hover{
   		background-color: transparent;
   		color: $footer-nav-hover-color;
@@ -145,6 +145,85 @@ $footer-nav-hover-color: $brand-primary !default;
 
 
 
+@media screen and (min-width: $screen-xs-min){
+  .footer{  
+    &-image{
+      &-hover{
+        &::after{
+        top: 45%;
+        left: 47%;    
+        }
+      }
+    }
+    &-link{
+      &::after{
+        left: 22%;
+      }
+    }    
+    &-nav{
+     .navbar-nav {
+        >li{
+          display: inline-block;
+        }
+        >li>a{
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+  .copyright{
+    padding: 1em 0 0;
+    p {
+      margin: 0;
+    }
+  }
+}
 
+@media screen and (min-width: $screen-sm-min){
+  .footer{ 
+    &-link{
+      &::after{
+        left: 20%;
+      }
+    }
+  }  
+ .copyright{
+    float: left;
+    padding: 1.5em 0;   
+  }
+}
+
+@media screen and (min-width: $screen-md-min){
+  .footer{  
+    &-image{
+      &-hover{
+        &::after{
+          top: 42%;
+          left: 42%;    
+        }
+      }
+    }
+    &-link{
+      &::after{
+        left: 45%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg-min){
+  .footer{  
+    &-nav{
+     .navbar-nav {
+        >li>a{
+          padding: 1.5em .5em;
+        }
+      }
+    }    
+  }
+ .copyright{
+    padding: 2.5em 0;   
+  }
+}
 
 

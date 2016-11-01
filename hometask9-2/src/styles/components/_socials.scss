@@ -22,3 +22,9 @@ $socials-line-height: $socials-height !default;
 		}
 	}
 }
+
+@media screen and (min-width: $screen-sm-min){
+  .social{ 
+		text-align: right;
+  }
+}
