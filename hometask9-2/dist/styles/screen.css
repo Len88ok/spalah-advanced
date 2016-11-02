@@ -3468,6 +3468,8 @@ tbody.collapse.in {
 .dropdown-list-type {
   list-style-type: circle;
   padding-left: 1.2em; }
+  .dropdown-list-type li:hover {
+    color: #00bc9c; }
 
 .dropdown-image {
   position: relative; }
