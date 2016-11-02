@@ -15,7 +15,6 @@ $footer-nav-hover-color: $brand-primary !default;
 		font-size: 16px;
 		font-weight: 700;
 		text-transform: uppercase;
-		margin-bottom: 2em;
 	}
 		
 	&-logo{
@@ -145,7 +144,7 @@ $footer-nav-hover-color: $brand-primary !default;
 
 
 
-@media screen and (min-width: $screen-xs-min){
+@media screen and (min-width: $screen-xxs-min){
   .footer{  
     &-image{
       &-hover{
@@ -154,6 +153,12 @@ $footer-nav-hover-color: $brand-primary !default;
         left: 47%;    
         }
       }
+    }
+    &-heading{
+      padding: 1em;
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 0;
     }
     &-link{
       &::after{
@@ -181,6 +186,9 @@ $footer-nav-hover-color: $brand-primary !default;
 
 @media screen and (min-width: $screen-sm-min){
   .footer{ 
+     &-heading{
+      text-decoration: none;
+    }
     &-link{
       &::after{
         left: 20%;
@@ -195,6 +203,11 @@ $footer-nav-hover-color: $brand-primary !default;
 
 @media screen and (min-width: $screen-md-min){
   .footer{  
+    &-heading{
+      text-align: left;
+      padding: 0;
+      margin-bottom: 2em;
+    }
     &-image{
       &-hover{
         &::after{

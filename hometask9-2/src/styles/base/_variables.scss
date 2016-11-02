@@ -47,3 +47,11 @@ $btn-primary-color:              #fff;
 $btn-primary-bg:                 $brand-primary;
 $btn-primary-border:             darken($btn-primary-bg, 5%);
 
+// Smalest screen / phone
+//** Deprecated `$screen-xxs` as of v3.0.1
+$screen-xxs:                  320px;
+//** Deprecated `$screen-xxs-min` as of v3.2.0
+$screen-xxs-min:              $screen-xxs;
+//** Deprecated `$screen-minphone` as of v3.0.1
+$screen-minphone:               $screen-xxs-min;
+

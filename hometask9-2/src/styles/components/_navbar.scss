@@ -76,7 +76,7 @@ $navbar-background-color-1: #fff !default;
   }
 }
 
-@media screen and (min-width: $screen-xs-min){
+@media screen and (min-width: $screen-xxs-min){
   .navbar{
     &-search{
       display: none;
@@ -101,6 +101,7 @@ $navbar-background-color-1: #fff !default;
     }
   } 
 }
+
 @media screen and (min-width: $screen-sm-min){
 .navbar{
     &-search{
